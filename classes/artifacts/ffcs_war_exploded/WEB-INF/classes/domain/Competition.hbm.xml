@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ffcs.xkjs.domain.Competition" table="xkjs_competition">
+
+
+
+        <id name="comId" type="string" column="comId">
+            <generator class="uuid"></generator>
+        </id>
+
+
+        <property name="comName" type="java.lang.String">
+            <column name="comName" length="120" />
+        </property>
+
+        <property name="organizer" type="java.lang.String">
+            <column name="organizer" length="120" />
+        </property>
+
+        <property name="responsibleUnit" type="java.lang.String">
+            <column name="responsibleUnit" length="120" />
+        </property>
+
+        <property name="category" type="java.lang.String">
+            <column name="category" length="120" />
+        </property>
+
+        <property name="level" type="java.lang.String">
+            <column name="level" length="120" />
+        </property>
+
+        <property name="startDate" type="date" column="startDate"></property>
+
+
+    </class>
+</hibernate-mapping>

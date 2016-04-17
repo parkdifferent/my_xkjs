@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="target:war">
+    <output-path>$PROJECT_DIR$/target/target</output-path>
+    <root id="archive" name="ffcs.war">
+      <element id="artifact" artifact-name="target:war exploded" />
+      <element id="javaee-facet-resources" facet="ffcs/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ffcs" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

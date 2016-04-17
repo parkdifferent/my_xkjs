@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ffcs.xkjs.domain.Profession" table="xkjs_profession">
+
+        <id name="proId" type="java.lang.Integer">
+            <column name="proId" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="professionName" type="java.lang.String">
+            <column name="professionName" length="60" />
+        </property>
+
+
+        <!-- 专业和学院是多对一的关系 -->
+        <many-to-one name="academe" class="com.ffcs.xkjs.domain.Academe" column="academeId" cascade="save-update" lazy="false">
+
+        </many-to-one>
+
+
+    </class>
+</hibernate-mapping>

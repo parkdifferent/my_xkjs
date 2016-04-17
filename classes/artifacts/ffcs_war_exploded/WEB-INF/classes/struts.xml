@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 开发模式 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- ui主题，简单主题 -->
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<!-- 修改struts2的后缀 改成.do-->
+	<constant name="struts.action.extension" value="do"></constant>
+	
+	<!-- 系统管理 -->
+	<!--<package name="system" namespace="/system" extends="struts-default">-->
+
+    <package name="system" namespace="/system" extends="json-default">
+		<!-- 测试 -->
+		<action name="elecTextAction_*" class="elecTextAction" method="{1}">
+			<result name="save">/system/success.jsp</result>
+			<!-- 自加 -->
+			<result name="home">/system/text_list.jsp</result>
+			
+			<result name="edit">/system/text_add.jsp</result>
+			<result name="add">/system/text_add.jsp</result>
+			<result name="del" type="redirectAction">
+				<param name="actionName">elecTextAction_home.do?currentPage=${#request.currentPage}</param>
+			</result>
+
+            <!--json测试-->
+
+               <!-- <result name="success" type="json">
+                    <param name="root">returnMap</param>
+                </result>-->
+
+            <result name="success" type="json">
+                <param name="includeProperties">\[\d+\]\.areaId,\[\d+\]\.name</param>
+            </result>
+			
+		</action>
+		
+		
+		<action name="uploadAction_*" class="uploadAction" method="{1}">
+			<result name="fileTest">/system/success.jsp</result>
+			
+			<result name="excelToJAVA">/system/success.jsp</result>
+			
+			<result name="success" type="stream">
+		     	 <param name="contentType">application/vnd.ms-excel</param>
+		     	<!-- 使用inputName输出值栈中流的值 -->
+		     	<param name="inputName">inputStream</param>
+		     	<param name="contentDisposition">attachment;filename="test.xls"</param>
+		     	<param name="bufferSize">1024</param> 
+		    </result>
+			
+			 <result name="exportExcelSucc"  type="stream">
+		        <param name="contentType">application/vnd.ms-excel</param>
+		        <param name="inputName">inputStream</param>
+		        <param name="contentDisposition">attachment;filename="elecText.xls"</param>
+		        <param name="bufferSize">4096</param>
+		     
+		     </result>
+		</action>
+
+
+
+
+
+
+
+        <!-- 图片验证码 -->
+        <action name="verifyCode" class="verifyAction">
+            <result name="success" type="stream">
+                <param name="inputName">imageStream</param>
+            </result>
+        </action>
+
+        <action name="user_*" class="loginAction" method="{1}">
+
+            <!-- 自加 -->
+            <result name="login">/system/testFrame.jsp</result>
+            <!--<result name="save">/manage/news/success.jsp</result>
+            <result name="edit">/manage/news/news_add.jsp</result>
+            <result name="add">/manage/news/news_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">news_list.do?currentPage=${#request.currentPage}</param>
+            </result>-->
+        </action>
+
+
+
+    <!--新闻管理-->
+        <action name="news_*" class="newsAction" method="{1}">
+
+            <!-- 自加 -->
+            <result name="list">/manage/news/news_list1.jsp</result>
+           <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/news/news_add.jsp</result>
+            <result name="add">/manage/news/news_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">news_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+        </action>
+
+
+        <!--通知管理-->
+        <action name="notice_*" class="noticeAction" method="{1}">
+
+            <!-- 自加 -->
+            <result name="list">/manage/notice/notice_list1.jsp</result>
+            <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/notice/notice_add.jsp</result>
+            <result name="add">/manage/notice/notice_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">notice_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+        </action>
+
+        <!--竞赛项目管理-->
+        <action name="competition_*" class="competitionAction" method="{1}">
+
+            <!-- 自加 -->
+            <result name="list">/manage/competition/competition_list1.jsp</result>
+            <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/competition/competition_add.jsp</result>
+            <result name="add">/manage/competition/competition_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">competition_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+        </action>
+
+        <!--竞赛报名管理-->
+        <action name="enter_*" class="enterAction" method="{1}">
+
+            <!-- 导入Excel -->
+
+            <result name="importExcel">/manage/enter/enter_importExcel.jsp</result>
+            <result name="importJava" type="redirectAction">
+                <param name="actionName">enter_list.do</param>
+            </result>
+
+           <!-- 获取学院下专业的json-->
+            <result name="getProfessionJson" type="json">
+                <param name="includeProperties">\[\d+\]\.proId,\[\d+\]\.professionName</param>
+            </result>
+
+            <result name="list">/manage/enter/enter_list1.jsp</result>
+            <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/enter/enter_add.jsp</result>
+            <result name="add">/manage/enter/enter_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">enter_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+        </action>
+
+        <!--竞赛结果管理-->
+        <action name="result_*" class="resultAction" method="{1}">
+
+
+            <!-- 获取学院下专业的json-->
+            <result name="getProfessionJson" type="json">
+                <param name="includeProperties">\[\d+\]\.proId,\[\d+\]\.professionName</param>
+            </result>
+
+            <!-- 自加 -->
+            <result name="list">/manage/result/result_list1.jsp</result>
+            <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/result/result_add.jsp</result>
+            <result name="add">/manage/result/result_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">result_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+        </action>
+		
+		
+		
+	</package>
+
+
+   <!-- <package name="area" namespace="/area"  extends="json-default" >
+
+
+
+    </package>-->
+
+
+
+</struts>
