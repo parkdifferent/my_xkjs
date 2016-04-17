@@ -309,12 +309,20 @@
 
 
                             <td align="center">
-                                <c:if test="${request.enter.auditStatus==0}">
+                                <s:if test="#enter.auditStatus==0">
                                     未审核
-                                </c:if>
-                                <c:if test="${request.enter.auditStatus==1}">
+                                </s:if>
+                                <s:if test="#enter.auditStatus==1">
                                     已审核
-                                </c:if>
+                                </s:if>
+
+
+                                    <%-- <c:if test="#{enter.auditStatus==0}">
+                                         未审核
+                                     </c:if>
+                                     <c:if test="#{enter.auditStatus==1}">
+                                         已审核
+                                     </c:if>--%>
 
 
                             </td>

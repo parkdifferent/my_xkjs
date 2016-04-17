@@ -1,7 +1,7 @@
 package com.ffcs.xkjs.domain;
 
 /**
- * Created by11111 tianf on 2016/4/8.
+ * Created by tianf on 2016/4/8.
  */
 @SuppressWarnings("serial")
 public class Student {

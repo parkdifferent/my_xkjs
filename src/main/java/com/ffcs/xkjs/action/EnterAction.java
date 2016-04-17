@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by tianf on 2016/4/8.
+ * Created by tianf11111 on 2016/4/8.
  */
 
 @Controller("enterAction")
@@ -471,6 +471,29 @@ public class EnterAction extends BaseAction<Enter> {
         return "getProfessionJson";
 
     }
+
+    public String audit() {
+
+
+        String enterId=request.getParameter("enterId");
+
+        String currentPage=request.getParameter("currentPage");
+
+        if(!TUtil.null2String(enterId).equals("")) {
+            Enter enter1=new Enter();
+            enter1.setEnterId(enterId);
+            Enter enter2=enterService.findEnterByID(enter1);
+            enter2.setAuditStatus(1);
+            enterService.update(enter2);
+        }
+        request.setAttribute("currentPage", currentPage);
+        return "audit";
+
+
+
+    }
+
+
 
 
 

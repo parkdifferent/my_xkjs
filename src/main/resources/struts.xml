@@ -138,6 +138,10 @@
                 <param name="actionName">enter_list.do</param>
             </result>
 
+            <result name="audit" type="redirectAction">
+                <param name="actionName">enter_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+
            <!-- 获取学院下专业的json-->
             <result name="getProfessionJson" type="json">
                 <param name="includeProperties">\[\d+\]\.proId,\[\d+\]\.professionName</param>

@@ -11,7 +11,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
 /**
- * Created by 222tianf on 2016/3/27.
+ * Created by tianf on 2016/3/27.
  */
 public class BaseAction<T> extends ActionSupport implements ModelDriven<T>,ServletRequestAware,ServletResponseAware {
 
