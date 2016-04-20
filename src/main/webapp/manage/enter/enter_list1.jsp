@@ -376,7 +376,7 @@
                             <!-- <td align="center">#if($!store_url!="")<a href="$!store_url" target="_blank"  class="blue" >店铺</a>#else <span style="color:#F00">未开店</span>#end</td> -->
                             <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/enter_edit.do?enterId=<s:property value='#enter.enterId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
                                 |<a href="javascript:void(0);" onclick="if(confirm('删除新闻后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/enter_del.do?mulitId=<s:property value='#enter.enterId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
-                                |<a href="<%=basePath%>/system/enter_audit.do?enterId=<s:property value='#enter.enterId'/>&currentPage=${request.currentPage}" class="blue" >审核</a>
+                                |<a href="<%=basePath%>/system/enter_audit.do?mulitId=<s:property value='#enter.enterId'/>&currentPage=${request.currentPage}" class="blue" >审核</a>
                             </td>
                         </tr>
 

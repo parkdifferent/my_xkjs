@@ -7,703 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c7bf3ce-60b0-4b51-8daa-6e1ac568e5f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/UserAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\My97DatePicker.htm" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\WdatePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\config.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\lang\en.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\lang\zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\lang\zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\skin\WdatePicker.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\skin\datePicker.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\skin\default\datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\skin\default\img.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\skin\whyGreen\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\skin\whyGreen\datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\My97DatePicker\skin\whyGreen\img.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\BaseAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\CompetitionAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\ElecTextAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\EnterAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\LoginAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\NewsAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\NoticeAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\ResultAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\VerifyAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\action\uploadAction.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\IAcademeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\IAreaDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\ICommonDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\ICompetitionDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\IElecTextDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\IEnterDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\INewsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\INoticeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\IProfessionDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\IResultDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\IUserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\AcademeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\AreaDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\CommonDaoImpl$1.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\CommonDaoImpl$2.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\CommonDaoImpl$3.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\CommonDaoImpl$4.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\CommonDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\CompetitionDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\ElecTextDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\EnterDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\NewsDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\NoticeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\ProfessionDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\ResultDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\dao\impl\UserDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Academe.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Area.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Competition.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\ElecText.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Enter.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\News.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Notice.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Profession.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Result.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\Student.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\domain\User.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\IAcademeService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\IAreaService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\ICompetitionService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\IElecTextService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\IEnterService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\INewsService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\INoticeService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\IProfessionService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\IResultService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\IUserService.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\AcademeServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\AreaServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\CompetitionServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\ElecTextServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\EnterServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\NewsServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\NoticeServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\ProfessionServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\ResultServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\service\impl\UserServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\test.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\utils\CodeUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\utils\MD5Util.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\utils\PageBean.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\utils\PageInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\utils\TUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\com\ffcs\xkjs\utils\ValueUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\Academe.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\Area.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\Competition.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\ElecText.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\Enter.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\News.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\Notice.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\Profession.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\Result.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\domain\User.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\classes\struts.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\antlr-2.7.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\asm-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\asm-commons-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\asm-tree-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\aspectjweaver-1.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\cglib-nodep-2.1_3.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-codec-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-collections-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-fileupload-1.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-io-2.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-lang-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-lang3-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-logging-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\commons-pool-1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\ehcache-2.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\freemarker-2.3.16.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\hibernate-commons-annotations-3.2.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\hibernate-core-3.6.6.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\httpclient-4.5.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\httpcore-4.4.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\javassist-3.11.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\jaxen-1.1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\jta-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\jxl-2.6.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\log4j-1.2.14.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\mysql-connector-java-5.1.33.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\nutz-1.b.43.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\ognl-3.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\quartz-1.6.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\slf4j-api-1.7.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\slf4j-jdk14-1.7.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-aop-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-aspects-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-beans-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-context-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-context-support-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-core-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-expression-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-jdbc-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-orm-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-security-core-2.0.8.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-security-web-3.1.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-support-2.0.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-tx-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\spring-web-3.2.14.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\struts2-core-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\struts2-json-plugin-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\struts2-spring-plugin-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\xmlpull-1.1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\xpp3_min-1.1.4c.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\xstream-1.4.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\lib\xwork-core-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\close.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\Font.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\MainPage.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\Style.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\buttonstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\menu.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\openView.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\showText.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\checkbox.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\edit.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\10.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\1_close.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\1_open.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\2.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\3.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\4.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\5.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\6.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\7.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\8.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\flag\9.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\folder_Close.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\folder_Open.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\line_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\line_center.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\line_conn.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\line_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\minus_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\minus_center.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\minus_noLine.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\minus_root.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\minus_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\moveArrow.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\page.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\plus_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\plus_center.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\plus_noLine.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\plus_root.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\plus_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\radio.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\remove.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\10.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\1_close.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\1_open.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\2.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\3.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\4.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\5.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\6.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\7.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\8.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\img\sim\9.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\zTreeIcons.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\css\zTreeStyle\zTreeStyle.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\dataChart\dataChartAdd.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\dataChart\dataChartAddList.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\dataChart\dataChartIndex.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\image.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\daibanshiyi.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\daiwoshenpi.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\jiancetaijianzhu.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\jiancetaijianzhuguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\jishusheshiweihuguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\jishuziliaotuzhiguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\jueseguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\menu_arrow_close.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\menu_arrow_open.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\menu_arrow_single.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\menu_line_2.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\menu_line_3.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\qicaoshenqing.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\shebeigouzhijihua.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\shebeijiaozhunjianxiu.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\shenpiliuchengguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\shenpiliuzhuanguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\shenqingmobanguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\shujuzidianguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\weihuqingkuang.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\wodeshenqingchaxun.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\xitongguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\yiqishebeiguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\yonghuguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\yunxingqingkuang.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\zhandianjibenxinxi.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\zhuandianshebeiyunxingguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\MenuIcon\ziliaotuzhiguanli.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\add.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\attach.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\b-info.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\back1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\build.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\button_add.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\button_cancel.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\button_ok.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\button_view.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\check.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\cotNavGround.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\delete.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\doc.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\edit.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\gif.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\handle.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\headpic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\hotel_dire_arrowc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\i_del.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\i_edit.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\ie.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\index.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\loginbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\menu03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\mima.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\mis_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\open.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\remeber.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\sel1.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\tablehead.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\title.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\titleline.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\yin.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\yonghu.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\you.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\zhuyi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\zoom.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\images\zuo.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\competition\competition_add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\competition\competition_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\competition\competition_list1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\enter\enter_add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\enter\enter_importExcel.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\enter\enter_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\enter\enter_list1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\news\news_add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\news\news_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\news\news_list1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\notice\notice_add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\notice\notice_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\notice\notice_list1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\result\result_add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\result\result_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\result\result_list1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\manage\success.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\alermDevice.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\alermStation.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\change.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\home.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\left.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\loading.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\login1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\menu\title.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\file\moudel.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\js\jquery-1.6.2.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\js\jquery-ui-1.8.21.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\js\jquery.poshytip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\js\jquery.shop.base.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\js\jquery.shop.common.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\js\jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\js\jquery.zh.cn.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\common\css\jquery-ui-1.8.22.custom.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\2014.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\aback.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\add.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\add.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\android.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\atonce.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\batch_top.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\bg-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\border-anim-h.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\border-anim-v.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\border-h.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\border-v.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\btn1.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\btn2.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\changepic.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\changepic_a.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\chose.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\claso.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\classsan.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\close.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\close_map.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\close_mapa.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\contant_bar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\contract.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\cuoh.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\czts.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\daoru.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\default_user_photo.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\del.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\del.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\del2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\dele.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\drag.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\duih.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\edit.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\edit.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\error.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\error.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\ewm.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\exit.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\expandtable.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\false.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\filebtn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\floor_tab_this.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\flsearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\flsearch2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\forma.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\goods_edit_a.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\green_logistics.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\home.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\hot_sell.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\hotm.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\hotspot.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\im_portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\index_buy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\index_top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\input_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\into.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\into_left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\ios.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\jian.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\jingg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\left.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\level_-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\level_-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\level_0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\level_1.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\level_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\level_2.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\level_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\btn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\btna.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\code.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\login.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\login_left.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\login_logo.old.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\login_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\password.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\login\username.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\mail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\main_top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\main_top.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu_add.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu_bg_a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu_cut.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu_dian.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu_empty.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\menu_orange.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_a.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_a_left.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_a_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_fitment.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_fitment_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_home.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_home_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_menber.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_menber_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_operate.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_operate_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_pay.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_pay_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_payoff.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_payoff_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_product.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_product_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_self.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_self_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_set.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_set_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_shop.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_shop_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_this_left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_this_right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_tool.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_tool_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_website.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nav_website_this.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\navlist.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\navlistleft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\navlistright.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\navthisleft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\navthisright.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\newclass.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\news.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\news.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\next.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\no.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nothis1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nothis1.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nothis2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\nothis2.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\numbig.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\off.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\ok.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\on.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\password.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\ad_next.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\ad_prev.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\ad_scroll_back.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\ad_scroll_forward.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\batch.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\batcha.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\batched.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\change.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\changea.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\changepic.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\changepica.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\colorinput.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\delp.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\delpa.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\delpic.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\delpica.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\drag_img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\mid_left.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\mid_left_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\mid_right.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\mid_right_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\opa75.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\pens.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\pensa.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phcra.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phcrb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phlista.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phlistb.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phlistc.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phlistd.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phliste.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phlistf.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\photobg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\photom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\phsan.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\pic_upload.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\setm.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\setma.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\shadow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\smph.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\top_left_bt.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\top_right_bt.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\up_img_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\uploadph.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\warn.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\wp.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\wpa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\photo\wpative.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\preview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\print_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\print_02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\qi.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\qinone.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\qiye.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\qq.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\red_close.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\red_logistics.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\san.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\sanjiao.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\save.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\searbtn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\searbtna.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\search_ico.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\search_right.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\select_right_c.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\seller_center_add.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\seller_center_add_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\skin_black.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\skin_blue.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\skin_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\skin_this.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\spread.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\storey_1f.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\storey_2f.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\storey_3f.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\sub1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\sub2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\subject_select_left.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\subject_select_left_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\subject_select_right.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\subject_select_right_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\sys.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\sys.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\thism.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\thism.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\thist.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\thist.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\tijiao.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\tip-skyblue.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\tj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\tm_dela.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\tops.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\tops2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\true.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\tx_st.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\url.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\user.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\warning.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\website.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\website2.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\weibo.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\weig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\weiw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\weixin_nav_left.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\ww.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\wx_add.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\wx_back_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\wx_hd_r.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\wx_sc.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\xiew.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\xing.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\yand.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\images\yes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\login.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\resources\style\system\manage\blue\template.css" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\calendarTime.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\changePage.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\changePageBackUp.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\function.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\controlbar2.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\controlbar3.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\controlbar4-hover.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\controlbar4.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\fullexpand.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\loader.white.gif" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\outlines\Outlines.psd" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\outlines\beveled.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\outlines\drop-shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\outlines\outer-glow.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\outlines\rounded-white.png" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\zoomin.cur" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\graphics\zoomout.cur" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\highslide-html.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\highslide-html.packed.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\highslide.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\highslide.packed.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\highslide\swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\jquery-1.4.2.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\jquery-ztree-2.5.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\limitedTextarea.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\listselect.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\menu.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\menuData.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\mztree.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\pub.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\public.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\showText.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\tabletool.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\tool.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\tree.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\validate.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\script\web_tree.js" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\actingIndex.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\dictionaryEdit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\dictionaryIndex.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\exportExcel.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\roleEdit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\roleIndex.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\success.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\testFrame.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\test_area.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\test_area1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\textAdd.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\text_add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\text_list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\upload.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\userAdd.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\userEdit.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\userIndex.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\system\welcome.jsp" afterPath="" />
-      <change type="DELETED" beforePath="F:\xkjs\xkjs\classes\artifacts\ffcs_war_exploded\upload\test.xls" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/domain/Enter.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/domain/Enter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/file/xkjs_apply.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/file/xkjs_result.xls" />
+      <change type="DELETED" beforePath="F:\xkjs\xkjs\src\main\webapp\manage\User\user_list1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="F:\xkjs\xkjs\target\maven-status\maven-compiler-plugin\compile\default-cli\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="F:\xkjs\xkjs\target\maven-status\maven-compiler-plugin\compile\default-cli\inputFiles.lst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/EnterAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/EnterAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/EnterServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/EnterServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/IEnterService.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/IEnterService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/IResultService.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/IResultService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/LoginAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/LoginAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/NoticeAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/NoticeAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/ResultAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/ResultAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/ResultServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/ResultServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/utils/TUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/utils/TUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/domain/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/uploadAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/uploadAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/domain/Enter.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/domain/Enter.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Enter.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Enter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IEnterService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IEnterService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IResultService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IResultService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/NoticeAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/NoticeAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/ResultServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/ResultServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/utils/TUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/utils/TUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/domain/User.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/domain/User.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_importExcel.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_importExcel.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffcs.iml" afterPath="$PROJECT_DIR$/ffcs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ffcs_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ffcs_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ffcs_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ffcs_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/menu/login1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/menu/login1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/uploadAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/uploadAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/User/user_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/User/user_list.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\xkjs\xkjs\src\main\webapp\system\testFrame.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/system/index.jsp" />
     </list>
+    <list id="ffa3e255-414f-439f-8693-46980ee3efb2" name="Failed commit: Default" comment="周三啊3" />
     <ignored path="ffcs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -728,56 +52,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.72" vertical-offset="153" max-vertical-offset="4199">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11759" max-vertical-offset="12580">
-              <caret line="739" column="50" selection-start-line="739" selection-start-column="34" selection-end-line="739" selection-end-column="50" />
-              <folding>
-                <element signature="e#18514#18532#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1513">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_list1.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result_list1.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77272725" vertical-offset="3570" max-vertical-offset="5848">
-              <caret line="228" column="64" selection-start-line="228" selection-start-column="60" selection-end-line="228" selection-end-column="64" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="1479" max-vertical-offset="5848">
+              <caret line="96" column="66" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnterAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="12495">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -785,8 +65,38 @@
       <file leaf-file-name="enter_list1.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.076923" vertical-offset="2060" max-vertical-offset="7395">
-              <caret line="132" column="200" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="200" />
+            <state vertical-scroll-proportion="-9.038462" vertical-offset="6191" max-vertical-offset="7395">
+              <caret line="378" column="85" selection-start-line="378" selection-start-column="85" selection-end-line="378" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEnterService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IEnterService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="527">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnterServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1162" max-vertical-offset="3672">
+              <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnterAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.8210527" vertical-offset="7383" max-vertical-offset="12444">
+              <caret line="511" column="0" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -819,8 +129,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/User.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/User/user_list1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IEnterService.java" />
@@ -834,16 +142,21 @@
         <option value="$PROJECT_DIR$/src/main/webapp/manage/user/user_list1.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/menu/login1.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/user/user_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/UserAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/NoticeAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_importExcel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/ResultServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/user/user_add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/user/user_list.jsp" />
+        <option value="$PROJECT_DIR$/target/classes/struts.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_importExcel.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java" />
       </list>
     </option>
@@ -868,10 +181,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="ffcs" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -929,24 +238,14 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ffcs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
       </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-18" />
-    <option name="y" value="11" />
-    <option name="width" value="1378" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -973,6 +272,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -1002,126 +302,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generated-sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1170,7 +350,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1196,7 +376,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="file" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1223,6 +407,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ffcs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xkjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1282,7 +496,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="notice" />
+              <option name="myItemId" value="enter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1301,40 +515,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1361,36 +541,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1421,40 +571,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1520,7 +636,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1531,9 +646,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/stone" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30890054" />
     <property name="recentsLimit" value="5" />
@@ -1549,6 +664,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xkjs\xkjs\src\main\webapp\resources\file" />
+      <recent name="F:\xkjs\xkjs\src\main\webapp\manage" />
       <recent name="F:\xkjs\xkjs\src\main\webapp\manage\result" />
       <recent name="F:\xkjs\xkjs\src\main" />
     </key>
@@ -2012,7 +1129,10 @@
       <workItem from="1461046148580" duration="119000" />
       <workItem from="1461046275397" duration="3217000" />
       <workItem from="1461074919515" duration="14211000" />
-      <workItem from="1461113811062" duration="4176000" />
+      <workItem from="1461113811062" duration="5471000" />
+      <workItem from="1461153523499" duration="3889000" />
+      <workItem from="1461158159749" duration="2818000" />
+      <workItem from="1461162413379" duration="3500000" />
     </task>
     <task id="LOCAL-00001" summary="change">
       <created>1460891433865</created>
@@ -2050,14 +1170,20 @@
       <option name="project" value="LOCAL" />
       <updated>1461142762551</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="周三啊1">
+      <created>1461143694142</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1461143694142</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65582000" />
+    <option name="totallyTimeSpent" value="77084000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-18" y="11" width="1378" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2065,24 +1191,24 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24428822" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17047451" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17094018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18453427" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2786325" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25483304" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3075571" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25438598" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45811966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2837633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33888048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2100,26 +1226,26 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24428822" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3251318" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17094018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36731106" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2786325" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64850616" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3075571" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25438598" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45811966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2837633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33888048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2147,7 +1273,11 @@
     <MESSAGE value="war" />
     <MESSAGE value="周三" />
     <MESSAGE value="周三啊" />
-    <option name="LAST_COMMIT_MESSAGE" value="周三啊" />
+    <MESSAGE value="周三啊1" />
+    <MESSAGE value="周三啊2" />
+    <MESSAGE value="周三啊3" />
+    <MESSAGE value="420 23:07" />
+    <option name="LAST_COMMIT_MESSAGE" value="420 23:07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2160,32 +1290,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/User.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_importExcel.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="8" column="81" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1802">
+          <caret line="81" column="86" selection-start-line="81" selection-start-column="86" selection-end-line="81" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4516129" vertical-offset="0" max-vertical-offset="2584">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6586" max-vertical-offset="12087">
+          <caret line="436" column="28" selection-start-line="436" selection-start-column="16" selection-end-line="436" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -2218,13 +1342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26546907" vertical-offset="1414" max-vertical-offset="5117">
-          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1564">
@@ -2251,7 +1368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="92" max-vertical-offset="1377">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2269,72 +1385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Enter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="1887">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#857#858#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#941#942#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#997#998#0" expanded="false" />
-            <element signature="e#1035#1036#0" expanded="false" />
-            <element signature="e#1065#1066#0" expanded="false" />
-            <element signature="e#1097#1098#0" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1167#1168#0" expanded="false" />
-            <element signature="e#1201#1202#0" expanded="false" />
-            <element signature="e#1235#1236#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1311#1312#0" expanded="false" />
-            <element signature="e#1349#1350#0" expanded="false" />
-            <element signature="e#1386#1387#0" expanded="false" />
-            <element signature="e#1419#1420#0" expanded="false" />
-            <element signature="e#1471#1472#0" expanded="false" />
-            <element signature="e#1515#1516#0" expanded="false" />
-            <element signature="e#1549#1550#0" expanded="false" />
-            <element signature="e#1579#1580#0" expanded="false" />
-            <element signature="e#1625#1626#0" expanded="false" />
-            <element signature="e#1663#1664#0" expanded="false" />
-            <element signature="e#1698#1699#0" expanded="false" />
-            <element signature="e#1729#1730#0" expanded="false" />
-            <element signature="e#1777#1778#0" expanded="false" />
-            <element signature="e#1817#1818#0" expanded="false" />
-            <element signature="e#1853#1854#0" expanded="false" />
-            <element signature="e#1885#1886#0" expanded="false" />
-            <element signature="e#1935#1936#0" expanded="false" />
-            <element signature="e#1977#1978#0" expanded="false" />
-            <element signature="e#2009#2010#0" expanded="false" />
-            <element signature="e#2037#2038#0" expanded="false" />
-            <element signature="e#2079#2080#0" expanded="false" />
-            <element signature="e#2113#2114#0" expanded="false" />
-            <element signature="e#2147#2148#0" expanded="false" />
-            <element signature="e#2177#2178#0" expanded="false" />
-            <element signature="e#2223#2224#0" expanded="false" />
-            <element signature="e#2261#2262#0" expanded="false" />
-            <element signature="e#2292#2293#0" expanded="false" />
-            <element signature="e#2319#2320#0" expanded="false" />
-            <element signature="e#2359#2360#0" expanded="false" />
-            <element signature="e#2391#2392#0" expanded="false" />
-            <element signature="e#2425#2426#0" expanded="false" />
-            <element signature="e#2457#2458#0" expanded="false" />
-            <element signature="e#2505#2506#0" expanded="false" />
-            <element signature="e#2547#2548#0" expanded="false" />
-            <element signature="e#2586#2587#0" expanded="false" />
-            <element signature="e#2620#2621#0" expanded="false" />
-            <element signature="e#2675#2676#0" expanded="false" />
-            <element signature="e#2721#2722#0" expanded="false" />
-            <element signature="e#2753#2754#0" expanded="false" />
-            <element signature="e#2781#2782#0" expanded="false" />
-            <element signature="e#2823#2824#0" expanded="false" />
-            <element signature="e#2857#2858#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="10370">
@@ -2347,7 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7638191" vertical-offset="2449" max-vertical-offset="7769">
           <caret line="153" column="173" selection-start-line="153" selection-start-column="164" selection-end-line="153" selection-end-column="173" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2355,7 +1404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1135371" vertical-offset="867" max-vertical-offset="2074">
           <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2363,7 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4977778" vertical-offset="547" max-vertical-offset="1088">
           <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2371,7 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1898" max-vertical-offset="2363">
           <caret line="42" column="25" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2379,12 +1425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="6052">
           <caret line="158" column="35" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="35" />
-          <folding>
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2392,7 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33193278" vertical-offset="12" max-vertical-offset="1649">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2400,23 +1439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7566462" vertical-offset="786" max-vertical-offset="1394">
           <caret line="68" column="31" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_importExcel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="918" max-vertical-offset="1802">
-          <caret line="70" column="56" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.230769" vertical-offset="1239" max-vertical-offset="1802">
-          <caret line="87" column="45" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2455,25 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IEnterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="527">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3091" max-vertical-offset="3672">
-          <caret line="219" column="32" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="32" />
-          <folding>
-            <element signature="e#5292#5300#0" expanded="true" />
-            <element signature="e#7594#7610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/xwork/xwork-core/2.2.3/xwork-core-2.2.3.jar!/com/opensymphony/xwork2/DefaultActionInvocation.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.68" vertical-offset="4940" max-vertical-offset="6341">
@@ -2485,7 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.869668" vertical-offset="3998" max-vertical-offset="4420">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2493,7 +1495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="329" max-vertical-offset="1037">
           <caret line="41" column="53" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2501,7 +1502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6042654" vertical-offset="816" max-vertical-offset="2788">
           <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2516,9 +1516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60721064" vertical-offset="2349" max-vertical-offset="7276">
           <caret line="157" column="14" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2526,7 +1523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87096775" vertical-offset="2091" max-vertical-offset="4777">
           <caret line="164" column="57" selection-start-line="164" selection-start-column="57" selection-end-line="164" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2534,7 +1530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67741936" vertical-offset="0" max-vertical-offset="527">
           <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2542,31 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6451613" vertical-offset="3162" max-vertical-offset="3689">
           <caret line="224" column="69" selection-start-line="224" selection-start-column="38" selection-end-line="224" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.076923" vertical-offset="2060" max-vertical-offset="7395">
-          <caret line="132" column="200" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="200" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1513">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3978">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2574,34 +1544,172 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="11759" max-vertical-offset="12580">
           <caret line="739" column="50" selection-start-line="739" selection-start-column="34" selection-end-line="739" selection-end-column="50" />
-          <folding>
-            <element signature="e#18514#18532#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/User/user_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5117">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.72" vertical-offset="153" max-vertical-offset="4199">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3253" max-vertical-offset="4199">
+          <caret line="196" column="12" selection-start-line="196" selection-start-column="12" selection-end-line="196" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25840">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8478261" vertical-offset="765" max-vertical-offset="1377">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5612245" vertical-offset="612" max-vertical-offset="4301">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1513">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#687#688#0" expanded="false" />
+            <element signature="e#735#736#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#831#832#0" expanded="false" />
+            <element signature="e#869#870#0" expanded="false" />
+            <element signature="e#899#900#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#959#960#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1069#1070#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1145#1146#0" expanded="false" />
+            <element signature="e#1183#1184#0" expanded="false" />
+            <element signature="e#1220#1221#0" expanded="false" />
+            <element signature="e#1253#1254#0" expanded="false" />
+            <element signature="e#1305#1306#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
+            <element signature="e#1383#1384#0" expanded="false" />
+            <element signature="e#1413#1414#0" expanded="false" />
+            <element signature="e#1459#1460#0" expanded="false" />
+            <element signature="e#1497#1498#0" expanded="false" />
+            <element signature="e#1528#1529#0" expanded="false" />
+            <element signature="e#1555#1556#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1627#1628#0" expanded="false" />
+            <element signature="e#1661#1662#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1737#1738#0" expanded="false" />
+            <element signature="e#1775#1776#0" expanded="false" />
+            <element signature="e#1806#1807#0" expanded="false" />
+            <element signature="e#1833#1834#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+            <element signature="e#1905#1906#0" expanded="false" />
+            <element signature="e#1937#1938#0" expanded="false" />
+            <element signature="e#1965#1966#0" expanded="false" />
+            <element signature="e#2007#2008#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2073#2074#0" expanded="false" />
+            <element signature="e#2101#2102#0" expanded="false" />
+            <element signature="e#2143#2144#0" expanded="false" />
+            <element signature="e#2177#2178#0" expanded="false" />
+            <element signature="e#2209#2210#0" expanded="false" />
+            <element signature="e#2239#2240#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="e#2321#2322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_importExcel.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1802">
+          <caret line="81" column="86" selection-start-line="81" selection-start-column="86" selection-end-line="81" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Enter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5511222" vertical-offset="442" max-vertical-offset="1853">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.615385" vertical-offset="4144" max-vertical-offset="5253">
+          <caret line="260" column="21" selection-start-line="260" selection-start-column="21" selection-end-line="260" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_importExcel.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39502764" vertical-offset="1234" max-vertical-offset="1802">
+          <caret line="81" column="92" selection-start-line="81" selection-start-column="92" selection-end-line="81" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="1479" max-vertical-offset="5848">
+          <caret line="96" column="66" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IEnterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="527">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1162" max-vertical-offset="3672">
+          <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.038462" vertical-offset="6191" max-vertical-offset="7395">
+          <caret line="378" column="85" selection-start-line="378" selection-start-column="85" selection-end-line="378" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="12495">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77272725" vertical-offset="3570" max-vertical-offset="5848">
-          <caret line="228" column="64" selection-start-line="228" selection-start-column="60" selection-end-line="228" selection-end-column="64" />
+        <state vertical-scroll-proportion="1.8210527" vertical-offset="7383" max-vertical-offset="12444">
+          <caret line="511" column="0" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2625,7 +1733,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate (ffcs)|Hibernate</last-edited>
+          <last-edited>Spring (ffcs)|Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2660,7 +1768,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|ffcs</last-edited>
+          <last-edited>Web|ffcs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

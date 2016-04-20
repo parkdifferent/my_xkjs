@@ -94,7 +94,7 @@
             var comName = $("#comName").val();
             var beginTime = $("#beginTime").val();
             var endTime = $("#endTime").val();
-            window.location.href="<%=basePath%>/system/enter_exportExcel.do?grade="+grade+"&academe="+academe+"&profession="+profession+"&comName="+comName+"&beginTime="+beginTime+"&endTime="+endTime;
+            window.location.href="<%=basePath%>/system/result_exportExcel.do?grade="+grade+"&academe="+academe+"&profession="+profession+"&comName="+comName+"&beginTime="+beginTime+"&endTime="+endTime;
 
         }
 

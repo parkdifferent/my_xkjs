@@ -98,10 +98,10 @@ public class EnterServiceImpl implements IEnterService {
             paramsList.add(TUtil.formatDate(endTime));
         }
 
-        if (!TUtil.null2String(enter.getAuditStatus()).equals("")) {
+        /*if (!TUtil.null2String(enter.getAuditStatus()).equals("")) {
             condition += " and o.auditStatus=?";
             paramsList.add(enter.getAuditStatus());
-        }
+        }*/
 
 
 

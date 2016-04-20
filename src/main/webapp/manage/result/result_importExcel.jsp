@@ -79,7 +79,7 @@
 
                 <ul class="set1">
                     <li class="setcont_bg">模板下载</li>
-                    <li><a id="down" href="<%=basePath%>/resources/file/moudel.xlsx"><b>导入竞赛结果模板下载</b></a></li>
+                    <li><a id="down" href="<%=basePath%>/resources/file/xkjs_result.xls"><b>导入竞赛结果模板下载</b></a></li>
                 </ul>
                 <ul class="set1">
                     <li class="setcont_bg"><strong class="sred">*</strong>批量导入</li>

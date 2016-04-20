@@ -473,21 +473,42 @@ public class EnterAction extends BaseAction<Enter> {
 
     public String audit() {
 
-
-        String enterId = request.getParameter("enterId");
-
+        String mulitId = request.getParameter("mulitId");
         String currentPage = request.getParameter("currentPage");
 
-        if (!TUtil.null2String(enterId).equals("")) {
+        if (mulitId.contains(",")) {
+            String[] ids = mulitId.split(",");
+            //competitionService.deleteCompetitionByIds(ids);
+
+            for(String id:ids) {
+
+                Enter enter1 = new Enter();
+                enter1.setEnterId(id);
+                Enter enter2 = enterService.findEnterByID(enter1);
+                enter2.setAuditStatus(1);
+                enterService.update(enter2);
+
+            }
+            //noticeService.deleteNoticeByIds(ids);
+        } else {
+            //noticeService.deleteNoticeByIds(mulitId);
+            // competitionService.deleteCompetitionByIds(mulitId);
             Enter enter1 = new Enter();
-            enter1.setEnterId(enterId);
+            enter1.setEnterId(mulitId);
             Enter enter2 = enterService.findEnterByID(enter1);
             enter2.setAuditStatus(1);
             enterService.update(enter2);
         }
+		/*for(String id:ids) {
+			if(!id.equals("")) {
+				ElecText text=new ElecText();
+				text.setTextID(id);
+				ElecText oldText=elecTextService.findElecTextByID(text);
+
+			}
+		}*/
         request.setAttribute("currentPage", currentPage);
         return "audit";
-
 
     }
 

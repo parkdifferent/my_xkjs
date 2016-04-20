@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: tianf
   Date: 2016/4/18
-  Time: 9:31
+  Time: 9:32
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -35,7 +35,7 @@
         function selectProfession(o){
             //货物所属单位的文本内容
             var academeName = $(o).find("option:selected").text();
-            $.post("${base}/system/enter_getProfessionJson.do",{"academeName":academeName},function(data){
+            $.post("${base}/system/user_getProfessionJson.do",{"academeName":academeName},function(data){
                 //先删除单位名称的下拉菜单，但是请选择要留下
                 $("#profession option").remove();
 
@@ -86,11 +86,11 @@
     </script>
 </head>
 <body>
-        <h>Hello World!</h>
+        <%--<h>Hello World!</h>--%>
 
 
 
-<%--<div class="cont">
+<div class="cont">
     <h3 class="seth">用户管理</h3>
     <div class="nav_list">
         <ul>
@@ -167,7 +167,7 @@
 
 
 
-                    &lt;%&ndash; <span>专业</span> <span>
+                    <%-- <span>专业</span> <span>
           <select name="profession" id="profession">
 
 
@@ -179,11 +179,11 @@
               </c:if>
 
           </select>
-          </span>&ndash;%&gt;
+          </span>--%>
 
-                    &lt;%&ndash; <span>专业</span> <span class="size150">
+                    <%-- <span>专业</span> <span class="size150">
            <input name="profession" type="text" id="profession" value="${request.profession}" />
-           </span>&ndash;%&gt;
+           </span>--%>
 
         <span>
         <input name="" type="submit"  value="搜索" style="cursor:pointer;" class="search_btn"/>
@@ -216,7 +216,7 @@
                     <th align="center" ><span class="form_btna">操作</span></th>
 
 
-                    &lt;%&ndash; <th>&nbsp;</th>
+                    <%-- <th>&nbsp;</th>
                      <th width="20%" ><span class="form_btna">店铺名称</span></th>
                      <th width="16%"><span class="form_btna">店主用户名 | 店主姓名</span></th>
                      <th width="10%"><span class="form_btna">所在地</span></th>
@@ -224,7 +224,7 @@
                      <th width="10%"><span class="form_btna">有效期至</span></th>
                      <th width="6%"><span class="form_btna">状态</span></th>
                      <th width="6%"><span class="form_btna">公司信息</span></th>
-                     <th><b class="form_btnb">操作</b></th>&ndash;%&gt;
+                     <th><b class="form_btnb">操作</b></th>--%>
                 </tr>
                 <s:if test="#request.userList!=null && #request.userList.size()>0">
                     <s:iterator value="#request.userList" var="user">
@@ -256,7 +256,7 @@
                             <td align="center"><s:property value="#user.classes"/></td>
                             <td align="center"><s:property value="#user.telephone"/></td>
                             <td align="center"><s:property value="#user.email"/></td>
-                            &lt;%&ndash;<td align="center"><s:date name="#user.startDate" format="yyyy-MM-dd"/></td>&ndash;%&gt;
+                            <%--<td align="center"><s:date name="#user.startDate" format="yyyy-MM-dd"/></td>--%>
 
 
                             <!-- <td class="lightred"><ul>
@@ -266,7 +266,7 @@
                             <!--  #set($store_url=$!storeTools.query_user_store_url("$!obj.id","$!webPath")) -->
                             <!-- <td align="center">#if($!store_url!="")<a href="$!store_url" target="_blank"  class="blue" >店铺</a>#else <span style="color:#F00">未开店</span>#end</td> -->
                             <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/user_edit.do?userId=<s:property value='#user.userId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
-                                |<a href="javascript:void(0);" onclick="if(confirm('删除新闻后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/user_del.do?mulitId=<s:property value='#user.userId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
+                                |<a href="javascript:void(0);" onclick="if(confirm('删除用户后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/user_del.do?mulitId=<s:property value='#user.userId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
                             </td>
                         </tr>
                     </s:iterator>
@@ -288,7 +288,7 @@
         </div>
 
     </form>
-</div>--%>
+</div>
 </body>
 </html>
 
