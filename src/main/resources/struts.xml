@@ -75,10 +75,29 @@
         </action>
 
         <!-- 用户登录 -->
-        <action name="loginAction" class="loginAction">
+        <action name="loginAction_*" class="loginAction" method="{1}">
             <result name="success" >
                 /system/index.jsp
             </result>
+
+            <result name="logout" >
+                /menu/login1.jsp
+            </result>
+
+            <result name="pwd" >
+                /manage/User/user_pwd.jsp
+            </result>
+
+            <result name="perfect" >
+                /manage/success.jsp
+            </result>
+
+            <result name="error" >
+                /manage/error.jsp
+            </result>
+
+
+
         </action>
 
         <!--用户管理-->
@@ -94,10 +113,10 @@
             <!-- 用户登录 -->
             <!--<result name="login">/system/index.jsp</result>-->
 
-            <result name="list">/manage/user/user_list.jsp</result>
+            <result name="list">/manage/User/user_list.jsp</result>
             <result name="save">/manage/success.jsp</result>
-            <result name="edit">/manage/user/user_add.jsp</result>
-            <result name="add">/manage/user/user_add.jsp</result>
+            <result name="edit">/manage/User/user_add.jsp</result>
+            <result name="add">/manage/User/user_add.jsp</result>
             <result name="del" type="redirectAction">
                 <param name="actionName">user_list.do?currentPage=${#request.currentPage}</param>
             </result>

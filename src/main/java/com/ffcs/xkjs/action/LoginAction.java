@@ -37,23 +37,26 @@ public class LoginAction extends BaseAction<User> {
     }
 
 
-    public String execute() throws Exception {
+    public String login() throws Exception {
         Map session=ActionContext.getContext().getSession();
         //获取验证码
         String code=(String)session.get("code");
         String username=request.getParameter("username");
         String password=request.getParameter("password");
+        User user1;
         //判断验证码输入是否正确
         if(code.equals(TUtil.null2String(vcode))) {
             this.addActionError("验证码输入不正确！");
             return this.INPUT;
         } else {
-            User user1=userService.findUserByUserName(username);
+            user1=userService.findUserByUserName(username);
             if(TUtil.null2String(user1).equals("")) {
                 this.addActionError("用户不存在！");
                 return this.INPUT;
 
             } else {
+
+
                 String password1=user1.getPassword();
                 System.out.println(password1);
                 if(!MD5Util.getMD5String(password).toUpperCase().equals(user1.getPassword())) {
@@ -62,12 +65,54 @@ public class LoginAction extends BaseAction<User> {
                 }
             }
         }
-
+        //session.put("userName",username);
+        request.setAttribute("userName",username);
+        session.put("userId",user1.getUserId());
         return this.SUCCESS;
     }
 
 
     public String logout() {
+
+        Map session=ActionContext.getContext().getSession();
+        session.clear();
+
         return  "logout";
+    }
+
+    public String pwd() {
+
+        return "pwd";
+    }
+
+
+
+    public String pwdSave() {
+
+        String old_password= request.getParameter("old_password");
+        String password= request.getParameter("password");
+        Map session=ActionContext.getContext().getSession();
+        String userId=(String)session.get("userId");
+        User user1=new User();
+        user1.setUserId(userId);
+        User user2=userService.findUserByID(user1);
+
+        if(MD5Util.getMD5String(old_password).toUpperCase().equals(user2.getPassword())) {
+            user2.setPassword(MD5Util.getMD5String(password).toUpperCase());
+            request.setAttribute("op_title","修改密码成功");
+            //request.seta("op_title", "修改密码成功");
+
+
+        }
+        else {
+            request.setAttribute("op_title","原密码错误");
+            request.setAttribute("list_url",TUtil.getURL(request)+ "/system/user_list.do");
+            return "error";
+
+        }
+
+        request.setAttribute("list_url",TUtil.getURL(request)+ "/system/user_list.do");
+        return "perfect";
+
     }
 }

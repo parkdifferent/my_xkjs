@@ -103,13 +103,13 @@
             <ul>
                 <li>
                     <span class="login_img"><img src="<%=basePath%>/resources/style/system/manage/blue/images/user.png" /></span>
-                    <span class="login_word"><%--$!{user.userName}--%><%--loginName--%>admin</span>
+                    <span class="login_word">${request.userName}<%--$!{user.userName}--%><%--loginName--%><%--admin--%></span>
                 </li>
-                <a href="<%=basePath%>/xShop_logout.htm" target="_self"><li>
+                <a href="<%=basePath%>/system/loginAction_logout.do" target="_self"><li>
                     <span class="login_img"><img src="<%=basePath%>/resources/style/system/manage/blue/images/exit.png" /></span>
                     <span class="login_word">安全退出</span>
                 </li></a>
-                <a href="<%=basePath%>/admin/admin_pws.htm" target="main_workspace"><li>
+                <a href="<%=basePath%>/system/loginAction_pwd.do" target="main_workspace"><li>
                     <span class="login_img"><img src="<%=basePath%>/resources/style/system/manage/blue/images/password.png" /></span>
                     <span class="login_word">修改密码</span>
                 </li></a>
