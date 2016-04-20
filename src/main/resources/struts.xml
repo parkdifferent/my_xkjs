@@ -74,16 +74,33 @@
             </result>
         </action>
 
-        <action name="user_*" class="loginAction" method="{1}">
+        <!-- 用户登录 -->
+        <action name="loginAction" class="loginAction">
+            <result name="success" >
+                /system/index.jsp
+            </result>
+        </action>
 
-            <!-- 自加 -->
-            <result name="login">/system/testFrame.jsp</result>
-            <!--<result name="save">/manage/news/success.jsp</result>
-            <result name="edit">/manage/news/news_add.jsp</result>
-            <result name="add">/manage/news/news_add.jsp</result>
+        <!--用户管理-->
+
+        <action name="user_*" class="userAction" method="{1}">
+
+            <!-- 获取学院下专业的json-->
+            <result name="getProfessionJson" type="json">
+                <param name="includeProperties">\[\d+\]\.proId,\[\d+\]\.professionName</param>
+            </result>
+
+
+            <!-- 用户登录 -->
+            <!--<result name="login">/system/index.jsp</result>-->
+
+            <result name="list">/manage/user/user_list.jsp</result>
+            <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/user/user_add.jsp</result>
+            <result name="add">/manage/user/user_add.jsp</result>
             <result name="del" type="redirectAction">
-                <param name="actionName">news_list.do?currentPage=${#request.currentPage}</param>
-            </result>-->
+                <param name="actionName">user_list.do?currentPage=${#request.currentPage}</param>
+            </result>
         </action>
 
 
@@ -131,6 +148,22 @@
         <!--竞赛报名管理-->
         <action name="enter_*" class="enterAction" method="{1}">
 
+            <!-- 导出Excel -->
+
+            <result name="exportExcel" type="stream">
+                <param name="contentType">application/vnd.ms-excel</param>
+                <!--<param name="contentType">application/x-download</param>-->
+
+                <!-- 使用inputName输出值栈中流的值 -->
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename="export.xls"</param>
+                <param name="bufferSize">1024</param>
+            </result>
+
+           <!-- <result name="exportExcel" type="redirectAction">
+                <param name="actionName">enter_list.do</param>
+            </result>-->
+
             <!-- 导入Excel -->
 
             <result name="importExcel">/manage/enter/enter_importExcel.jsp</result>
@@ -158,6 +191,24 @@
 
         <!--竞赛结果管理-->
         <action name="result_*" class="resultAction" method="{1}">
+
+           <!-- 导入Excel-->
+            <result name="importExcel">/manage/result/result_importExcel.jsp</result>
+            <result name="importJava" type="redirectAction">
+                <param name="actionName">result_list.do</param>
+            </result>
+
+            <!-- 导出Excel -->
+
+            <result name="exportExcel" type="stream">
+                <param name="contentType">application/vnd.ms-excel</param>
+                <!--<param name="contentType">application/x-download</param>-->
+
+                <!-- 使用inputName输出值栈中流的值 -->
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename="result.xls"</param>
+                <param name="bufferSize">1024</param>
+            </result>
 
 
             <!-- 获取学院下专业的json-->
