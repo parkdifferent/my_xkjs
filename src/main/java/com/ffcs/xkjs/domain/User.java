@@ -14,7 +14,6 @@ public class User implements java.io.Serializable {
 
     private String role;
 
-
     private String sno;   //学号
 
     private String grade;   //年级
@@ -25,7 +24,7 @@ public class User implements java.io.Serializable {
 
     private String classes;     //班级
 
-    private String trueName;   //姓名
+    /*private String trueName;   //姓名       */
 
     private String telephone;   //手机
 
@@ -104,13 +103,13 @@ public class User implements java.io.Serializable {
         this.classes = classes;
     }
 
-    public String getTrueName() {
+   /* public String getTrueName() {
         return trueName;
     }
 
     public void setTrueName(String trueName) {
         this.trueName = trueName;
-    }
+    }*/
 
     public String getTelephone() {
         return telephone;

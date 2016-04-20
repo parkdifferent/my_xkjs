@@ -64,7 +64,7 @@
 </head>
 <body>
 <div class="login_bg">
-    <form name="theForm" id="theForm" action="<%=basePath%>/system/user_login.do" method="post">
+    <form name="theForm" id="theForm" action="<%=basePath%>/system/loginAction.do" method="post">
 
         <div class="main">
             <h1 class="login_h1">

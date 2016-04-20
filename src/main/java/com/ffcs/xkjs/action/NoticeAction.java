@@ -3,6 +3,7 @@ package com.ffcs.xkjs.action;
 import com.ffcs.xkjs.domain.Notice;
 import com.ffcs.xkjs.service.INoticeService;
 import com.ffcs.xkjs.utils.TUtil;
+import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,7 @@ import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -157,14 +159,30 @@ public class NoticeAction extends BaseAction<Notice>{
                 //int index=uploadFileName.lastIndexOf(".");
                // String extFileName=uploadFileName.substring(index,uploadFileName.length());
 
-                String uploadPath= ServletActionContext.getServletContext().getRealPath("/upload");
 
-                DateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
-                Calendar calendar = Calendar.getInstance();
-                String path = df.format(calendar.getTime());
 
-                File toFile=new File(uploadPath,this.getUploadFileName());
-                OutputStream os=new FileOutputStream(toFile);
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                String fileName = sdf.format(new Date());
+
+                String path= "/upload/" + fileName;
+
+                File destFile = new File(ServletActionContext.getServletContext()
+                        .getRealPath(path));
+
+               // File destFile = new File(ServletActionContext.getServletContext()
+                       // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+
+               /* if(!destFile.exists()){
+                    destFile.mkdirs();
+                }*/
+
+
+
+
+                //FileUtils.copyFile(upload, destFile);
+
+                //File toFile=new File(uploadPath,this.getUploadFileName());
+                OutputStream os=new FileOutputStream(destFile+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
                 byte[] buffer=new byte[1024];
                 int length=0;
                 while((length=is.read(buffer))>0) {
@@ -173,11 +191,12 @@ public class NoticeAction extends BaseAction<Notice>{
                 is.close();
                 os.close();
 
-                System.out.println(uploadPath);
+                System.out.println(destFile);
                 System.out.println(uploadFileName);
                 System.out.println(uploadContentType);
                 notice.setFileName(uploadFileName);
-                notice.setFilePath(uploadPath);
+                notice.setFilePath(path+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+               // notice.setFilePath(destFile);
             }
 
             noticeService.saveNotice(notice);
@@ -186,20 +205,34 @@ public class NoticeAction extends BaseAction<Notice>{
 
             if(upload.exists()) {
                 InputStream is =new FileInputStream(upload);
-                //获取文件扩展名
-               // int index=uploadFileName.lastIndexOf(".");
-               // String extFileName=uploadFileName.substring(index,uploadFileName.length());
-                DateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
-                Calendar calendar = Calendar.getInstance();
-                String path = df.format(calendar.getTime());
-               // String uploadPath=  ServletActionContext.getServletContext().getRealPath("/" + path);
 
-                String uploadPath=  ServletActionContext.getServletContext().getRealPath("/upload");
-                File toFile=new File(uploadPath,this.getUploadFileName());
-                /*if(toFile.exists()){
-                    toFile.mkdir();
+
+                //获取文件扩展名
+                //int index=uploadFileName.lastIndexOf(".");
+                // String extFileName=uploadFileName.substring(index,uploadFileName.length());
+
+
+
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                String fileName = sdf.format(new Date());
+
+                String path= "/upload/" + fileName;
+
+                File destFile = new File(ServletActionContext.getServletContext()
+                        .getRealPath(path));
+
+                // File destFile = new File(ServletActionContext.getServletContext()
+                // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+
+               /* if(!destFile.exists()){
+                    destFile.mkdirs();
                 }*/
-                OutputStream os=new FileOutputStream(toFile);
+
+
+                //FileUtils.copyFile(upload, destFile);
+
+                //File toFile=new File(uploadPath,this.getUploadFileName());
+                OutputStream os=new FileOutputStream(destFile+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
                 byte[] buffer=new byte[1024];
                 int length=0;
                 while((length=is.read(buffer))>0) {
@@ -208,11 +241,11 @@ public class NoticeAction extends BaseAction<Notice>{
                 is.close();
                 os.close();
 
-                System.out.println(uploadPath);
+                System.out.println(destFile);
                 System.out.println(uploadFileName);
                 System.out.println(uploadContentType);
                 notice.setFileName(uploadFileName);
-                notice.setFilePath(uploadPath);
+                notice.setFilePath(path+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
             }
 
             noticeService.update(notice);

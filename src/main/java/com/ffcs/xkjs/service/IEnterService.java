@@ -22,4 +22,7 @@ public interface IEnterService {
     void deleteEnterByIds(Serializable... ids);
 
     Enter findEnterByID(Enter enter);
+
+
+    public List<Enter> findEnterListByConditionNoPage(Enter enter, String beginTime, String endTime);
 }

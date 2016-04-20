@@ -65,6 +65,10 @@
             <column name="email" length="60" />
         </property>
 
+        <property name="tutor" type="java.lang.String">
+            <column name="tutor" length="30" />
+        </property>
+
 
 
 

@@ -82,11 +82,42 @@
         });
 
 
-       /* function payoff_excel(){
 
 
 
-            var type = jQuery("#type").val();
+        function export_excel(){
+
+            var grade=$("#grade").val();
+            var academe=$("#academe").val();
+            var profession=$("#profession").val();
+            var comName=$("#comName").val();
+            var beginTime=$("#beginTime").val();
+            var endTime=$("#endTime").val();
+
+
+           /* $.ajax({
+                url: "<%=basePath%>/system/enter_exportExcel.do",    //请求的url地址
+                dataType: "json",   //返回格式为json
+                async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+                data: { "grade": grade,"academe":academe,"profession":profession,"comName":comName,"beginTime":beginTime,"endTime":endTime },    //参数值
+                type: "POST",   //请求方式
+                beforeSend: function() {
+                    //请求前的处理
+                },
+                success: function(data) {
+                    //请求成功时处理
+                },
+                complete: function() {
+                    //请求完成的处理
+                },
+                error: function() {
+                    //请求出错处理
+                }
+            });
+*/
+
+
+            /*var type = jQuery("#type").val();
             var type_data = jQuery("#type_data").val();
             var addTime_beginTime = jQuery("#addTime_beginTime").val();
             var addTime_endTime = jQuery("#addTime_endTime").val();
@@ -95,13 +126,13 @@
             var complete_beginTime = jQuery("#complete_beginTime").val();
             var complete_endTime = jQuery("#complete_endTime").val();
             var begin_price = jQuery("#begin_price").val();
-            var end_price = jQuery("#end_price").val();
+            var end_price = jQuery("#end_price").val();*/
 
             <!--20160223新增代码-->
 
-            window.location.href="$!webPath/admin/payofflog_excel.htm?type="+type+"&type_data="+type_data+"&addTime_beginTime="+addTime_beginTime+"&addTime_endTime="+addTime_endTime+"&apply_beginTime="+apply_beginTime+"&apply_endTime="+apply_endTime+"&complete_beginTime="+complete_beginTime+"&complete_endTime="+complete_endTime+"&begin_price="+begin_price+"&end_price="+end_price+"&status=$!{status}";
+            window.location.href="<%=basePath%>/system/enter_exportExcel.do?grade="+grade+"&academe="+academe+"&profession="+profession+"&comName="+comName+"&beginTime="+beginTime+"&endTime="+endTime;
 
-        }*/
+        }
 
 
 
@@ -117,7 +148,7 @@
             <li><a href="<%=basePath%>/system/enter_add.do" ><b>新增</b></a></li>
 
             <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/enter_importExcel.do"> <b class="add_btn_b">导入Excel</b></a></li>
-            <li><a class="add_btn" onclick="payoff_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>
+            <li><a class="add_btn" onclick="export_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>
         </ul>
     </div>
     <form action="<%=basePath%>/system/enter_list.do" method="post" name="ListForm" id="ListForm">
@@ -216,6 +247,13 @@
       </select>
       </span>
 
+
+                    <span>指导教师</span> <span class="size150">
+          <input name="tutor" type="text" id="tutor" value="${request.tutor}" />
+          </span>
+
+
+
                     <span>开始时间</span><span class="size100">
         <input name="beginTime" type="text" id="beginTime" value="${beginTime}"  readonly="readonly"/>
         </span><span>—</span><span class="size100">
@@ -253,6 +291,7 @@
 
                     <th width="6%" ><span class="form_btna">竞赛名称</span></th>
                     <%--<th width="10%" align="center"><span class="form_btna">参赛形式</span></th>--%>
+                    <th width="6%" ><span class="form_btna">指导教师</span></th>
 
                     <th width="6%" ><span class="form_btna">报名时间</span></th>
                     <th width="6%" ><span class="form_btna">状态</span></th>
@@ -304,6 +343,8 @@
                             <td align="center"><s:property value="#enter.email"/></td>
 
                             <td align="center"><s:property value="#enter.comName"/></td>
+
+                            <td align="center"><s:property value="#enter.tutor"/></td>
 
                             <td align="center"><s:date name="#enter.enterDate" format="yyyy-MM-dd"/></td>
 

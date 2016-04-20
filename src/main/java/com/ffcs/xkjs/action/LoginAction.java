@@ -37,7 +37,7 @@ public class LoginAction extends BaseAction<User> {
     }
 
 
-    public String login() throws Exception {
+    public String execute() throws Exception {
         Map session=ActionContext.getContext().getSession();
         //获取验证码
         String code=(String)session.get("code");
@@ -63,6 +63,11 @@ public class LoginAction extends BaseAction<User> {
             }
         }
 
-        return "login";
+        return this.SUCCESS;
+    }
+
+
+    public String logout() {
+        return  "logout";
     }
 }

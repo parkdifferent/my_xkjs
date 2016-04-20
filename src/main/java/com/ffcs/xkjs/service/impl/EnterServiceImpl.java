@@ -73,6 +73,11 @@ public class EnterServiceImpl implements IEnterService {
             paramsList.add("%"+enter.getTrueName()+"%");
         }
 
+        if (!TUtil.null2String(enter.getTutor()).equals("")) {
+            condition += " and o.tutor like ?";
+            paramsList.add("%"+enter.getTutor()+"%");
+        }
+
         /*if (!TUtil.null2String(enter.getName()).equals("")) {
             condition += " and o.name like ?";
             paramsList.add("%"+enter.getName()+"%");
@@ -83,7 +88,7 @@ public class EnterServiceImpl implements IEnterService {
         }
 */
         if (!TUtil.null2String(beginTime).equals("")) {
-            condition+=" and o.enterDate >= ? ";
+            condition+=" and o.beginTime >= ? ";
             paramsList.add(TUtil.formatDate(beginTime));
 
         }
@@ -136,6 +141,88 @@ public class EnterServiceImpl implements IEnterService {
         String enterId=enter.getEnterId();
         Enter enter1=enterDao.findObjectByID(enterId);
         return enter1;
+
+    }
+
+    @Override
+    public List<Enter> findEnterListByConditionNoPage(Enter enter, String beginTime, String endTime) {
+        //组织查询条件
+        String condition = "";
+        //存放可变参数？
+        List<Object> paramsList = new ArrayList<Object>();
+
+        if (!TUtil.null2String(enter.getSno()).equals("")) {
+            condition += " and o.sno like ?";
+            paramsList.add("%"+enter.getSno()+"%");
+        }
+
+        if (!TUtil.null2String(enter.getGrade()).equals("")) {
+            condition += " and o.grade like ?";
+            paramsList.add("%"+enter.getGrade()+"%");
+        }
+
+        if (!TUtil.null2String(enter.getAcademe()).equals("")) {
+            condition += " and o.academe like ?";
+            paramsList.add("%"+enter.getAcademe()+"%");
+        }
+
+        if (!TUtil.null2String(enter.getProfession()).equals("")) {
+            condition += " and o.profession like ?";
+            paramsList.add("%"+enter.getProfession()+"%");
+        }
+
+        if (!TUtil.null2String(enter.getComName()).equals("")) {
+            condition += " and o.comName like ?";
+            paramsList.add("%"+enter.getComName()+"%");
+        }
+
+        if (!TUtil.null2String(enter.getTrueName()).equals("")) {
+            condition += " and o.trueName like ?";
+            paramsList.add("%"+enter.getTrueName()+"%");
+        }
+
+        if (!TUtil.null2String(enter.getTutor()).equals("")) {
+            condition += " and o.tutor like ?";
+            paramsList.add("%"+enter.getTutor()+"%");
+        }
+
+
+
+        /*if (!TUtil.null2String(enter.getName()).equals("")) {
+            condition += " and o.name like ?";
+            paramsList.add("%"+enter.getName()+"%");
+        }
+        if (!TUtil.null2String(enter.getTelephone()).equals("")) {
+            condition += " and o.telephone like ?";
+            paramsList.add("%"+enter.getTelephone()+"%");
+        }
+*/
+        if (!TUtil.null2String(beginTime).equals("")) {
+            condition+=" and o.enterDate >= ? ";
+            paramsList.add(TUtil.formatDate(beginTime));
+
+        }
+
+        if(!TUtil.null2String(endTime).equals("")) {
+            condition+=" and o.enterDate <= ? ";
+            paramsList.add(TUtil.formatDate(endTime));
+        }
+
+       /* if (!TUtil.null2String(enter.getAuditStatus()).equals("")) {
+            condition += " and o.auditStatus=?";
+            paramsList.add(enter.getAuditStatus());
+        }*/
+
+        //传递可变参数
+        Object [] params = paramsList.toArray();
+        //排序
+        Map<String, String> orderby = new LinkedHashMap<String, String>();//有序
+        orderby.put("o.enterDate", "asc");
+
+        //查询
+        List<Enter> list = enterDao.findCollectionByConditionNoPage(condition,params,orderby);
+        return list;
+
 
     }
 }

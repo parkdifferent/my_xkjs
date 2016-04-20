@@ -32,6 +32,7 @@ import jxl.write.WritableCellFormat;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -52,6 +53,9 @@ public class uploadAction {
     IAreaService areaService;
 
     public String fileTest() throws IOException {
+
+        //FileUtils.copyFile();
+
         // 上传简历
 	/*	if (upload != null) {
 			String uuidName = UUID.randomUUID().toString();
@@ -59,6 +63,7 @@ public class uploadAction {
 			File destFile = new File(ServletActionContext.getServletContext()
 					.getRealPath(path));
 			FileUtils.copyFile(upload, destFile);
+
 
 			// 接收员工数据
 			// 在user 保存 uuid文件路径 和 真实文件名

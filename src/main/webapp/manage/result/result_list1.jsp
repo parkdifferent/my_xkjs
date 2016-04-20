@@ -85,6 +85,19 @@
 
         });
 
+
+        function export_excel() {
+
+            var grade = $("#grade").val();
+            var academe = $("#academe").val();
+            var profession = $("#profession").val();
+            var comName = $("#comName").val();
+            var beginTime = $("#beginTime").val();
+            var endTime = $("#endTime").val();
+            window.location.href="<%=basePath%>/system/enter_exportExcel.do?grade="+grade+"&academe="+academe+"&profession="+profession+"&comName="+comName+"&beginTime="+beginTime+"&endTime="+endTime;
+
+        }
+
     </script>
 </head>
 <body>
@@ -95,8 +108,8 @@
             <li><a href="<%=basePath%>/system/result_list.do"  class="this"><b>管理</b></a> </li>
             <li><a href="<%=basePath%>/system/result_add.do" ><b>新增</b></a></li>
 
-            <li><a class="add_btn" onclick="payoff_excel()" href="javascript:void(0);"> <b class="add_btn_b">导入Excel</b></a></li>
-            <li><a class="add_btn" onclick="payoff_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>
+            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/result_importExcel.do"> <b class="add_btn_b">导入Excel</b></a></li>
+            <li><a class="add_btn" onclick="export_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>
         </ul>
     </div>
     <form action="<%=basePath%>/system/result_list.do" method="post" name="ListForm" id="ListForm">

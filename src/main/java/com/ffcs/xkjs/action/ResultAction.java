@@ -10,10 +10,19 @@ import com.ffcs.xkjs.service.IProfessionService;
 import com.ffcs.xkjs.service.IResultService;
 import com.ffcs.xkjs.utils.TUtil;
 import com.ffcs.xkjs.utils.ValueUtils;
+import jxl.*;
+import jxl.read.biff.BiffException;
+import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.hssf.util.HSSFColor;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -353,6 +362,405 @@ public class ResultAction extends BaseAction<Result> {
         return "getProfessionJson";
 
     }
+
+    public String importExcel() {
+
+
+        return "importExcel";
+
+    }
+
+    private File upload;
+    private String uploadContentType;
+    private String uploadFileName; // 真实文件名
+
+
+    public String getUploadContentType() {
+        return uploadContentType;
+    }
+
+    public void setUploadContentType(String uploadContentType) {
+        this.uploadContentType = uploadContentType;
+    }
+
+    public File getUpload() {
+        return upload;
+    }
+
+    public void setUpload(File upload) {
+        this.upload = upload;
+    }
+
+    public String getUploadFileName() {
+        return uploadFileName;
+    }
+
+    public void setUploadFileName(String uploadFileName) {
+        this.uploadFileName = uploadFileName;
+    }
+
+
+    public String importJava() {
+
+        try {
+
+            //1.构建Workbook
+            Workbook rwb = Workbook.getWorkbook(upload);
+
+            //2.获得工作表
+            Sheet rs=rwb.getSheet(0);
+            List<Result> resultList=new ArrayList<Result>();
+            for(int i=1;i<rs.getRows();i++) {
+                Result result2=new Result();
+				/*Cell fcell=rs.getCell(1,i);
+				if(fcell.getType()==CellType.NUMBER){
+					NumberCell nc=(NumberCell) fcell;//转换类型
+					int areaId=(int) nc.getValue();//获取的值
+				    area.setAreaId(areaId);;//将值插入到集合里去
+				      System.out.println(areaId);
+				}*/
+
+
+                Cell fCell=rs.getCell(0,i);
+                String sno=fCell.getContents();
+                result2.setSno(sno);
+                System.out.println(sno);
+
+                Cell fCell1=rs.getCell(1,i);
+                String name=fCell1.getContents();
+                result2.setName(name);
+                System.out.println(name);
+
+                Cell fCell2=rs.getCell(2,i);
+                String grade=fCell2.getContents();
+                result2.setGrade(grade);
+                System.out.println(grade);
+
+                Cell fCell3=rs.getCell(3,i);
+                String academe=fCell3.getContents();
+                result2.setAcademe(academe);
+                System.out.println(academe);
+
+                Cell fCell4=rs.getCell(4,i);
+                String profession=fCell4.getContents();
+                result2.setProfession(profession);
+                System.out.println(profession);
+
+                Cell fCell5=rs.getCell(5,i);
+                String classes=fCell5.getContents();
+                result2.setClasses(classes);
+                System.out.println(classes);
+
+                Cell fCell6=rs.getCell(6,i);
+                String comName=fCell6.getContents();
+                result2.setComName(comName);
+                System.out.println(comName);
+
+                Cell fCell7=rs.getCell(7,i);
+                String form=fCell7.getContents();
+                result2.setForm(form);
+                System.out.println(form);
+
+                Cell fCell8=rs.getCell(8,i);
+                String prize=fCell8.getContents();
+                result2.setPrize(prize);
+                System.out.println(prize);
+
+                Cell fCell9=rs.getCell(9,i);
+                String tutor=fCell9.getContents();
+                result2.setTutor(tutor);
+                System.out.println(tutor);
+
+
+                //获奖时间
+                Cell fCell10=rs.getCell(10,i);
+                if(fCell10.getType()== CellType.DATE){
+                    DateCell dateCell=(DateCell) fCell10;
+                    Date result= dateCell.getDate();
+                    result2.setGetTime(result);
+                    //enter2.setEnterDate(result);
+                    System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(result));
+                    //contactPersonInfo.setContactBirthday(result);
+                    //System.out.println("生日："+new SimpleDateFormat("yyyy-MM-dd").format(result));//Thu Jan 10 08:00:00 CST 2013
+                }
+
+
+                //加入到List集合中
+                resultList.add(result2);
+
+
+            }
+            // 主体内容生成结束
+            // 写入文件
+            rwb.close();
+            System.out.println(uploadFileName);
+            System.out.println(resultList.size());
+
+            //写入数据库
+            for(Result result3:resultList) {
+                //userService.saveEnter(enter3);
+                resultService.saveResult(result3);
+            }
+
+        }
+        catch (BiffException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return "importJava";
+    }
+
+
+
+
+    File file=new File("result.xls");
+
+    public InputStream getInputStream() throws FileNotFoundException {
+        return new FileInputStream(file);
+    }
+
+
+
+    public String exportExcel() {
+
+        String grade = request.getParameter("grade");
+        String academe = request.getParameter("academe");
+        String profession = request.getParameter("profession");
+        String comName = request.getParameter("comName");
+        String beginTime = request.getParameter("beginTime");
+        String endTime = request.getParameter("endTime");
+
+        //Enter enter1 = new Enter();
+
+        Result result1=new Result();
+
+        //文件名称
+        String title1 = "";
+
+        if (!TUtil.null2String(grade).equals("")) {
+            result1.setGrade(grade);
+            title1 += grade;
+        }
+        if (!TUtil.null2String(academe).equals("")) {
+            result1.setAcademe(academe);
+            title1 += academe;
+        }
+        if (!TUtil.null2String(profession).equals("")) {
+            result1.setProfession(profession);
+            title1 += profession;
+        }
+        if (!TUtil.null2String(comName).equals("")) {
+            result1.setComName(comName);
+            title1 += comName;
+        }
+
+        title1 += "竞赛成绩表";
+
+
+        // List<Enter> list=enterService.findEnterByCondition(enter1,beginTime,endTime);
+        List<Result> datas = resultService.findResultListByConditionNoPage(result1, beginTime, endTime);
+        // 创建Excel的工作书册 Workbook,对应到一个excel文档
+        HSSFWorkbook wb = new HSSFWorkbook();
+        // 创建Excel的工作sheet,对应到一个excel文档的tab
+        HSSFSheet sheet = wb.createSheet("竞赛成绩表");
+        HSSFPatriarch patriarch = sheet.createDrawingPatriarch();
+        List<HSSFClientAnchor> anchor = new ArrayList<HSSFClientAnchor>();
+        for (int i = 0; i < datas.size(); i++) {
+            anchor.add(new HSSFClientAnchor(0, 0, 1000, 255, (short) 1,
+                    2 + i, (short) 1, 2 + i));
+        }
+
+
+        // 设置excel每列宽度
+        sheet.setColumnWidth(0, 6000);
+        sheet.setColumnWidth(1, 4000);
+        sheet.setColumnWidth(2, 8000);
+        sheet.setColumnWidth(3, 6000);
+        sheet.setColumnWidth(4, 6000);
+        sheet.setColumnWidth(5, 6000);
+        sheet.setColumnWidth(6, 6000);
+        sheet.setColumnWidth(7, 6000);
+        sheet.setColumnWidth(8, 6000);
+        sheet.setColumnWidth(9, 6000);
+        sheet.setColumnWidth(10, 6000);
+
+
+        // 创建字体样式
+        HSSFFont font = wb.createFont();
+        font.setFontName("Verdana");
+        font.setBoldweight((short) 100);
+        font.setFontHeight((short) 300);
+        font.setColor(HSSFColor.BLUE.index);
+        // 创建单元格样式
+        HSSFCellStyle style = wb.createCellStyle();
+        style.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+        style.setVerticalAlignment(HSSFCellStyle.VERTICAL_CENTER);
+        style.setFillForegroundColor(HSSFColor.LIGHT_TURQUOISE.index);
+        style.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+        // 设置边框
+        style.setBottomBorderColor(HSSFColor.RED.index);
+        style.setBorderBottom(HSSFCellStyle.BORDER_THIN);
+        style.setBorderLeft(HSSFCellStyle.BORDER_THIN);
+        style.setBorderRight(HSSFCellStyle.BORDER_THIN);
+        style.setBorderTop(HSSFCellStyle.BORDER_THIN);
+        style.setFont(font);// 设置字体
+        // 创建Excel的sheet的一行
+        HSSFRow row = sheet.createRow(0);
+        row.setHeight((short) 500);// 设定行的高度
+        // 创建一个Excel的单元格
+        HSSFCell cell = row.createCell(0);
+        // 合并单元格(startRow，endRow，startColumn，endColumn)
+        sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 11));
+        // 给Excel的单元格设置样式和赋值
+        cell.setCellStyle(style);
+        String title = "竞赛成绩表";
+        Date time1 = null;
+        Date time2 = null;
+        time1 = TUtil.formatDate(beginTime);
+        time2 = TUtil.formatDate(endTime);
+        String Time = TUtil.null2String(TUtil.formatShortDate(time1) + " - " + TUtil.formatShortDate(time2));
+        cell.setCellValue(title + "(" + Time + ")");
+
+        // 设置单元格内容格式时间
+        HSSFCellStyle style1 = wb.createCellStyle();
+        style1.setDataFormat(HSSFDataFormat.getBuiltinFormat("yyyy-mm-dd"));
+        style1.setWrapText(true);// 自动换行
+        style1.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+        HSSFCellStyle style2 = wb.createCellStyle();
+        style2.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+        row = sheet.createRow(1);
+
+        cell = row.createCell(0);
+        cell.setCellStyle(style2);
+        cell.setCellValue("学号");
+
+        cell = row.createCell(1);
+        cell.setCellStyle(style2);
+        cell.setCellValue("姓名");
+
+        cell = row.createCell(2);
+        cell.setCellStyle(style2);
+        cell.setCellValue("年级");
+
+        cell = row.createCell(3);
+        cell.setCellStyle(style2);
+        cell.setCellValue("学院");
+
+        cell = row.createCell(4);
+        cell.setCellStyle(style2);
+        cell.setCellValue("专业");
+
+        cell = row.createCell(5);
+        cell.setCellStyle(style2);
+        cell.setCellValue("班级");
+
+
+
+        cell = row.createCell(6);
+        cell.setCellStyle(style2);
+        cell.setCellValue("竞赛名称");
+
+       /* cell = row.createCell(1);
+        cell.setCellStyle(style2);
+        cell.setCellValue("参赛形式");*/
+
+        cell = row.createCell(7);
+        cell.setCellStyle(style2);
+        cell.setCellValue("参赛形式");
+
+        cell = row.createCell(8);
+        cell.setCellStyle(style2);
+        cell.setCellValue("奖项");
+
+        cell = row.createCell(9);
+        cell.setCellStyle(style2);
+        cell.setCellValue("指导教师");
+
+        cell = row.createCell(10);
+        cell.setCellStyle(style2);
+        cell.setCellValue("获奖时间");
+
+        for (int j = 2; j <= datas.size() + 1; j++) {
+            row = sheet.createRow(j);
+            // 设置单元格的样式格式
+            int i = 0;
+
+            cell = row.createCell(i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getSno());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getName());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getGrade());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getAcademe());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getProfession());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getClasses());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getComName());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getForm());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getPrize());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(datas.get(j - 2).getTutor());
+
+            cell = row.createCell(++i);
+            cell.setCellStyle(style2);
+            cell.setCellValue(TUtil.formatShortDate(datas.get(j - 2).getGetTime()));
+        }
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        String excel_name = sdf.format(new Date());
+
+
+        try {
+            OutputStream os = new FileOutputStream(file);
+            wb.write(os);
+            os.close();
+
+               /* String path = request.getSession().getServletContext()
+                        .getRealPath("")
+                        + File.separator + "excel";
+                response.setContentType("application/x-download");
+                response.addHeader("Content-Disposition",
+                        "attachment;filename=" + excel_name + ".xls");
+                OutputStream os = response.getOutputStream();
+                wb.write(os);
+                os.close();*/
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return "exportExcel";
+    }
+
+
 
 
 

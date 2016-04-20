@@ -21,4 +21,6 @@ public interface IResultService {
     void deleteResultByIds(Serializable... ids);
 
     Result findResultByID(Result result);
+
+    public List<Result> findResultListByConditionNoPage(Result result, String beginTime, String endTime);
 }

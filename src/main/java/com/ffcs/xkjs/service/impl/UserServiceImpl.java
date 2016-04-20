@@ -50,6 +50,47 @@ public class UserServiceImpl implements IUserService {
             paramsList.add("%"+user.getUserName()+"%");
         }
 
+        if (!TUtil.null2String(user.getRole()).equals("")) {
+            condition += " and o.role like ?";
+            paramsList.add("%"+user.getRole()+"%");
+        }
+
+        if (!TUtil.null2String(user.getSno()).equals("")) {
+            condition += " and o.sno like ?";
+            paramsList.add("%"+user.getSno()+"%");
+        }
+
+        if (!TUtil.null2String(user.getGrade()).equals("")) {
+            condition += " and o.grade like ?";
+            paramsList.add("%"+user.getGrade()+"%");
+        }
+
+        if (!TUtil.null2String(user.getAcademe()).equals("")) {
+            condition += " and o.academe like ?";
+            paramsList.add("%"+user.getAcademe()+"%");
+        }
+
+        if (!TUtil.null2String(user.getProfession()).equals("")) {
+            condition += " and o.profession like ?";
+            paramsList.add("%"+user.getProfession()+"%");
+        }
+
+        if (!TUtil.null2String(user.getClasses()).equals("")) {
+            condition += " and o.classes like ?";
+            paramsList.add("%"+user.getClasses()+"%");
+        }
+
+        if (!TUtil.null2String(user.getTelephone()).equals("")) {
+            condition += " and o.telephone like ?";
+            paramsList.add("%"+user.getTelephone()+"%");
+        }
+
+
+
+
+
+
+
 
         //将集合中存放的可变参数转换成数组
         Object [] params = paramsList.toArray();

@@ -89,7 +89,7 @@
 <body>
 
 <div class="cont">
-    <h1 class="seth">报名管理</h1>
+    <h1 class="seth">竞赛报名管理</h1>
     <div class="nav_list">
         <ul>
             <li><a href="<%=basePath%>/system/enter_list.do"><b>管理</b></a> </li>

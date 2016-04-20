@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="ffcs:war exploded">
-    <output-path>$PROJECT_DIR$/classes/artifacts/ffcs_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/ffcs</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -61,10 +61,14 @@
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: net.sourceforge.jexcelapi:jxl:2.6.10" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.13" />
           <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
           <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
           <element id="library" level="project" name="Maven: opensymphony:quartz:1.6.3" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="ffcs/web/Web" />
     </root>

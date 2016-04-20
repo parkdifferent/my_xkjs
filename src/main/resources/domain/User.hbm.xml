@@ -45,9 +45,9 @@
         </property>
 
 
-        <property name="trueName" type="java.lang.String">
+       <!-- <property name="trueName" type="java.lang.String">
             <column name="trueName" length="25" />
-        </property>
+        </property>-->
 
         <property name="telephone" type="java.lang.String">
             <column name="telephone" length="60" />

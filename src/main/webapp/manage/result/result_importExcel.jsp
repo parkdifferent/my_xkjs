@@ -40,7 +40,7 @@
         }
 
         jQuery(document).ready(function(){
-            jQuery('#enterDate').attr("readyonly","readyonly").datepicker({
+            jQuery('#resultDate').attr("readyonly","readyonly").datepicker({
                 dateFormat:"yy-mm-dd",
                 changeMonth: true,
                 changeYear: true
@@ -61,25 +61,25 @@
 </head>
 <body>
 <div class="cont">
-    <h1 class="seth">竞赛报名管理</h1>
+    <h1 class="seth">竞赛结果管理</h1>
     <div class="nav_list">
         <ul>
-            <li><a href="<%=basePath%>/system/enter_list.do"><b>管理</b></a> </li>
-            <li><a href="<%=basePath%>/system/enter_add.do" ><b>新增</b></a></li>
+            <li><a href="<%=basePath%>/system/result_list.do"><b>管理</b></a> </li>
+            <li><a href="<%=basePath%>/system/result_add.do" ><b>新增</b></a></li>
 
-            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/enter_importExcel.do" class="this"> <b class="add_btn_b">导入Excel</b></a></li>
+            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/result_importExcel.do" class="this"> <b class="add_btn_b">导入Excel</b></a></li>
             <li><a class="add_btn" onclick="payoff_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>
         </ul>
     </div>
     <br />
-    <form id="" action="<%=basePath%>/system/enter_importJava.do"
+    <form id="" action="<%=basePath%>/system/result_importJava.do"
           method="post" enctype="multipart/form-data">
         <div class="edit">
             <div class="editul setcont" id="base">
 
                 <ul class="set1">
                     <li class="setcont_bg">模板下载</li>
-                    <li><a id="down" href="<%=basePath%>/resources/file/moudel.xlsx<%--<%=basePath%>/upload/20160420005303.jpg--%>"><b>导入竞赛报名模板下载</b></a></li>
+                    <li><a id="down" href="<%=basePath%>/resources/file/moudel.xlsx"><b>导入竞赛结果模板下载</b></a></li>
                 </ul>
                 <ul class="set1">
                     <li class="setcont_bg"><strong class="sred">*</strong>批量导入</li>

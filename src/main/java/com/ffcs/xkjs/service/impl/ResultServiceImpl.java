@@ -144,4 +144,86 @@ public class ResultServiceImpl implements IResultService{
         Result result1=resultDao.findObjectByID(resultId);
         return result1;
     }
+
+
+    @Override
+    public List<Result> findResultListByConditionNoPage(Result result, String beginTime, String endTime) {
+
+        //组织查询条件
+        String condition = "";
+        //存放可变参数？
+        List<Object> paramsList = new ArrayList<Object>();
+
+        if (!TUtil.null2String(result.getSno()).equals("")) {
+            condition += " and o.sno like ?";
+            paramsList.add("%"+result.getSno()+"%");
+        }
+
+        if (!TUtil.null2String(result.getGrade()).equals("")) {
+            condition += " and o.grade like ?";
+            paramsList.add("%"+result.getGrade()+"%");
+        }
+
+        if (!TUtil.null2String(result.getAcademe()).equals("")) {
+            condition += " and o.academe like ?";
+            paramsList.add("%"+result.getAcademe()+"%");
+        }
+
+        if (!TUtil.null2String(result.getProfession()).equals("")) {
+            condition += " and o.profession like ?";
+            paramsList.add("%"+result.getProfession()+"%");
+        }
+
+        if (!TUtil.null2String(result.getComName()).equals("")) {
+            condition += " and o.comName like ?";
+            paramsList.add("%"+result.getComName()+"%");
+        }
+
+        if (!TUtil.null2String(result.getName()).equals("")) {
+            condition += " and o.name like ?";
+            paramsList.add("%"+result.getName()+"%");
+        }
+
+        if (!TUtil.null2String(result.getClasses()).equals("")) {
+            condition += " and o.classes like ?";
+            paramsList.add("%"+result.getClasses()+"%");
+        }
+
+        if (!TUtil.null2String(result.getTutor()).equals("")) {
+            condition += " and o.tutor like ?";
+            paramsList.add("%"+result.getTutor()+"%");
+        }
+
+        /*if (!TUtil.null2String(enter.getName()).equals("")) {
+            condition += " and o.name like ?";
+            paramsList.add("%"+enter.getName()+"%");
+        }
+        if (!TUtil.null2String(enter.getTelephone()).equals("")) {
+            condition += " and o.telephone like ?";
+            paramsList.add("%"+enter.getTelephone()+"%");
+        }
+*/
+        if (!TUtil.null2String(beginTime).equals("")) {
+            condition+=" and o.getTime >= ? ";
+            paramsList.add(TUtil.formatDate(beginTime));
+
+        }
+
+        if(!TUtil.null2String(endTime).equals("")) {
+            condition+=" and o.getTime <= ? ";
+            paramsList.add(TUtil.formatDate(endTime));
+        }
+
+
+        //传递可变参数
+        Object [] params = paramsList.toArray();
+        //排序
+        Map<String, String> orderby = new LinkedHashMap<String, String>();//有序
+        orderby.put("o.getTime", "asc");
+
+        //查询
+        List<Result> list = resultDao.findCollectionByConditionNoPage(condition,params,orderby);
+        return list;
+
+    }
 }

@@ -38,6 +38,8 @@ public class Enter implements java.io.Serializable {
 
     private String form;      //参赛形式   团体赛/个人赛
 
+    private String tutor;       // 指导教师
+
 
     private Date enterDate;     //报名时间
 
@@ -146,5 +148,13 @@ public class Enter implements java.io.Serializable {
 
     public void setAuditStatus(Integer auditStatus) {
         this.auditStatus = auditStatus;
+    }
+
+    public String getTutor() {
+        return tutor;
+    }
+
+    public void setTutor(String tutor) {
+        this.tutor = tutor;
     }
 }

@@ -127,5 +127,13 @@ public class TUtil {
         return new String(randBuffer);
     }
 
+
+    public static String formatShortDate(Object v) {
+        if (v == null)
+            return null;
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        return df.format(v);
+    }
+
 }
 

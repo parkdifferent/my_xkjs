@@ -72,3 +72,4 @@ com\ffcs\xkjs\service\impl\AcademeServiceImpl.class
 com\ffcs\xkjs\action\uploadAction.class
 com\ffcs\xkjs\domain\Enter.class
 com\ffcs\xkjs\action\EnterAction.class
+com\ffcs\xkjs\action\UserAction.class
