@@ -195,7 +195,7 @@ public class NoticeAction extends BaseAction<Notice>{
                 System.out.println(uploadFileName);
                 System.out.println(uploadContentType);
                 notice.setFileName(uploadFileName);
-                notice.setFilePath(path+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+                notice.setFilePath("upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
                // notice.setFilePath(destFile);
             }
 
@@ -245,7 +245,7 @@ public class NoticeAction extends BaseAction<Notice>{
                 System.out.println(uploadFileName);
                 System.out.println(uploadContentType);
                 notice.setFileName(uploadFileName);
-                notice.setFilePath(path+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+                notice.setFilePath("upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
             }
 
             noticeService.update(notice);

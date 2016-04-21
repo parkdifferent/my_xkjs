@@ -16,6 +16,12 @@
     <package name="system" namespace="/system" extends="json-default">
 		<!-- 测试 -->
 		<action name="elecTextAction_*" class="elecTextAction" method="{1}">
+
+
+
+           <!-- <result name="echartsTest">/echartsTest.jsp</result>-->
+
+
 			<result name="save">/system/success.jsp</result>
 			<!-- 自加 -->
 			<result name="home">/system/text_list.jsp</result>

@@ -1,17 +1,22 @@
 package com.ffcs.xkjs.action;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.PrintWriter;
+import java.lang.reflect.Array;
+import java.util.*;
 
 import javax.annotation.Resource;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
 
+import com.alibaba.fastjson.JSON;
 import com.ffcs.xkjs.domain.Area;
+import com.ffcs.xkjs.domain.Echarts;
 import com.ffcs.xkjs.domain.ElecText;
 import com.ffcs.xkjs.service.IElecTextService;
 import com.ffcs.xkjs.utils.TUtil;
 import com.ffcs.xkjs.utils.ValueUtils;
+
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import com.opensymphony.xwork2.ActionContext;
@@ -266,6 +271,47 @@ public class ElecTextAction extends BaseAction<ElecText> {
         ValueUtils.putValueStack(userList);
         returnMap.put("userList",userList);
         System.out.println("keyime");*/
+
+
+    }
+
+
+    public void echartsTest() {
+
+
+        Echarts echarts=new Echarts();
+
+        List<String> categoryList=new ArrayList(Arrays.asList("衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"));
+        List<Integer> seriesList=new ArrayList(Arrays.asList(5, 20, 40, 10, 10, 20));
+
+
+        //request.setAttribute("categoryList",categoryList);
+        //request.setAttribute("seriesList",seriesList);
+
+        //return "echartsTest";
+
+
+        echarts.setCategoryList(categoryList);
+        echarts.setSeriesList(seriesList);
+
+       // echarts.getCategoryList().add()
+
+        String JsonString=JSON.toJSONString(echarts);
+
+        System.out.println(JsonString);
+
+
+        response.setContentType("text/html;charset=utf-8");
+        try {
+           PrintWriter out= response.getWriter();
+
+            out.println(JsonString);
+            out.flush();
+            out.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
 
 
     }

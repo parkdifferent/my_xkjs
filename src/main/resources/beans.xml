@@ -48,20 +48,20 @@
 
 
     <!-- 1、制定任务信息 -->
-    <bean id="orderPayTask"
+   <!-- <bean id="orderPayTask"
           class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-        <!-- 调用的类 -->
+        &lt;!&ndash; 调用的类 &ndash;&gt;
         <property name="targetObject" ref="elecTextAction"/>
-        <!-- 调用类中的方法 -->
+        &lt;!&ndash; 调用类中的方法 &ndash;&gt;
         <property name="targetMethod" value="execute"/>
         <property name="concurrent" value="false"/>
     </bean>
-    <!-- 2、制定任务执行时机（任务执行触发器） -->
+    &lt;!&ndash; 2、制定任务执行时机（任务执行触发器） &ndash;&gt;
     <bean id="order_cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
         <property name="jobDetail" ref="orderPayTask"/>
         <property name="cronExpression" value="30 * * * * ?"/>
     </bean>
-    <!-- 3、设置调度工厂 -->
+    &lt;!&ndash; 3、设置调度工厂 &ndash;&gt;
     <bean id="schdulerFactory" lazy-init="false"
           class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="triggers">
@@ -71,6 +71,6 @@
 
             </list>
         </property>
-    </bean>
+    </bean>-->
 
 </beans>

@@ -490,6 +490,19 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>fastjson</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.28</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/fastjson-1.1.28.jar</systemPath>
+        </dependency>
+
+
+
+
+
+
     </dependencies>
 
 
