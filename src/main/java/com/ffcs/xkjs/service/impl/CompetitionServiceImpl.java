@@ -43,6 +43,13 @@ public class CompetitionServiceImpl implements ICompetitionService {
         String condition = "";
         //存放可变参数？
         List<Object> paramsList = new ArrayList<Object>();
+
+        if(!TUtil.null2String(competition.getStatus()).equals("")) {
+            condition+=" and o.status = ?";
+            paramsList.add(competition.getStatus());
+        }
+
+
         if (!TUtil.null2String(competition.getComName()).equals("")) {
             condition += " and o.comName like ?";
             paramsList.add("%"+competition.getComName()+"%");

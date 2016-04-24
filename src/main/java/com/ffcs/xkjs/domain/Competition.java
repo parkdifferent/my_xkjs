@@ -30,7 +30,7 @@ public class Competition implements java.io.Serializable {
     private String filePath;
 
 
-    private Integer status = 0;              //    0 未开始    1  开始报名    2  报名截止
+    private Integer status;              //    0 未开始    1  开始报名    2  报名截止
 
 
     public Integer getStatus() {

@@ -43,7 +43,7 @@ public class Enter implements java.io.Serializable {
 
     private Date enterDate;     //报名时间
 
-    private Integer auditStatus=0;   //   审核   0审核   1已审核
+    private Integer auditStatus;   //   审核   0审核   1已审核
 
 
     public String getEnterId() {

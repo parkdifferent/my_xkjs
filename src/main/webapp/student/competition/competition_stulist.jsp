@@ -59,14 +59,14 @@
 </head>
 <body>
 <div class="cont">
-    <h3 class="seth">竞赛项目管理</h3>
-    <div class="nav_list">
+    <h3 class="seth">竞赛项目</h3>
+    <%--<div class="nav_list">
         <ul>
             <li><a href="<%=basePath%>/system/competition_list.do"  class="this"><b>管理</b></a></li>
             <li><a href="<%=basePath%>/system/competition_add.do" ><b>新增</b></a></li>
         </ul>
-    </div>
-    <form action="<%=basePath%>/system/competition_list.do" method="post" name="ListForm" id="ListForm">
+    </div>--%>
+    <form action="<%=basePath%>/system/competition_stulist.do" method="post" name="ListForm" id="ListForm">
         <div class="search">
             <ul>
                 <li>
@@ -113,10 +113,6 @@
       </select>
       </span>
 
-
-
-
-
                     <span>开始时间</span><span class="size100">
         <input name="beginTime" type="text" id="beginTime" value="${beginTime}"  readonly="readonly"/>
         </span><span>—</span><span class="size100">
@@ -132,7 +128,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>到期已提交续费申请的店铺请尽快与店主联系并完成线下续费流程，待店主续费成功后请编辑店铺状态为正常营业</li>
+                <li>竞赛项目</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -180,16 +176,9 @@
 
             </td>
 
-
-
-        <!-- <td class="lightred"><ul>
-        <li>$!CommUtil.formatLongDate($!obj.lastLoginDate)</li>
-        <li>$!obj.lastLoginIp</li>
-        </ul></td> -->
-        <!--  #set($store_url=$!storeTools.query_user_store_url("$!obj.id","$!webPath")) -->
-        <!-- <td align="center">#if($!store_url!="")<a href="$!store_url" target="_blank"  class="blue" >店铺</a>#else <span style="color:#F00">未开店</span>#end</td> -->
-        <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/competition_edit.do?comId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
-        |<a href="javascript:void(0);" onclick="if(confirm('删除竞赛项目后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/competition_del.do?mulitId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
+        <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/competition_stuedit.do?comId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}" class="blue" >查看</a>
+        <%--|<a href="javascript:void(0);" onclick="if(confirm('删除竞赛项目后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/competition_del.do?mulitId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>--%>
+            |<a href="<%=basePath%>/system/enter_stuedit.do?comId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}" class="blue" >报名</a>
         </td>
         </tr>
         </s:iterator>
@@ -207,7 +196,8 @@
         </div>
 
         <div class="oper_sp"> <span class="oper_check"><label><input name="all" type="checkbox" id="all" onclick="selectAll(this)" value="" />全部</label></span>
-        <span class="oper_del">  <input name="" type="button" value="删除" style="cursor:pointer;" onclick="cmd('<%=basePath%>/system/competition_del.do?currentPage=${request.currentPage}')"/></span></div>
+       <%-- <span class="oper_del">  <input name="" type="button" value="删除" style="cursor:pointer;" onclick="cmd('<%=basePath%>/system/competition_del.do?currentPage=${request.currentPage}')"/></span>--%>
+        </div>
         </div>
 
     </form>

@@ -45,6 +45,15 @@ public class UserServiceImpl implements IUserService {
         String condition = "";
         //存放可变参数？
         List<Object> paramsList = new ArrayList<Object>();
+
+
+
+        if (!TUtil.null2String(user.getUserId()).equals("")) {
+            condition += " and o.userId = ?";
+            paramsList.add(user.getUserId());
+        }
+
+
         if (!TUtil.null2String(user.getUserName()).equals("")) {
             condition += " and o.userName like ?";
             paramsList.add("%"+user.getUserName()+"%");

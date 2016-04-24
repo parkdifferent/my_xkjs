@@ -322,7 +322,7 @@ public class UserAction extends BaseAction<User>{
             //设置初始密码
             user.setPassword(user.getSno());
             //设置角色
-            user.setRole("USER");
+            user.setRole("student");
 
             userService.saveUser(user);
         }
@@ -505,6 +505,89 @@ public class UserAction extends BaseAction<User>{
         }
 
         return "importJava";
+    }
+
+
+    public String stulist() {
+
+        Map session=ActionContext.getContext().getSession();
+        String userId=(String)session.get("userId");
+        User user1=new User();
+        user1.setUserId(userId);
+        List<User> list=userService.findUserByCondition(user1);
+        //User user2=userService.findUserByID(user1);
+
+        request.setAttribute("userList", list);
+
+        return "stulist";
+
+    }
+
+
+
+    public String stuedit() {
+
+        Map session=ActionContext.getContext().getSession();
+        String userId = (String)session.get("userId");
+
+
+        if (!TUtil.null2String(userId).equals("")) {
+
+            User user1 = new User();
+            user1.setUserId(userId);
+            User user2 = userService.findUserByID(user1);
+
+            request.setAttribute("user", user2);
+
+            List<Academe> academeList = academeService.findAcademeByCondition(null);
+
+            request.setAttribute("academeList", academeList);
+
+            //获取专业
+            List<Academe> academeList1 = academeService.findAcademeByCondition(user2.getAcademe());
+            if (!academeList1.isEmpty()) {
+                Academe academe1 = academeList1.get(0);
+                //Integer academeId=academe1.getAcademeId();
+                //根据academeId查询专业
+                Set<Profession> professionSet = academe1.getProfessions();
+                request.setAttribute("professionSet", professionSet);
+            }
+
+            request.setAttribute("academe1", user2.getAcademe());
+            request.setAttribute("profession1", user2.getProfession());
+        }
+
+        request.setAttribute("edit", true);
+
+        return "stuedit";
+    }
+
+
+
+    public String stusave(){
+
+
+        Map session=ActionContext.getContext().getSession();
+        String userId = (String)session.get("userId");
+
+        //取回原来的密码
+        User user1=new User();
+        user1.setUserId(userId);
+        User user2=userService.findUserByID(user1);
+        if(!TUtil.null2String(userId).equals("")) {
+            user.setRole("student");        //默认角色
+            user.setPassword(user2.getPassword());   //原来密码
+            userService.update(user);
+        }
+//        String list_url=request.getParameter("list_url");
+       /* String add_url=request.getParameter("add_url");*/
+
+        /*System.out.println(list_url+"          "+add_url);*/
+        request.setAttribute("list_url", TUtil.getURL(request)+"/system/user_stulist.do");
+
+        request.setAttribute("op_title", "修改个人信息成功");
+        /*request.setAttribute("add_url", add_url);*/
+        return "stusave";
     }
 
 

@@ -343,6 +343,68 @@ public class NoticeAction extends BaseAction<Notice>{
 
 
 
+    public String stulist() {
+
+        String title=request.getParameter("title");
+        String content=request.getParameter("content");
+
+        String beginTime=request.getParameter("beginTime");
+        String endTime=request.getParameter("endTime");
+
+
+
+        Notice notice1=new Notice();
+
+        if(!TUtil.null2String(title).equals("")) {
+            notice1.setTitle(title);
+            request.setAttribute("title", title);
+        }
+
+        if(!TUtil.null2String(content).equals("")) {
+            notice1.setContent(content);
+            request.setAttribute("content", content);
+        }
+
+
+        List<Notice> list=noticeService.findNoticeByCondition(notice1,beginTime,endTime);
+        request.setAttribute("noticeList", list);
+        request.setAttribute("beginTime", beginTime);
+        request.setAttribute("endTime", endTime);
+        return "stulist";
+
+    }
+
+
+
+    public String stuedit() {
+
+        // String newsId=request.getParameter("newsId");
+        String noticeId=request.getParameter("noticeId");
+
+        String currentPage=request.getParameter("currentPage");
+        if(!TUtil.null2String(noticeId).equals("")) {
+
+            Notice notice1=new Notice();
+            notice1.setNoticeId(noticeId);
+            Notice notice2=noticeService.findNoticeByID(notice1);
+            request.setAttribute("notice",notice2);
+
+            //编辑，初始化kindeditor的显示值
+            request.setAttribute("content",notice2.getContent());
+        }
+
+        request.setAttribute("edit", true);
+        //ValueStack vs=ActionContext.getContext().getValueStack();
+        //vs.set("edit", true);
+        request.setAttribute("currentPage", currentPage);
+        return "stuedit";
+    }
+
+
+
+
+
+
 
 
 

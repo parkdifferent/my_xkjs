@@ -33,6 +33,7 @@ public class CompetitionAction extends BaseAction<Competition> {
        // String condition=request.getParameter("condition");
         //String value=request.getParameter("value");
 
+        String status=request.getParameter("status");
 
         String comName=request.getParameter("comName");
         String category=request.getParameter("category");
@@ -45,20 +46,12 @@ public class CompetitionAction extends BaseAction<Competition> {
 
         System.out.println(comName+"      "+category+"         "+level);
         Competition competition1=new Competition();
-       // News news1 = new News();
-       /* if(!TUtil.null2String(condition).equals("") && !TUtil.null2String(value).equals("")) {
-            if (condition.equals("comName")) {
-                competition1.setComName(value);
-                //news1.setTitle(value);
-            }
 
-            if (condition.equals("content")) {
-                news1.setContent(value);
-            }
-        }*/
+        if(!TUtil.null2String(status).equals("")) {
+            competition1.setStatus(new Integer(status));
+            request.setAttribute("status", status);
+        }
 
-       /* request.setAttribute("category", null);
-        request.setAttribute("level",null );*/
         if(!TUtil.null2String(comName).equals("")) {
             competition1.setComName(comName);
         }
@@ -74,14 +67,7 @@ public class CompetitionAction extends BaseAction<Competition> {
         }
 
         List<Competition> list=competitionService.findCompetitionByCondition(competition1,beginTime,endTime);
-       // List<News> list=newsService.findNewsByCondition(news1,beginTime,endTime);
-        /*if(list!=null && list.size()>0){
-            for(News news:list){
-                System.out.println(text.getTextName()+"    "+text.getTextDate()+"    "+text.getTextRemark());
-            }
-        }*/
-        //ActionContext.getContext().put("textList", list);
-        //ServletActionContext.getRequest().setAttribute("textList", list);
+
         request.setAttribute("competitionList", list);
        // request.setAttribute("condition", condition);
         request.setAttribute("beginTime", beginTime);
@@ -335,6 +321,81 @@ public class CompetitionAction extends BaseAction<Competition> {
         }
 
         return "download";
+    }
+
+
+
+    public String stulist() {
+
+        String status=request.getParameter("status");
+
+        String comName=request.getParameter("comName");
+        String category=request.getParameter("category");
+        String level=request.getParameter("level");
+
+        String beginTime=request.getParameter("beginTime");
+        String endTime=request.getParameter("endTime");
+
+
+        System.out.println(comName+"      "+category+"         "+level);
+        Competition competition1=new Competition();
+
+        if(!TUtil.null2String(status).equals("")) {
+            competition1.setStatus(new Integer(status));
+            request.setAttribute("status", status);
+        }
+
+        if(!TUtil.null2String(comName).equals("")) {
+            competition1.setComName(comName);
+        }
+
+        if(!TUtil.null2String(category).equals("")) {
+            competition1.setCategory(category);
+            request.setAttribute("category", category);
+        }
+
+        if(!TUtil.null2String(level).equals("")) {
+            competition1.setLevel(level);
+            request.setAttribute("level",level );
+        }
+
+        List<Competition> list=competitionService.findCompetitionByCondition(competition1,beginTime,endTime);
+
+        request.setAttribute("competitionList", list);
+        // request.setAttribute("condition", condition);
+        request.setAttribute("beginTime", beginTime);
+        //request.setAttribute("value", value);
+        request.setAttribute("endTime", endTime);
+
+        request.setAttribute("comName", comName);
+
+
+        return "stulist";
+
+    }
+
+
+
+
+    public String stuedit() {
+
+
+        String comId=request.getParameter("comId");
+
+        String currentPage=request.getParameter("currentPage");
+        if(!TUtil.null2String(comId).equals("")) {
+
+
+            Competition competition1=new Competition();
+            competition1.setComId(comId);
+            Competition competition2=competitionService.findCompetitionByID(competition1);
+            request.setAttribute("competition",competition2);
+
+        }
+
+        request.setAttribute("edit", true);
+        request.setAttribute("currentPage", currentPage);
+        return "stuedit";
     }
 
 

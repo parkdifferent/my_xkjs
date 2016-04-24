@@ -69,8 +69,10 @@ public class LoginAction extends BaseAction<User> {
                 }
             }
                 //session.put("userName",username);
-        request.setAttribute("userName",user1.getUserName());
+        //request.setAttribute("userName",user1.getUserName());
         session.put("userId",user1.getUserId());
+        session.put("userName",user1.getUserName());
+        session.put("role",user1.getRole());
         return this.SUCCESS;
     }
 

@@ -188,6 +188,65 @@ public class NewsAction extends BaseAction<News> {
 
 
 
+    public String stulist() {
+
+
+        String title=request.getParameter("title");
+        String content=request.getParameter("content");
+
+
+        String beginTime=request.getParameter("beginTime");
+        String endTime=request.getParameter("endTime");
+
+        News news1 = new News();
+
+        if(!TUtil.null2String(title).equals("")) {
+            news1.setTitle(title);
+            request.setAttribute("title", title);
+        }
+
+        if(!TUtil.null2String(content).equals("")) {
+            news1.setContent(content);
+            request.setAttribute("content", content);
+        }
+
+        List<News> list=newsService.findNewsByCondition(news1,beginTime,endTime);
+
+        request.setAttribute("newsList", list);
+
+        request.setAttribute("beginTime", beginTime);
+
+        request.setAttribute("endTime", endTime);
+        return "stulist";
+
+
+    }
+
+
+
+    public String stuedit() {
+
+        String newsId=request.getParameter("newsId");
+
+        String currentPage=request.getParameter("currentPage");
+        if(!TUtil.null2String(newsId).equals("")) {
+            News news1=new News();
+            news1.setNewsId(newsId);
+            News news2=newsService.findNewsByID(news1);
+            request.setAttribute("news", news2);
+            //编辑，初始化kindeditor的显示值
+            request.setAttribute("content",news2.getContent());
+        }
+
+        request.setAttribute("edit", true);
+
+
+        request.setAttribute("currentPage", currentPage);
+        return "stuedit";
+    }
+
+
+
 
 
 

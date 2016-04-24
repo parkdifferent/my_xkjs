@@ -43,6 +43,11 @@ public class EnterServiceImpl implements IEnterService {
         //存放可变参数？
         List<Object> paramsList = new ArrayList<Object>();
 
+        if (!TUtil.null2String(enter.getAuditStatus()).equals("")) {
+            condition+=" and o.auditStatus = ?";
+            paramsList.add(enter.getAuditStatus());
+        }
+
         if (!TUtil.null2String(enter.getSno()).equals("")) {
             condition += " and o.sno like ?";
             paramsList.add("%"+enter.getSno()+"%");

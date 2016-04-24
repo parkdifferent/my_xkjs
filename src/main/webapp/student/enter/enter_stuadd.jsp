@@ -89,22 +89,22 @@
 <body>
 
 <div class="cont">
-    <h1 class="seth">竞赛报名管理</h1>
+    <h1 class="seth">竞赛报名</h1>
     <div class="nav_list">
         <ul>
             <li><a href="<%=basePath%>/system/enter_list.do"><b>管理</b></a> </li>
-            <li><a href="<%=basePath%>/system/enter_add.do" <s:if test="#request.edit==null"> class="this" </s:if> ><b>新增</b></a></li>
+            <%--<li><a href="<%=basePath%>/system/enter_add.do" <s:if test="#request.edit==null"> class="this" </s:if> ><b>新增</b></a></li>
 
             <s:if test="#request.edit">
                 <li>  <a href="javascript:void(0);" class="this"><b>编辑</b></a></li>
-            </s:if>
+            </s:if>--%>
 
 
 
         </ul>
     </div>
 
-    <form name="theForm" id="theForm" action="<%=basePath%>/system/enter_save.do" method="post">
+    <form name="theForm" id="theForm" action="<%=basePath%>/system/enter_stusave.do" method="post">
 
         <div class="edit">
             <div class="editul setcont">
@@ -169,11 +169,6 @@
                 </ul>
 
 
-
-
-
-
-
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>专业</li>
                     <li><span class="webname">
@@ -204,10 +199,6 @@
                 </ul>
 
 
-
-
-
-
                 <ul class="set1">
                     <li class="setcont_bg">手机</li>
                     <li><span class="webname">
@@ -229,11 +220,6 @@
                     <li  class="setcont_bg"><strong class=""></strong>竞赛名称</li>
                     <li><span class="webname">
          <select name="comName" id="comName">
-
-            <%-- <option value="校级">校级</option>
-             <option value="市级">市级</option>
-             <option value="省级">省级</option>
-             <option value="国家级">国家级</option>--%>
 
              <option value="" ${request.enter.comName ==null?'selected':''}>请选择...</option>
 
@@ -261,10 +247,6 @@
                 </ul>
 
 
-
-
-
-
                 <ul class="set1">
                     <li class="setcont_bg">报名时间</li>
                     <li><span class="webname">
@@ -275,21 +257,6 @@
       </span></li>
                 </ul>
 
-
-
-                <ul class="set1">
-                    <li  class="setcont_bg"><strong class=""></strong>审核状态</li>
-                    <li><span class="webname">
-         <select name="auditStatus" id="auditStatus">
-
-             <option value="0" ${request.enter.auditStatus =="0"?'selected':''}>未审核</option>
-             <option value="1" ${request.enter.auditStatus =="1"?'selected':''}>已审核</option>
-
-         </select>
-        </span>
-                        <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
-                    </li>
-                </ul>
 
             </div>
         </div>

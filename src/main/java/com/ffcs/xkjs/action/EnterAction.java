@@ -1,15 +1,10 @@
 package com.ffcs.xkjs.action;
 
-import com.ffcs.xkjs.domain.Academe;
-import com.ffcs.xkjs.domain.Competition;
-import com.ffcs.xkjs.domain.Enter;
-import com.ffcs.xkjs.domain.Profession;
-import com.ffcs.xkjs.service.IAcademeService;
-import com.ffcs.xkjs.service.ICompetitionService;
-import com.ffcs.xkjs.service.IEnterService;
-import com.ffcs.xkjs.service.IProfessionService;
+import com.ffcs.xkjs.domain.*;
+import com.ffcs.xkjs.service.*;
 import com.ffcs.xkjs.utils.TUtil;
 import com.ffcs.xkjs.utils.ValueUtils;
+import com.opensymphony.xwork2.ActionContext;
 import jxl.*;
 import jxl.read.biff.BiffException;
 import org.apache.poi.hssf.usermodel.*;
@@ -21,10 +16,7 @@ import org.springframework.stereotype.Controller;
 import javax.annotation.Resource;
 import java.io.*;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by tianf221111 on 2016/4/8.
@@ -50,11 +42,12 @@ public class EnterAction extends BaseAction<Enter> {
     ICompetitionService competitionService;
 
 
+    @Resource(name= IUserService.SERVICE_NAME)
+    IUserService userService;
+
+
     public String list() {
 
-
-        // String condition=request.getParameter("condition");
-        //String value=request.getParameter("value");
 
         String sno = request.getParameter("sno");
         String trueName = request.getParameter("trueName");
@@ -68,12 +61,23 @@ public class EnterAction extends BaseAction<Enter> {
 
         String tutor = request.getParameter("tutor");
 
+
+        String auditStatus = request.getParameter("auditStatus");
+
         //获取专业id
         String proId = request.getParameter("profession");
         //System.out.println(comName+"      "+category+"         "+level);
 
 
         Enter enter1 = new Enter();
+
+        if (!TUtil.null2String(auditStatus).equals("")) {
+            enter1.setAuditStatus(new Integer(auditStatus));
+            request.setAttribute("auditStatus",auditStatus);
+        }
+
+
+
         if (!TUtil.null2String(sno).equals("")) {
             enter1.setSno(sno);
         }
@@ -421,6 +425,9 @@ public class EnterAction extends BaseAction<Enter> {
                 }
 
 
+                //初始状态为未审核
+                enter2.setAuditStatus(new Integer(0));
+
                 //加入到List集合中
                 enterList.add(enter2);
 
@@ -485,7 +492,7 @@ public class EnterAction extends BaseAction<Enter> {
                 Enter enter1 = new Enter();
                 enter1.setEnterId(id);
                 Enter enter2 = enterService.findEnterByID(enter1);
-                enter2.setAuditStatus(1);
+                enter2.setAuditStatus(new Integer(1));
                 enterService.update(enter2);
 
             }
@@ -496,7 +503,7 @@ public class EnterAction extends BaseAction<Enter> {
             Enter enter1 = new Enter();
             enter1.setEnterId(mulitId);
             Enter enter2 = enterService.findEnterByID(enter1);
-            enter2.setAuditStatus(1);
+            enter2.setAuditStatus(new Integer(1));
             enterService.update(enter2);
         }
 		/*for(String id:ids) {
@@ -779,6 +786,165 @@ public class EnterAction extends BaseAction<Enter> {
             e.printStackTrace();
         }
         return "exportExcel";
+    }
+
+
+
+
+
+    public String stuedit() {
+
+        // String newsId=request.getParameter("newsId");
+
+        /*获取学生信息*/
+        Map session= ActionContext.getContext().getSession();
+        String userId = (String)session.get("userId");
+
+        //取回原来的密码
+        User user1=new User();
+        user1.setUserId(userId);
+        User user2=userService.findUserByID(user1);
+
+        String currentPage = request.getParameter("currentPage");
+
+
+           // Enter enter2 = enterService.findEnterByID(enter1);
+        Enter enter2=new Enter();
+        enter2.setSno(user2.getSno());
+        enter2.setTrueName(user2.getUserName());
+        enter2.setGrade(user2.getGrade());
+        enter2.setAcademe(user2.getAcademe());
+        enter2.setProfession(user2.getProfession());
+        enter2.setClasses(user2.getClasses());
+        enter2.setTelephone(user2.getTelephone());
+        enter2.setEmail(user2.getEmail());
+
+
+
+        /*获取报名竞赛项目*/
+        String comId=request.getParameter("comId");
+        Competition competition1=new Competition();
+        competition1.setComId(comId);
+        Competition competition2=competitionService.findCompetitionByID(competition1);
+       String comName= competition2.getComName();
+        request.setAttribute("comName1", comName);
+
+
+            request.setAttribute("enter", enter2);
+
+            List<Academe> academeList = academeService.findAcademeByCondition(null);
+            List<Competition> competitionList = competitionService.findCompetitionsNoPage();
+
+            request.setAttribute("academeList", academeList);
+            request.setAttribute("competitionList", competitionList);
+
+            //获取专业
+            List<Academe> academeList1 = academeService.findAcademeByCondition(enter2.getAcademe());
+            if (!academeList1.isEmpty()) {
+                Academe academe1 = academeList1.get(0);
+                //Integer academeId=academe1.getAcademeId();
+                //根据academeId查询专业
+                Set<Profession> professionSet = academe1.getProfessions();
+                request.setAttribute("professionSet", professionSet);
+            }
+
+
+            request.setAttribute("academe1", enter2.getAcademe());
+            request.setAttribute("profession1", enter2.getProfession());
+
+
+
+
+
+        request.setAttribute("edit", true);
+
+        request.setAttribute("currentPage", currentPage);
+        return "stuedit";
+    }
+
+
+
+
+    public String stusave() {
+
+        String enterId = request.getParameter("enterId");
+        String currentPage = request.getParameter("currentPage");
+
+        if (TUtil.null2String(enterId).equals("")) {
+
+            /*设置报名初始状态为未审核*/
+            enter.setAuditStatus(new Integer(0));
+            enterService.saveEnter(enter);
+        } else {
+            // noticeService.update(notice);
+            // competitionService.update(competition);
+            enterService.update(enter);
+        }
+
+        String list_url = request.getParameter("list_url");
+
+
+
+        request.setAttribute("currentPage", currentPage);
+        request.setAttribute("list_url", TUtil.getURL(request) + "/system/competition_stulist.do");
+
+        request.setAttribute("op_title", "保存报名信息成功");
+
+
+
+        return "stusave";
+    }
+
+
+
+    public String stulist() {
+
+        //获取个人信息，
+        Map session=ActionContext.getContext().getSession();
+        String userId=(String)session.get("userId");
+        User user1=new User();
+        user1.setUserId(userId);
+        User user2=userService.findUserByID(user1);
+        String sno=user2.getSno();
+
+
+        String comName = request.getParameter("comName");
+        String beginTime = request.getParameter("beginTime");
+        String endTime = request.getParameter("endTime");
+        String tutor = request.getParameter("tutor");
+        String auditStatus = request.getParameter("auditStatus");
+
+        Enter enter1 = new Enter();
+
+        if (!TUtil.null2String(sno).equals("")) {
+            enter1.setSno(sno);
+        }
+
+
+        if (!TUtil.null2String(auditStatus).equals("")) {
+            enter1.setAuditStatus(new Integer(auditStatus));
+            request.setAttribute("auditStatus",auditStatus);
+        }
+
+
+        if (!TUtil.null2String(comName).equals("")) {
+            enter1.setComName(comName);
+        }
+
+        if (!TUtil.null2String(tutor).equals("")) {
+            enter1.setTutor(tutor);
+        }
+
+        List<Enter> list = enterService.findEnterByCondition(enter1, beginTime, endTime);
+
+        request.setAttribute("enterList", list);
+        request.setAttribute("beginTime", beginTime);
+        request.setAttribute("endTime", endTime);
+        request.setAttribute("tutor", tutor);
+        request.setAttribute("comName1", comName);
+
+        return "stulist";
+
     }
 
 

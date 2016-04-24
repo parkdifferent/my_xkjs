@@ -143,6 +143,14 @@
             <result name="del" type="redirectAction">
                 <param name="actionName">user_list.do?currentPage=${#request.currentPage}</param>
             </result>
+
+
+            <!--学生登陆-->
+            <result name="stulist">/student/user/user_stulist.jsp</result>
+            <result name="stuedit">/student/user/user_stuadd.jsp</result>
+            <result name="stusave">/student/success.jsp</result>
+
+
         </action>
 
 
@@ -158,6 +166,14 @@
             <result name="del" type="redirectAction">
                 <param name="actionName">news_list.do?currentPage=${#request.currentPage}</param>
             </result>
+
+
+
+           <!-- 学生登陆-->
+            <result name="stulist">/student/news/news_stulist.jsp</result>
+            <result name="stuedit">/student/news/news_stuadd.jsp</result>
+
+
         </action>
 
 
@@ -180,6 +196,13 @@
             <result name="del" type="redirectAction">
                 <param name="actionName">notice_list.do?currentPage=${#request.currentPage}</param>
             </result>
+
+
+            <!--学生登陆-->
+            <result name="stulist">/student/notice/notice_stulist.jsp</result>
+            <result name="stuedit">/student/notice/notice_stuadd.jsp</result>
+
+
         </action>
 
         <!--竞赛项目管理-->
@@ -203,6 +226,12 @@
             <result name="del" type="redirectAction">
                 <param name="actionName">competition_list.do?currentPage=${#request.currentPage}</param>
             </result>
+
+           <!-- 学生登陆-->
+            <result name="stulist">/student/competition/competition_stulist.jsp</result>
+            <result name="stuedit">/student/competition/competition_stuadd.jsp</result>
+
+
         </action>
 
         <!--竞赛报名管理-->
@@ -247,6 +276,16 @@
             <result name="del" type="redirectAction">
                 <param name="actionName">enter_list.do?currentPage=${#request.currentPage}</param>
             </result>
+
+
+            <!--学生登陆-->
+            <result name="stuedit">/student/enter/enter_stuadd.jsp</result>
+            <result name="stusave">/student/success.jsp</result>
+
+            <result name="stulist">/student/enter/enter_stulist.jsp</result>
+
+
+
         </action>
 
         <!--竞赛结果管理-->

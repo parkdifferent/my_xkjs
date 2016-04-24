@@ -51,6 +51,13 @@
         });
 
 
+
+        function downloadFile() {
+
+            window.location.href="<%=basePath%>/system/competition_download.do?comId=<s:property value='#request.competition.comId'/>";
+        }
+
+
     </script>
 
 </head>
@@ -58,15 +65,15 @@
 <body>
 
 <div class="cont">
-    <h1 class="seth">竞赛项目管理</h1>
+    <h1 class="seth">竞赛项目</h1>
     <div class="nav_list">
         <ul>
-            <li><a href="<%=basePath%>/system/competition_list.do"><b>管理</b></a> </li>
-            <li><a href="<%=basePath%>/system/competition_add.do" <s:if test="#request.edit==null"> class="this" </s:if> ><b>新增</b></a></li>
+            <li><a href="<%=basePath%>/system/competition_stulist.do"><b>主页</b></a> </li>
+            <%--<li><a href="<%=basePath%>/system/competition_add.do" <s:if test="#request.edit==null"> class="this" </s:if> ><b>新增</b></a></li>
 
             <s:if test="#request.edit">
                 <li>  <a href="javascript:void(0);" class="this"><b>编辑</b></a></li>
-            </s:if>
+            </s:if>--%>
 
 
 
@@ -83,7 +90,7 @@
                 <ul class="set1">
                     <li class="setcont_bg">竞赛名称</li>
                     <li><span class="webname">
-        <input name="comName" type="text" id="comName" value="<s:property value="#request.competition.comName"/>" />
+        <input name="comName" type="text" id="comName" value="<s:property value="#request.competition.comName"/>" readonly/>
       </span></li>
                 </ul>
 
@@ -91,7 +98,7 @@
                 <ul class="set1">
                     <li class="setcont_bg">主办单位</li>
                     <li><span class="webname">
-        <input name="organizer" type="text" id="organizer" value="<s:property value="#request.competition.organizer"/>" />
+        <input name="organizer" type="text" id="organizer" value="<s:property value="#request.competition.organizer"/>" readonly/>
       </span></li>
                 </ul>
 
@@ -99,7 +106,7 @@
                 <ul class="set1">
                     <li class="setcont_bg">校内负责单位</li>
                     <li><span class="webname">
-        <input name="responsibleUnit" type="text" id="responsibleUnit" value="<s:property value="#request.competition.responsibleUnit"/>" />
+        <input name="responsibleUnit" type="text" id="responsibleUnit" value="<s:property value="#request.competition.responsibleUnit"/>" readonly/>
       </span></li>
                 </ul>
 
@@ -107,7 +114,7 @@
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>竞赛类别</li>
                     <li><span class="webname">
-         <select name="category" id="category">
+         <select name="category" id="category" >
 
              <%--<option value="学科知识类">学科知识类</option>
              <option value="创新创业类">创新创业类</option>
@@ -166,35 +173,9 @@
                 </ul>
 
 
-                <%--<s:if test="#request.edit">
-                    <ul class="set1">
-                        <li class="setcont_bg">已上传附件名称</li>
-                        <li><span class="webname">
-        <input name="fileName" type="text" id="fileName" value="<s:property value="#request.competition.fileName"/>" />
-      </span></li>
-                    </ul>
-                </s:if>--%>
 
 
-                <ul class="set1">
-                    <li class="setcont_bg"><strong class="sred">*</strong>附件</li>
 
-                    <li>
-                        <s:if test="#request.edit">
-                            <s:property value="#request.competition.fileName"/>
-                        </s:if>
-                    </li>
-                    <li><span> <input id="upload" type="file" name="upload" /></span>
-                        <%-- <s:if test="${request.edit}">
-                             <s:property value="#request.notice.fileName"/>
-                         </s:if>--%>
-
-                        <%-- <span id="nothis">
-                             <strong class="q"></strong>
-                             <strong class="w">选择要导入文件</strong><strong class="c"></strong>
-                         </span>--%>
-                    </li>
-                </ul>
 
 
                 <ul class="set1">
@@ -211,12 +192,30 @@
                 </ul>
 
 
+                <ul class="set1">
+                    <li class="setcont_bg"><strong class="sred">*</strong>附件</li>
+
+                    <li>
+                        <s:if test="#request.edit">
+                            <s:property value="#request.competition.fileName"/>
+                        </s:if>
+                    </li>
+
+                    <li>
+                    <div class="submit">
+                        <input name="save" type="button" value="下载" onclick="downloadFile()"/>
+                    </div>
+                    </li>
+                </ul>
 
 
 
 
 
-               <%-- <ul class="set1">
+
+
+
+            <%-- <ul class="set1">
                     <li class="setcont_bg"><strong class="sred">*</strong>附件</li>
                     <li><span> <input id="upload" type="file" name="upload" />
 						</span><span id="nothis"><strong class="q"></strong><strong
@@ -229,7 +228,7 @@
 
             </div>
         </div>
-        <div class="submit">
+        <%--<div class="submit">
    			<span class="pad120">
    			<input name="save" type="button" value="提交" onclick="saveForm()" />
    			 <input name="comId" type="hidden" id="comId" value="<s:property value="#request.competition.comId"/>" />
@@ -239,7 +238,7 @@
    
    </span>
 
-        </div>
+        </div>--%>
 
 
     </form>
