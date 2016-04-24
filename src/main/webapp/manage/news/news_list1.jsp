@@ -160,7 +160,10 @@
                               <li>冻结：<strong>#if($!{obj.freezeBlance})$!{obj.freezeBlance}#else 0 #end元</strong></li>
                             </ul></td> -->
                             <td align="center"><s:property value="#news.title"/></td>
-                            <td align="center"><s:property value="#news.content"/></td>
+
+                            <%--<td align="center"><s:property value="#news.content"/></td>--%>
+                            <td align="center"><a href="<%=basePath%>/system/news_edit.do?newsId=<s:property value='#news.newsId'/>">点击查看</a>   </td>
+
                             <td align="center"><s:date name="#news.newsTime" format="yyyy-MM-dd"/></td>
                             <td align="center"><s:property value="#news.publisher"/></td>
 

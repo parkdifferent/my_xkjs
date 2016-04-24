@@ -10,11 +10,18 @@ import com.ffcs.xkjs.utils.MD5Util;
 import com.ffcs.xkjs.utils.TUtil;
 import com.ffcs.xkjs.utils.ValueUtils;
 import com.opensymphony.xwork2.ActionContext;
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
 import javax.jws.soap.SOAPBinding;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -311,6 +318,12 @@ public class UserAction extends BaseAction<User>{
         if(TUtil.null2String(userId).equals("")) {
             //noticeService.saveNotice(notice);
             //competitionService.saveCompetition(competition);
+
+            //设置初始密码
+            user.setPassword(user.getSno());
+            //设置角色
+            user.setRole("USER");
+
             userService.saveUser(user);
         }
 
@@ -361,6 +374,137 @@ public class UserAction extends BaseAction<User>{
 
         return "getProfessionJson";
 
+    }
+
+
+    public String importExcel() {
+
+
+        return "importExcel";
+
+    }
+
+
+    private File upload;
+    private String uploadContentType;
+    private String uploadFileName; // 真实文件名
+
+
+    public File getUpload() {
+        return upload;
+    }
+
+    public void setUpload(File upload) {
+        this.upload = upload;
+    }
+
+    public String getUploadContentType() {
+        return uploadContentType;
+    }
+
+    public void setUploadContentType(String uploadContentType) {
+        this.uploadContentType = uploadContentType;
+    }
+
+    public String getUploadFileName() {
+        return uploadFileName;
+    }
+
+    public void setUploadFileName(String uploadFileName) {
+        this.uploadFileName = uploadFileName;
+    }
+
+
+    public String importJava() {
+
+        try {
+
+            //1.构建Workbook
+            Workbook rwb = Workbook.getWorkbook(upload);
+
+            //2.获得工作表
+            Sheet rs = rwb.getSheet(0);
+            List<User> userList = new ArrayList<User>();
+            for (int i = 2; i < rs.getRows()+1; i++) {
+                User user2 = new User();
+				/*Cell fcell=rs.getCell(1,i);
+				if(fcell.getType()==CellType.NUMBER){
+					NumberCell nc=(NumberCell) fcell;//转换类型
+					int areaId=(int) nc.getValue();//获取的值
+				    area.setAreaId(areaId);;//将值插入到集合里去
+				      System.out.println(areaId);
+				}*/
+
+
+                Cell fCell = rs.getCell(0, i);
+                String sno = fCell.getContents();
+                user2.setSno(sno);
+                System.out.println(sno);
+
+                Cell fCell1 = rs.getCell(1, i);
+                String userName = fCell1.getContents();
+                user2.setUserName(userName);
+                System.out.println(userName);
+
+                Cell fCell2 = rs.getCell(2, i);
+                String grade = fCell2.getContents();
+                user2.setGrade(grade);
+                System.out.println(grade);
+
+                Cell fCell3 = rs.getCell(3, i);
+                String academe = fCell3.getContents();
+                user2.setAcademe(academe);
+                System.out.println(academe);
+
+                Cell fCell4 = rs.getCell(4, i);
+                String profession = fCell4.getContents();
+                user2.setProfession(profession);
+                System.out.println(profession);
+
+                Cell fCell5 = rs.getCell(5, i);
+                String classes = fCell5.getContents();
+                user2.setClasses(classes);
+                System.out.println(classes);
+
+                Cell fCell6 = rs.getCell(6, i);
+                String telephone = fCell6.getContents();
+                user2.setTelephone(telephone);
+                System.out.println(telephone);
+
+                Cell fCell7 = rs.getCell(7, i);
+                String email = fCell7.getContents();
+                user2.setEmail(email);
+                System.out.println(email);
+
+
+                //设置初始密码
+                user2.setPassword(MD5Util.getMD5String(sno).toUpperCase());
+                //设置角色
+                user2.setRole("USER");
+
+                //加入到List集合中
+                userList.add(user2);
+
+
+            }
+            // 主体内容生成结束
+            // 写入文件
+            rwb.close();
+            System.out.println(uploadFileName);
+            System.out.println(userList.size());
+
+            //写入数据库
+            for (User user3 : userList) {
+                userService.saveUser(user3);
+            }
+
+        } catch (BiffException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return "importJava";
     }
 
 

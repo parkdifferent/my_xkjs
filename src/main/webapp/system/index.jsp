@@ -156,6 +156,9 @@
                         <li><a href="javascript:void(0);" id="goods_manage_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/goods_list.htm--%><%=basePath%>/system/competition_list.do','main_workspace','goods_manage_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目管理</span></a></li>
                         <li><a href="javascript:void(0);" id="order_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/enter_list.do','main_workspace','order_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛报名管理</span></a></li>
                         <!-- qkj    on 2015/12/28-->
+
+                        <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/information_list.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料管理</span></a></li>
+
                         <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/pay_list.htm--%><%=basePath%>/system/result_list.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果管理</span></a></li>
 
 

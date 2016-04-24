@@ -159,4 +159,32 @@ public class UserServiceImpl implements IUserService {
         }
         return user;
     }
+
+
+    @Override
+    public User findUserBySno(String sno) {
+
+
+        //组织查询条件
+        String condition = "";
+        //存放可变参数？
+        List<Object> paramsList = new ArrayList<Object>();
+        if (!TUtil.null2String(sno).equals("")) {
+            condition += " and o.sno=?";
+            paramsList.add(sno);
+        }
+
+
+        //将集合中存放的可变参数转换成数组
+        Object [] params = paramsList.toArray();
+
+        List<User> list=userDao.findCollectionByConditionNoPage(condition,params,null);
+
+        User user=null;
+        if(list!=null && list.size()>0) {
+            user=list.get(0);
+        }
+        return user;
+
+    }
 }

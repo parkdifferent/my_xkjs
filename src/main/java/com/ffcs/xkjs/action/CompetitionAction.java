@@ -3,10 +3,14 @@ package com.ffcs.xkjs.action;
 import com.ffcs.xkjs.domain.Competition;
 import com.ffcs.xkjs.service.ICompetitionService;
 import com.ffcs.xkjs.utils.TUtil;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -154,6 +158,34 @@ public class CompetitionAction extends BaseAction<Competition> {
         return "del";
     }
 
+    private File upload;
+    private String uploadContentType;
+    private String uploadFileName; // 真实文件名
+
+
+    public File getUpload() {
+        return upload;
+    }
+
+    public void setUpload(File upload) {
+        this.upload = upload;
+    }
+
+    public String getUploadContentType() {
+        return uploadContentType;
+    }
+
+    public void setUploadContentType(String uploadContentType) {
+        this.uploadContentType = uploadContentType;
+    }
+
+    public String getUploadFileName() {
+        return uploadFileName;
+    }
+
+    public void setUploadFileName(String uploadFileName) {
+        this.uploadFileName = uploadFileName;
+    }
 
     public String save(){
 
@@ -163,14 +195,86 @@ public class CompetitionAction extends BaseAction<Competition> {
         //System.out.println(elecText.getTextName()+"   "+elecText.getTextDate()+"      "+elecText.getTextID());
 
 
-        if(TUtil.null2String(comId).equals("")) {
-            //noticeService.saveNotice(notice);
+        if (TUtil.null2String(comId).equals("")) {
+
+            if (!TUtil.null2String(upload).equals("")) {
+                try {
+                    InputStream is = new FileInputStream(upload);
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                    String fileName = sdf.format(new Date());
+
+                    String path = "/upload/" + fileName;
+                    //获取文件扩展名
+                    int index = uploadFileName.lastIndexOf(".");
+                    String extFileName = uploadFileName.substring(index, uploadFileName.length());
+
+                    File destFile = new File(ServletActionContext.getServletContext()
+                            .getRealPath(path));
+                    OutputStream os = new FileOutputStream(destFile + extFileName);
+                    byte[] buffer = new byte[1024];
+                    int length = 0;
+                    while ((length = is.read(buffer)) > 0) {
+                        os.write(buffer, 0, length);
+                    }
+                    is.close();
+                    os.close();
+                    System.out.println(destFile);
+                    System.out.println(uploadFileName);
+                    System.out.println(uploadContentType);
+                    competition.setFileName(uploadFileName);
+                    competition.setFilePath(path + extFileName);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
             competitionService.saveCompetition(competition);
         }
 
 
         else {
-           // noticeService.update(notice);
+
+            if (!TUtil.null2String(upload).equals("")) {
+                try {
+                    InputStream is = new FileInputStream(upload);
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                    String fileName = sdf.format(new Date());
+
+                    String path = "/upload/" + fileName;
+                    //获取文件扩展名
+                    int index = uploadFileName.lastIndexOf(".");
+                    String extFileName = uploadFileName.substring(index, uploadFileName.length());
+
+                    File destFile = new File(ServletActionContext.getServletContext()
+                            .getRealPath(path));
+                    OutputStream os = new FileOutputStream(destFile + extFileName);
+                    byte[] buffer = new byte[1024];
+                    int length = 0;
+                    while ((length = is.read(buffer)) > 0) {
+                        os.write(buffer, 0, length);
+                    }
+                    is.close();
+                    os.close();
+                    System.out.println(destFile);
+                    System.out.println(uploadFileName);
+                    System.out.println(uploadContentType);
+                    competition.setFileName(uploadFileName);
+                    competition.setFilePath(path + extFileName);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if(TUtil.null2String(upload).equals("")) {
+                Competition competition1 = new Competition();
+                competition1.setComId(comId);
+                Competition competition2 = competitionService.findCompetitionByID(competition1);
+                String fileName1 = competition2.getFileName();
+                String filePath1 = competition2.getFilePath();
+                competition.setFileName(fileName1);
+                competition.setFilePath(filePath1);
+            }
+
             competitionService.update(competition);
         }
 
@@ -180,7 +284,7 @@ public class CompetitionAction extends BaseAction<Competition> {
 
         System.out.println(list_url+"          "+add_url);
         request.setAttribute("currentPage", currentPage);
-        request.setAttribute("list_url", TUtil.getURL(request)+"/system/competition_list.do?currentPage="+currentPage);
+        request.setAttribute("list_url", TUtil.getURL(request) + "/system/competition_list.do?currentPage=" + currentPage);
 
         request.setAttribute("op_title", "保存竞赛项目成功");
 
@@ -189,6 +293,48 @@ public class CompetitionAction extends BaseAction<Competition> {
 
 
         return "save";
+    }
+
+
+
+    InputStream inputStream1;
+
+    public InputStream getInputStream1() {
+        return inputStream1;
+    }
+
+
+    public String download() {
+
+        String comId=request.getParameter("comId");
+
+        Competition competition1=new Competition();
+        competition1.setComId(comId);
+        Competition competition2=competitionService.findCompetitionByID(competition1);
+        String filePath=competition2.getFilePath();
+
+
+        //Information information1=iInformationService.findInformationByID(infoId);
+        //String filePath=information1.getFilePath();
+        //文件路径
+        String path= ServletActionContext.getServletContext().getRealPath(filePath);
+        //文件名称
+        //String fileName=information1.getFileName();
+        String fileName=competition2.getFileName();
+
+        try{
+            //2：使用路径path，查找到对应的文件，转化成InputStream
+            inputStream1 = new FileInputStream(new File(path));
+            //可以出现中文
+            fileName = new String(fileName.getBytes("gbk"),"iso8859-1");
+            request.setAttribute("fileName", fileName);
+            //与栈顶的InputStream关联
+            //elecUser.setInputStream(in);
+        } catch( Exception e) {
+            e.printStackTrace();
+        }
+
+        return "download";
     }
 
 

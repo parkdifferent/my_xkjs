@@ -96,6 +96,8 @@
         <ul>
             <li><a href="<%=basePath%>/system/user_list.do"  class="this"><b>管理</b></a></li>
             <li><a href="<%=basePath%>/system/user_add.do" ><b>新增</b></a></li>
+
+            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/user_importExcel.do"> <b class="add_btn_b">导入Excel</b></a></li>
         </ul>
     </div>
     <form action="<%=basePath%>/system/user_list.do" method="post" name="ListForm" id="ListForm">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ffcs.xkjs.domain.Information" table="xkjs_information">
+
+        <id name="infoId" type="string" column="infoId">
+            <generator class="uuid"></generator>
+        </id>
+
+        <property name="fileName" type="java.lang.String">
+            <column name="fileName" length="150" />
+        </property>
+
+        <property name="filePath" type="java.lang.String">
+            <column name="filePath" length="150" />
+        </property>
+
+
+        <property name="description" type="java.lang.String">
+            <column name="description" length="65535" />
+        </property>
+
+        <property name="addTime" type="date" column="addTime"></property>
+
+
+
+
+
+
+
+    </class>
+</hibernate-mapping>

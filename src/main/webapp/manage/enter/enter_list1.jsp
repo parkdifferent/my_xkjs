@@ -95,39 +95,6 @@
             var endTime=$("#endTime").val();
 
 
-           /* $.ajax({
-                url: "<%=basePath%>/system/enter_exportExcel.do",    //请求的url地址
-                dataType: "json",   //返回格式为json
-                async: true, //请求是否异步，默认为异步，这也是ajax重要特性
-                data: { "grade": grade,"academe":academe,"profession":profession,"comName":comName,"beginTime":beginTime,"endTime":endTime },    //参数值
-                type: "POST",   //请求方式
-                beforeSend: function() {
-                    //请求前的处理
-                },
-                success: function(data) {
-                    //请求成功时处理
-                },
-                complete: function() {
-                    //请求完成的处理
-                },
-                error: function() {
-                    //请求出错处理
-                }
-            });
-*/
-
-
-            /*var type = jQuery("#type").val();
-            var type_data = jQuery("#type_data").val();
-            var addTime_beginTime = jQuery("#addTime_beginTime").val();
-            var addTime_endTime = jQuery("#addTime_endTime").val();
-            var apply_beginTime = jQuery("#apply_beginTime").val();
-            var apply_endTime = jQuery("#apply_endTime").val();
-            var complete_beginTime = jQuery("#complete_beginTime").val();
-            var complete_endTime = jQuery("#complete_endTime").val();
-            var begin_price = jQuery("#begin_price").val();
-            var end_price = jQuery("#end_price").val();*/
-
             <!--20160223新增代码-->
 
             window.location.href="<%=basePath%>/system/enter_exportExcel.do?grade="+grade+"&academe="+academe+"&profession="+profession+"&comName="+comName+"&beginTime="+beginTime+"&endTime="+endTime;

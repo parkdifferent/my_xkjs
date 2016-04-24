@@ -26,6 +26,44 @@ public class Competition implements java.io.Serializable {
 
                                    //附件
 
+    private String fileName;
+    private String filePath;
+
+
+    private Integer status = 0;              //    0 未开始    1  开始报名    2  报名截止
+
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getForm() {
+        return form;
+    }
+
+    public void setForm(String form) {
+        this.form = form;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
 
     public String getComId() {
         return comId;
@@ -81,5 +119,23 @@ public class Competition implements java.io.Serializable {
 
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Competition{" +
+                "comId='" + comId + '\'' +
+                ", comName='" + comName + '\'' +
+                ", organizer='" + organizer + '\'' +
+                ", responsibleUnit='" + responsibleUnit + '\'' +
+                ", category='" + category + '\'' +
+                ", level='" + level + '\'' +
+                ", form='" + form + '\'' +
+                ", startDate=" + startDate +
+                ", fileName='" + fileName + '\'' +
+                ", filePath='" + filePath + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

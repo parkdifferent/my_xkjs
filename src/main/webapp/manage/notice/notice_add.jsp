@@ -12,6 +12,11 @@
 <%@taglib prefix="s" uri="/struts-tags" %>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
+    request.setCharacterEncoding("UTF-8");
+    String contentData = request.getAttribute("content") != null ? (String)request.getAttribute("content") : "";
+
+
+
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
 %>
@@ -35,8 +40,19 @@
     <script src="<%=basePath%>/resources/js/jquery-ui-1.8.21.js"></script>
     <script src="<%=basePath%>/resources/js/jquery.zh.cn.js" charset="utf-8"></script>
 
+
+    <link rel="stylesheet" href="<%=basePath%>/resources/kindeditor/themes/default/default.css" />
+    <link rel="stylesheet" href="<%=basePath%>/resources/kindeditor/plugins/code/prettify.css" />
+    <script charset="utf-8" src="<%=basePath%>/resources/kindeditor/kindeditor-all.js"></script>
+    <script charset="utf-8" src="<%=basePath%>/resources/kindeditor/kindeditor-all-min.js"></script>
+    <script charset="utf-8" src="<%=basePath%>/resources/kindeditor/lang/zh-CN.js"></script>
+    <script charset="utf-8" src="<%=basePath%>/resources/kindeditor/plugins/code/prettify.js"></script>
+
     <script type="text/javascript">
         function saveForm(){
+            editor1.sync();
+            html=$('.content').val();
+            //alert(html);
             jQuery("#theForm").submit();
         }
 
@@ -49,6 +65,29 @@
 
 
 
+        });
+
+
+        var editor1;
+        KindEditor.ready(function(K) {
+            editor1 = K.create('textarea[name="content"]', {
+                cssPath : '<%=basePath%>/resources/kindeditor/plugins/code/prettify.css',
+                uploadJson : '<%=basePath%>/resources/kindeditor/jsp/upload_json.jsp',
+                fileManagerJson : '<%=basePath%>/resources/kindeditor/jsp/file_manager_json.jsp',
+                allowFileManager : true
+                /*afterCreate : function() {
+                 var self = this;
+                 K.ctrl(document, 13, function() {
+                 self.sync();
+                 document.forms['theForm'].submit();
+                 });
+                 K.ctrl(self.edit.doc, 13, function() {
+                 self.sync();
+                 document.forms['theForm'].submit();
+                 });
+                 }*/
+            });
+            //prettyPrint();
         });
 
 
@@ -92,7 +131,8 @@
                 <ul class="set1">
                     <li class="setcont_bg">通知内容</li>
                     <li><span class="webname">
-        <input name="content" type="text" id="content" value="<s:property value="#request.notice.content"/>" />
+       <%-- <input name="content" type="text" id="content" value="<s:property value="#request.notice.content"/>" />--%>
+                        <textarea name="content" cols="100" rows="10" style="width:700px;height:300px;visibility:hidden;"><%=htmlspecialchars(contentData)%></textarea>
       </span></li>
                 </ul>
 
@@ -112,6 +152,18 @@
         <input name="publisher" type="text" id="publisher" value="<s:property value="#request.notice.publisher"/>" />
       </span></li>
                 </ul>
+
+
+
+               <%-- <s:if test="#request.edit">
+                    <ul class="set1">
+                        <li class="setcont_bg">已上传附件名称</li>
+                        <li><span class="webname">
+        <input name="fileName" type="text" id="fileName" value="<s:property value="#request.notice.fileName"/>" />
+      </span></li>
+                    </ul>
+                </s:if>--%>
+
 
 
                 <ul class="set1">
@@ -138,6 +190,11 @@
                     </li>
                 </ul>
 
+                <%-- <li><a id="down" href="<%=basePath%>/system/notice_download.do?noticeId=<s:property value='#request.notice.noticeId'/>"><b>导入竞赛报名模板下载</b></a></li>--%>
+
+
+
+
             </div>
         </div>
         <div class="submit">
@@ -156,4 +213,16 @@
 
 </body>
 </html>
+
+
+
+<%!
+    private String htmlspecialchars(String str) {
+        str = str.replaceAll("&", "&amp;");
+        str = str.replaceAll("<", "&lt;");
+        str = str.replaceAll(">", "&gt;");
+        str = str.replaceAll("\"", "&quot;");
+        return str;
+    }
+%>
 

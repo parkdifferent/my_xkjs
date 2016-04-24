@@ -163,8 +163,9 @@
                               <li>冻结：<strong>#if($!{obj.freezeBlance})$!{obj.freezeBlance}#else 0 #end元</strong></li>
                             </ul></td> -->
                             <td align="center"><s:property value="#notice.title"/></td>
-                            <td align="center"><s:property value="#notice.content"/></td>
 
+                           <%-- <td align="center"><s:property value="#notice.content"/></td>--%>
+                            <td align="center"><a href="<%=basePath%>/system/notice_edit.do?noticeId=<s:property value='#notice.noticeId'/>">点击查看</a></td>
                             <td align="center"><s:property value="#notice.fileName"/></td>
                             <td align="center"><s:date name="#notice.noticeTime" format="yyyy-MM-dd"/></td>
                             <td align="center"><s:property value="#notice.publisher"/></td>

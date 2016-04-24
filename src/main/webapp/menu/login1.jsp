@@ -60,6 +60,14 @@
                 }
             });
         });*/
+
+
+
+
+
+
+
+
     </script>
 </head>
 <body>
@@ -83,20 +91,21 @@
                     <ul>
                         <%--#if(!$!user)--%>
                         <li><span class="username"></span>
-                            <input name="username" type="text" id="username"  autocomplete="false" class="login_txt"  />
-                            <b class="error_b"></b></li>
+                            <input name="username" type="text" id="username"  autocomplete="false" class="login_txt" onblur="checkUser()"  />
+                            <b class="error_b">${request.userMessage}</b></li>
                        <%-- #else
                         <li><span class="username"></span>
                             <span class="login_txt" >$!user.userName<input name="username" type="hidden" value="$!user.userName" /></span><b class="error_b"></b></li>
                         #end--%>
                         <li><span class="password"></span>
                             <input name="password" type="password" id="password"  autocomplete="false" class="login_txt" />
-                            <b class="error_b"></b>
+                            <b class="error_b">${request.passwordMessage}</b>
                         </li>
                         <li><span class="code"></span>
                             <input name="code" type="text" id="code"  style="text-transform:uppercase;" autocomplete="false" class="code_txt" />
                             <a href="javascript:void(0);" onclick="refreshCode();"  class="code_img"><img style="cursor:pointer; padding-top:6px;" src="<%=basePath%>/system/verifyCode.do" id="code_img" onclick="refreshCode();" width="73" height="27" /></a><%--<a href="javascript:void(0);" onclick="refreshCode();" class="code_a">换一张</a>--%>
-                            <b class="error_b"></b>
+                            <%--<b class="error_b"></b>--%>
+                            <b class="error_b">${request.codeMessage}</b>
                         </li>
                         <li>
                             <input name=""  type="button" onclick="login();" style="cursor:pointer" value="登 录" class="login_btn" />
@@ -105,7 +114,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="login_p">Copyright 2011-2015 © <a href="<%=basePath%>" target="_blank"><%--$!{config.company_name}--%></a></p>
+           <%-- <p class="login_p">Copyright 2011-2015 © <a href="<%=basePath%>" target="_blank">&lt;%&ndash;$!{config.company_name}&ndash;%&gt;</a></p>--%>
         </div>
 
 

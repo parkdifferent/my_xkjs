@@ -410,7 +410,7 @@ public class ResultAction extends BaseAction<Result> {
             //2.获得工作表
             Sheet rs=rwb.getSheet(0);
             List<Result> resultList=new ArrayList<Result>();
-            for(int i=1;i<rs.getRows();i++) {
+            for(int i=2;i<rs.getRows()+1;i++) {
                 Result result2=new Result();
 				/*Cell fcell=rs.getCell(1,i);
 				if(fcell.getType()==CellType.NUMBER){
@@ -527,11 +527,21 @@ public class ResultAction extends BaseAction<Result> {
 
         String grade = request.getParameter("grade");
         String academe = request.getParameter("academe");
-        String profession = request.getParameter("profession");
+        String professionId = request.getParameter("profession");
         String comName = request.getParameter("comName");
         String beginTime = request.getParameter("beginTime");
         String endTime = request.getParameter("endTime");
 
+
+        try {
+            grade = new String(grade.getBytes("ISO8859-1"),"UTF-8");
+            academe = new String(academe.getBytes("ISO8859-1"),"UTF-8");
+            comName = new String(comName.getBytes("ISO8859-1"),"UTF-8");
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+
+        }
         //Enter enter1 = new Enter();
 
         Result result1=new Result();
@@ -547,17 +557,27 @@ public class ResultAction extends BaseAction<Result> {
             result1.setAcademe(academe);
             title1 += academe;
         }
-        if (!TUtil.null2String(profession).equals("")) {
+        /*if (!TUtil.null2String(profession).equals("")) {
             result1.setProfession(profession);
             title1 += profession;
+        }*/
+        //获取专业名称
+        if (!TUtil.null2String(professionId).equals("")) {
+            Profession profession1 = professionService.findProfessionByID(new Integer(professionId));
+            String professionName = profession1.getProfessionName();
+
+            if (!TUtil.null2String(professionName).equals("")) {
+                result1.setProfession(professionName);
+                title1 += professionName;
+            }
         }
+
         if (!TUtil.null2String(comName).equals("")) {
             result1.setComName(comName);
             title1 += comName;
         }
 
         title1 += "竞赛成绩表";
-
 
         // List<Enter> list=enterService.findEnterByCondition(enter1,beginTime,endTime);
         List<Result> datas = resultService.findResultListByConditionNoPage(result1, beginTime, endTime);
@@ -572,7 +592,6 @@ public class ResultAction extends BaseAction<Result> {
                     2 + i, (short) 1, 2 + i));
         }
 
-
         // 设置excel每列宽度
         sheet.setColumnWidth(0, 6000);
         sheet.setColumnWidth(1, 4000);
@@ -585,7 +604,6 @@ public class ResultAction extends BaseAction<Result> {
         sheet.setColumnWidth(8, 6000);
         sheet.setColumnWidth(9, 6000);
         sheet.setColumnWidth(10, 6000);
-
 
         // 创建字体样式
         HSSFFont font = wb.createFont();

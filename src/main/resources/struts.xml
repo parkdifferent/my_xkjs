@@ -19,6 +19,9 @@
 
 
 
+            <result name="kindeditorTest">/resources/kindeditor/jsp/demo.jsp</result>
+
+
            <!-- <result name="echartsTest">/echartsTest.jsp</result>-->
 
 
@@ -86,6 +89,10 @@
                 /system/index.jsp
             </result>
 
+            <result name="logonError" >
+                /menu/login1.jsp
+            </result>
+
             <result name="logout" >
                 /menu/login1.jsp
             </result>
@@ -109,6 +116,16 @@
         <!--用户管理-->
 
         <action name="user_*" class="userAction" method="{1}">
+
+
+
+            <!-- 导入Excel -->
+
+            <result name="importExcel">/manage/User/user_importExcel.jsp</result>
+            <result name="importJava" type="redirectAction">
+                <param name="actionName">user_list.do</param>
+            </result>
+
 
             <!-- 获取学院下专业的json-->
             <result name="getProfessionJson" type="json">
@@ -147,6 +164,14 @@
         <!--通知管理-->
         <action name="notice_*" class="noticeAction" method="{1}">
 
+
+            <result name="download" type="stream">
+                <!-- <param name="contentType">image/jpeg</param> -->
+                <param name="inputName">inputStream1</param>
+                <param name="contentDisposition">attachment;filename="${#request.fileName}"</param>
+                <param name="bufferSize">1024</param>
+            </result>
+
             <!-- 自加 -->
             <result name="list">/manage/notice/notice_list1.jsp</result>
             <result name="save">/manage/success.jsp</result>
@@ -159,6 +184,16 @@
 
         <!--竞赛项目管理-->
         <action name="competition_*" class="competitionAction" method="{1}">
+
+            <result name="download" type="stream">
+                <!-- <param name="contentType">image/jpeg</param> -->
+                <param name="inputName">inputStream1</param>
+                <param name="contentDisposition">attachment;filename="${#request.fileName}"</param>
+                <param name="bufferSize">1024</param>
+            </result>
+
+
+
 
             <!-- 自加 -->
             <result name="list">/manage/competition/competition_list1.jsp</result>
@@ -250,6 +285,29 @@
                 <param name="actionName">result_list.do?currentPage=${#request.currentPage}</param>
             </result>
         </action>
+
+
+
+        <!--竞赛资料管理-->
+        <action name="information_*" class="informationAction" method="{1}">
+            <result name="list">/manage/information/information_list1.jsp</result>
+
+            <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/information/information_add.jsp</result>
+            <result name="add">/manage/information/information_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">information_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+
+
+            <result name="download" type="stream">
+                <!-- <param name="contentType">image/jpeg</param> -->
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename="${#request.fileName}"</param>
+                <param name="bufferSize">1024</param>
+            </result>
+
+                </action>
 		
 		
 		

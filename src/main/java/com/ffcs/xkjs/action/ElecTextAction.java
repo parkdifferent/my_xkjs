@@ -315,5 +315,15 @@ public class ElecTextAction extends BaseAction<ElecText> {
 
 
     }
+
+
+    public String kindeditorTest() {
+       String content1Data= request.getParameter("content1");
+        System.out.println(content1Data);
+
+        request.setAttribute("content1Data",content1Data);
+
+        return "kindeditorTest";
+    }
 }
 

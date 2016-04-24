@@ -88,6 +88,8 @@ public class NoticeAction extends BaseAction<Notice>{
     public String add() {
         String currentPage=request.getParameter("currentPage");
         request.setAttribute("currentPage", currentPage);
+
+        request.setAttribute("content",null);
         return "add";
     }
 
@@ -103,6 +105,9 @@ public class NoticeAction extends BaseAction<Notice>{
             notice1.setNoticeId(noticeId);
             Notice notice2=noticeService.findNoticeByID(notice1);
             request.setAttribute("notice",notice2);
+
+            //编辑，初始化kindeditor的显示值
+            request.setAttribute("content",notice2.getContent());
 
         }
 
@@ -151,101 +156,103 @@ public class NoticeAction extends BaseAction<Notice>{
 
         if(TUtil.null2String(noticeId).equals("")) {
 
-            if(upload.exists()) {
-                InputStream is =new FileInputStream(upload);
+            if(!TUtil.null2String(upload).equals("")) {
 
+                try {
+                    InputStream is =new FileInputStream(upload);
+                    //获取文件扩展名
+                    int index=uploadFileName.lastIndexOf(".");
+                    String extFileName=uploadFileName.substring(index,uploadFileName.length());
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                    String fileName = sdf.format(new Date());
 
-                //获取文件扩展名
-                //int index=uploadFileName.lastIndexOf(".");
-               // String extFileName=uploadFileName.substring(index,uploadFileName.length());
+                    String path= "/upload/" + fileName;
 
+                    File destFile = new File(ServletActionContext.getServletContext()
+                            .getRealPath(path));
 
-
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
-                String fileName = sdf.format(new Date());
-
-                String path= "/upload/" + fileName;
-
-                File destFile = new File(ServletActionContext.getServletContext()
-                        .getRealPath(path));
-
-               // File destFile = new File(ServletActionContext.getServletContext()
-                       // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+                    // File destFile = new File(ServletActionContext.getServletContext()
+                    // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
 
                /* if(!destFile.exists()){
                     destFile.mkdirs();
                 }*/
+                    //FileUtils.copyFile(upload, destFile);
+                    //File toFile=new File(uploadPath,this.getUploadFileName());
+                    OutputStream os=new FileOutputStream(destFile+extFileName);
+                    byte[] buffer=new byte[1024];
+                    int length=0;
+                    while((length=is.read(buffer))>0) {
+                        os.write(buffer,0,length);
+                    }
+                    is.close();
+                    os.close();
+                    System.out.println(destFile);
+                    System.out.println(uploadFileName);
+                    System.out.println(uploadContentType);
+                    notice.setFileName(uploadFileName);
+                    notice.setFilePath(path+extFileName);
+                    // notice.setFilePath(destFile);
 
+                } catch (Exception e) {
+                    e.printStackTrace();
 
-
-
-                //FileUtils.copyFile(upload, destFile);
-
-                //File toFile=new File(uploadPath,this.getUploadFileName());
-                OutputStream os=new FileOutputStream(destFile+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
-                byte[] buffer=new byte[1024];
-                int length=0;
-                while((length=is.read(buffer))>0) {
-                    os.write(buffer,0,length);
                 }
-                is.close();
-                os.close();
-
-                System.out.println(destFile);
-                System.out.println(uploadFileName);
-                System.out.println(uploadContentType);
-                notice.setFileName(uploadFileName);
-                notice.setFilePath("upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
-               // notice.setFilePath(destFile);
             }
 
             noticeService.saveNotice(notice);
         }
         else {
 
-            if(upload.exists()) {
-                InputStream is =new FileInputStream(upload);
+            if(!TUtil.null2String(upload).equals("")) {
+                try {
+                    InputStream is =new FileInputStream(upload);
+                    //获取文件扩展名
+                    int index=uploadFileName.lastIndexOf(".");
+                    String extFileName=uploadFileName.substring(index,uploadFileName.length());
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                    String fileName = sdf.format(new Date());
+                    String path= "/upload/" + fileName;
+                    File destFile = new File(ServletActionContext.getServletContext()
+                            .getRealPath(path));
 
-
-                //获取文件扩展名
-                //int index=uploadFileName.lastIndexOf(".");
-                // String extFileName=uploadFileName.substring(index,uploadFileName.length());
-
-
-
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
-                String fileName = sdf.format(new Date());
-
-                String path= "/upload/" + fileName;
-
-                File destFile = new File(ServletActionContext.getServletContext()
-                        .getRealPath(path));
-
-                // File destFile = new File(ServletActionContext.getServletContext()
-                // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+                    // File destFile = new File(ServletActionContext.getServletContext()
+                    // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
 
                /* if(!destFile.exists()){
                     destFile.mkdirs();
                 }*/
+                    //FileUtils.copyFile(upload, destFile);
+                    //File toFile=new File(uploadPath,this.getUploadFileName());
+                    OutputStream os=new FileOutputStream(destFile+extFileName);
+                    byte[] buffer=new byte[1024];
+                    int length=0;
+                    while((length=is.read(buffer))>0) {
+                        os.write(buffer,0,length);
+                    }
+                    is.close();
+                    os.close();
 
+                    System.out.println(destFile);
+                    System.out.println(uploadFileName);
+                    System.out.println(uploadContentType);
+                    notice.setFileName(uploadFileName);
+                    notice.setFilePath(path+extFileName);
 
-                //FileUtils.copyFile(upload, destFile);
+                }catch (Exception e) {
+                    e.printStackTrace();
 
-                //File toFile=new File(uploadPath,this.getUploadFileName());
-                OutputStream os=new FileOutputStream(destFile+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
-                byte[] buffer=new byte[1024];
-                int length=0;
-                while((length=is.read(buffer))>0) {
-                    os.write(buffer,0,length);
                 }
-                is.close();
-                os.close();
+            }
 
-                System.out.println(destFile);
-                System.out.println(uploadFileName);
-                System.out.println(uploadContentType);
-                notice.setFileName(uploadFileName);
-                notice.setFilePath("upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+            if(TUtil.null2String(upload).equals("")) {
+                Notice notice1 = new Notice();
+                notice1.setNoticeId(noticeId);
+                Notice notice2 = noticeService.findNoticeByID(notice1);
+                String fileName1 = notice2.getFileName();
+                String filePath1 = notice2.getFilePath();
+                notice.setFileName(fileName1);
+                notice.setFilePath(filePath1);
             }
 
             noticeService.update(notice);
@@ -256,7 +263,7 @@ public class NoticeAction extends BaseAction<Notice>{
         String add_url=request.getParameter("add_url");
         System.out.println(list_url+"          "+add_url);
         request.setAttribute("currentPage", currentPage);
-        request.setAttribute("list_url", TUtil.getURL(request)+"/system/notice_list.do?currentPage="+currentPage);
+        request.setAttribute("list_url", TUtil.getURL(request) + "/system/notice_list.do?currentPage=" + currentPage);
         request.setAttribute("op_title", "保存竞赛通知成功");
         request.setAttribute("add_url", add_url);
 
@@ -289,6 +296,47 @@ public class NoticeAction extends BaseAction<Notice>{
 
     public void setUploadFileName(String uploadFileName) {
         this.uploadFileName = uploadFileName;
+    }
+
+
+
+    InputStream inputStream1;
+
+    public InputStream getInputStream1() {
+        return inputStream1;
+    }
+
+    public String download() {
+
+        String noticeId=request.getParameter("noticeId");
+
+        Notice notice1=new Notice();
+        notice1.setNoticeId(noticeId);
+        Notice notice2=noticeService.findNoticeByID(notice1);
+        String filePath=notice2.getFilePath();
+
+
+        //Information information1=iInformationService.findInformationByID(infoId);
+        //String filePath=information1.getFilePath();
+        //文件路径
+        String path=ServletActionContext.getServletContext().getRealPath(filePath);
+        //文件名称
+        //String fileName=information1.getFileName();
+        String fileName=notice2.getFileName();
+
+        try{
+            //2：使用路径path，查找到对应的文件，转化成InputStream
+            inputStream1 = new FileInputStream(new File(path));
+            //可以出现中文
+            fileName = new String(fileName.getBytes("gbk"),"iso8859-1");
+            request.setAttribute("fileName", fileName);
+            //与栈顶的InputStream关联
+            //elecUser.setInputStream(in);
+        } catch( Exception e) {
+            e.printStackTrace();
+        }
+
+        return "download";
     }
 
 

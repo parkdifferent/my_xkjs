@@ -352,7 +352,7 @@ public class EnterAction extends BaseAction<Enter> {
             //2.获得工作表
             Sheet rs = rwb.getSheet(0);
             List<Enter> enterList = new ArrayList<Enter>();
-            for (int i = 1; i < rs.getRows(); i++) {
+            for (int i = 2; i < rs.getRows()+1; i++) {
                 Enter enter2 = new Enter();
 				/*Cell fcell=rs.getCell(1,i);
 				if(fcell.getType()==CellType.NUMBER){
@@ -523,8 +523,22 @@ public class EnterAction extends BaseAction<Enter> {
 
         String grade = request.getParameter("grade");
         String academe = request.getParameter("academe");
-        String profession = request.getParameter("profession");
+        String professionId = request.getParameter("profession");
         String comName = request.getParameter("comName");
+
+
+
+        try {
+            grade = new String(grade.getBytes("ISO8859-1"),"UTF-8");
+            academe = new String(academe.getBytes("ISO8859-1"),"UTF-8");
+            comName = new String(comName.getBytes("ISO8859-1"),"UTF-8");
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+
+        }
+
+
         String beginTime = request.getParameter("beginTime");
         String endTime = request.getParameter("endTime");
 
@@ -541,10 +555,25 @@ public class EnterAction extends BaseAction<Enter> {
             enter1.setAcademe(academe);
             title1 += academe;
         }
-        if (!TUtil.null2String(profession).equals("")) {
-            enter1.setProfession(profession);
+        /*if (!TUtil.null2String(professionId).equals("")) {
+            enter1.setProfession(professionName);
             title1 += profession;
+        }*/
+        //获取专业名称
+        if (!TUtil.null2String(professionId).equals("")) {
+            Profession profession1 = professionService.findProfessionByID(new Integer(professionId));
+            String professionName = profession1.getProfessionName();
+
+            if (!TUtil.null2String(professionName).equals("")) {
+                enter1.setProfession(professionName);
+                title1 += professionName;
+            }
         }
+
+
+
+
+
         if (!TUtil.null2String(comName).equals("")) {
             enter1.setComName(comName);
             title1 += comName;

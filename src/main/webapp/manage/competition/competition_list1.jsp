@@ -125,9 +125,13 @@
                     <th width="15%" ><span class="form_btna">竞赛名称</span></th>
                     <th width="15%" ><span class="form_btna">主办单位</span></th>
                     <th width="15%" ><span class="form_btna">校内负责单位</span></th>
-                    <th width="15%" ><span class="form_btna">竞赛类别</span></th>
-                    <th width="15%" ><span class="form_btna">竞赛级别</span></th>
-                    <th width="15%" ><span class="form_btna">开始时间</span></th>
+                    <th width="8%" ><span class="form_btna">竞赛类别</span></th>
+                    <th width="8%" ><span class="form_btna">竞赛级别</span></th>
+                    <th width="12%" ><span class="form_btna">开始时间</span></th>
+
+                    <th width="12%" ><span class="form_btna">附件</span></th>
+
+                    <th width="12%" ><span class="form_btna">竞赛状态</span></th>
                     <th align="center" ><span class="form_btna">操作</span></th>
 
 
@@ -169,6 +173,22 @@
         <td align="center"><s:property value="#competition.category"/></td>
         <td align="center"><s:property value="#competition.level"/></td>
         <td align="center"><s:date name="#competition.startDate" format="yyyy-MM-dd"/></td>
+            <td align="center"><s:property value="#competition.fileName"/></td>
+
+
+            <td align="center">
+                <s:if test="#competition.status==0">
+                    未开始
+                </s:if>
+                <s:if test="#competition.status==1">
+                    开始报名
+                </s:if>
+                <s:if test="#competition.status==2">
+                    报名截止
+                </s:if>
+
+            </td>
+
 
 
         <!-- <td class="lightred"><ul>

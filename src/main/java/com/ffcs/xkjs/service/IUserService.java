@@ -23,4 +23,6 @@ public interface IUserService {
     User findUserByID(User user);
 
     User findUserByUserName(String userName);
+
+    User findUserBySno(String sno);
 }

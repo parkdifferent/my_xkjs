@@ -73,7 +73,7 @@
         </ul>
     </div>
 
-    <form name="theForm" id="theForm" action="<%=basePath%>/system/competition_save.do" method="post">
+    <form name="theForm" id="theForm" action="<%=basePath%>/system/competition_save.do" method="post" enctype="multipart/form-data">
 
         <div class="edit">
             <div class="editul setcont">
@@ -165,8 +165,66 @@
       </span></li>
                 </ul>
 
-               
 
+                <%--<s:if test="#request.edit">
+                    <ul class="set1">
+                        <li class="setcont_bg">已上传附件名称</li>
+                        <li><span class="webname">
+        <input name="fileName" type="text" id="fileName" value="<s:property value="#request.competition.fileName"/>" />
+      </span></li>
+                    </ul>
+                </s:if>--%>
+
+
+                <ul class="set1">
+                    <li class="setcont_bg"><strong class="sred">*</strong>附件</li>
+
+                    <li>
+                        <s:if test="#request.edit">
+                            <s:property value="#request.competition.fileName"/>
+                        </s:if>
+                    </li>
+                    <li><span> <input id="upload" type="file" name="upload" /></span>
+                        <%-- <s:if test="${request.edit}">
+                             <s:property value="#request.notice.fileName"/>
+                         </s:if>--%>
+
+                        <%-- <span id="nothis">
+                             <strong class="q"></strong>
+                             <strong class="w">选择要导入文件</strong><strong class="c"></strong>
+                         </span>--%>
+                    </li>
+                </ul>
+
+
+                <ul class="set1">
+                    <li  class="setcont_bg"><strong class=""></strong>竞赛状态</li>
+                    <li><span class="webname">
+                <select name="status" id="status">
+
+                    <option value="0" ${request.competition.status =="0"?'selected':''}>未开始</option>
+                    <option value="1" ${request.competition.status =="1"?'selected':''}>开始报名</option>
+                    <option value="2" ${request.competition.status =="2"?'selected':''}>报名截止</option>
+                </select>
+                        </span>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+               <%-- <ul class="set1">
+                    <li class="setcont_bg"><strong class="sred">*</strong>附件</li>
+                    <li><span> <input id="upload" type="file" name="upload" />
+						</span><span id="nothis"><strong class="q"></strong><strong
+                            class="w">选择要上传文件</strong><strong class="c"></strong></span></li>
+                </ul>--%>
+
+
+                 <%--<li><a id="down" href="<%=basePath%>/system/competition_download.do?comId=<s:property value='#request.competition.comId'/>"><b>导入竞赛报名模板下载</b></a></li>--%>
 
 
             </div>

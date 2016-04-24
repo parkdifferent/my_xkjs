@@ -3,11 +3,13 @@ package com.ffcs.xkjs.action;
 import com.ffcs.xkjs.domain.News;
 import com.ffcs.xkjs.service.INewsService;
 import com.ffcs.xkjs.utils.TUtil;
+import com.opensymphony.xwork2.ActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by tianf on 2016/4/4.
@@ -79,6 +81,15 @@ public class NewsAction extends BaseAction<News> {
     public String add() {
         String currentPage=request.getParameter("currentPage");
         request.setAttribute("currentPage", currentPage);
+
+//新增，初始化kindeditor的值为空
+       request.setAttribute("content",null);
+
+
+        //ActionContext actionContext = ActionContext.getContext();
+        //Map<String,String> request = (Map) actionContext.get("request");
+        //request.put("a", "a is in request");
+
         return "add";
     }
 
@@ -92,6 +103,8 @@ public class NewsAction extends BaseAction<News> {
             news1.setNewsId(newsId);
             News news2=newsService.findNewsByID(news1);
             request.setAttribute("news", news2);
+            //编辑，初始化kindeditor的显示值
+            request.setAttribute("content",news2.getContent());
         }
 
         request.setAttribute("edit", true);
@@ -133,6 +146,11 @@ public class NewsAction extends BaseAction<News> {
 
     public String save(){
 
+        String content=request.getParameter("content");
+        //System.out.println(content);
+        //System.out.println(news.getContent());
+
+
         //String ID=request.getParameter("textID");
         String currentPage=request.getParameter("currentPage");
         //System.out.println(elecText.getTextName()+"   "+elecText.getTextDate()+"      "+elecText.getTextID());
@@ -160,6 +178,9 @@ public class NewsAction extends BaseAction<News> {
 
 
         request.setAttribute("add_url", add_url);
+
+
+       // request.setAttribute("content", content);
 
 
         return "save";
