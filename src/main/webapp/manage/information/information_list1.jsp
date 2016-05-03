@@ -132,8 +132,8 @@
                             <li>冻结：<strong>#if($!{obj.freezeBlance})$!{obj.freezeBlance}#else 0 #end元</strong></li>
                             </ul></td> -->
                             <td align="center"><s:property value="#information.fileName"/></td>
-                            <%--<td align="center"><s:property value="#information.description"/></td>--%>
-                            <td align="center"><a href="<%=basePath%>/system/information_edit.do?infoId=<s:property value='#information.infoId'/>">查看内容</a></td>
+                            <td align="center"><s:property value="#information.description"/></td>
+                           <%-- <td align="center"><a href="<%=basePath%>/system/information_edit.do?infoId=<s:property value='#information.infoId'/>">查看内容</a></td>--%>
                             <td align="center"><s:date name="#information.addTime" format="yyyy-MM-dd"/></td>
 
 

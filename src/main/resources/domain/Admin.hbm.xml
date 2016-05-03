@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ffcs.xkjs.domain.Admin" table="xkjs_admin">
+
+        <id name="adminId" type="string" column="adminId">
+            <generator class="uuid"></generator>
+        </id>
+
+
+        <property name="userName" type="java.lang.String">
+            <column name="userName" length="60" />
+        </property>
+
+        <property name="password" type="java.lang.String">
+            <column name="password" length="60" />
+        </property>
+
+        <property name="role" type="java.lang.String">
+            <column name="role" length="25" />
+        </property>
+
+
+    </class>
+</hibernate-mapping>

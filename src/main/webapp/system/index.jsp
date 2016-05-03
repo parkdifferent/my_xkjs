@@ -147,14 +147,28 @@
                 <div class="lefttop"> </div>
                 <div class="left_ul">
                     <ul class="ulleft" id="common_operation" style="display:block">
-                        <div class="leftone">常用操作</div>
-                        <li><a class="this" id="welcome_op" href="javascript:void(0);" onclick="openURL('url','<%--<%=basePath%>/admin/welcome.htm--%><%=basePath%>/system/welcome.jsp','main_workspace','welcome_op')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>欢迎页面000</span></a> </li>
+                        <div class="leftone">竞赛管理</div>
+                       <%-- <li><a class="this" id="welcome_op" href="javascript:void(0);" onclick="openURL('url','&lt;%&ndash;<%=basePath%>/admin/welcome.htm&ndash;%&gt;<%=basePath%>/system/welcome.jsp','main_workspace','welcome_op')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>欢迎页面000</span></a> </li>--%>
 
 
                        <c:if test="${sessionScope.role=='admin'}">
 
 
-                        <li><a href="javascript:void(0);" id="set_site_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/set_site.htm--%><%=basePath%>/system/user_list.do','main_workspace','set_site_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>用户管理</span></a></li>
+                       <%-- <li><a href="javascript:void(0);" id="set_site_op_q" onclick="openURL('url','&lt;%&ndash;<%=basePath%>/admin/set_site.htm&ndash;%&gt;<%=basePath%>/system/user_list.do','main_workspace','set_site_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>学生管理</span></a></li>
+                           <li><a href="javascript:void(0);" id="set_site_op_q" onclick="openURL('url','&lt;%&ndash;<%=basePath%>/admin/set_site.htm&ndash;%&gt;<%=basePath%>/system/teacher_list.do','main_workspace','set_site_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>指导教师管理</span></a></li>--%>
+
+
+
+
+                           <li><a  href="javascript:void(0);"id="complex_stat" suffix="stat_"><img id="stat_img" src="<%=basePath%>/resources/style/system/manage/blue/images/spread.jpg" width="13" height="13" /><span>用户管理</span></a>
+                               <ul id="stat_info"  style="display:none;">
+                                   <li><a href="javascript:void(0);" id="stat_user_op" onclick="openURL('url','<%=basePath%>/system/user_list.do','main_workspace','stat_user_op')"><span>学生管理</span></a></li>
+                                   <li><a href="javascript:void(0);" id="stat_order_op" onclick="openURL('url','<%=basePath%>/system/teacher_list.do','main_workspace','stat_order_op')"><span>指导教师管理</span></a></li>
+                                   <li><a href="javascript:void(0);" id="stat_goods_op" onclick="openURL('url','<%=basePath%>/system/admin_list.do','main_workspace','stat_goods_op')"><span>管理员管理</span></a></li>
+                               </ul>
+                           </li>
+
+
                         <li><a href="javascript:void(0);" id="user_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/user_list.htm--%><%=basePath%>/system/news_list.do','main_workspace','user_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛新闻管理</span></a></li>
                         <li><a href="javascript:void(0);" id="store_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/store_list.htm--%><%=basePath%>/system/notice_list.do','main_workspace','store_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛通知管理</span></a></li>
                         <li><a href="javascript:void(0);" id="goods_manage_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/goods_list.htm--%><%=basePath%>/system/competition_list.do','main_workspace','goods_manage_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目管理</span></a></li>
@@ -162,21 +176,47 @@
                         <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/information_list.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料管理</span></a></li>
                         <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/pay_list.htm--%><%=basePath%>/system/result_list.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果管理</span></a></li>
 
+
+
+
                        </c:if>
 
                         <c:if test="${sessionScope.role=='student'}">
 
-                            <li><a href="javascript:void(0);" id="set_site_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/set_site.htm--%><%=basePath%>/system/user_stulist.do','main_workspace','set_site_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>个人信息</span></a></li>
+                            <li><a  href="javascript:void(0);" id="set_site_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/set_site.htm--%><%=basePath%>/system/user_stulist.do','main_workspace','set_site_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>个人信息</span></a></li>
                             <li><a href="javascript:void(0);" id="user_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/user_list.htm--%><%=basePath%>/system/news_stulist.do','main_workspace','user_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛新闻</span></a></li>
                             <li><a href="javascript:void(0);" id="store_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/store_list.htm--%><%=basePath%>/system/notice_stulist.do','main_workspace','store_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛通知</span></a></li>
+                            <%--<li><a href="javascript:void(0);" id="goods_manage_op_q" onclick="openURL('url','&lt;%&ndash;<%=basePath%>/admin/goods_list.htm&ndash;%&gt;<%=basePath%>/system/teacher_stulist.do','main_we','goods_manage_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>指导教师</span></a></li>
+--%>
+                            <li><a href="javascript:void(0);" id="goods_manage_op_q"  onclick="openURL('url','<%--<%=basePath%>/admin/welcome.htm--%><%=basePath%>/system/teacher_stulist.do','main_workspace','goods_manage_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>指导教师</span></a> </li>
+                            <%--<li><a href="javascript:void(0);" id="set_site_op_q" onclick="openURL('url','&lt;%&ndash;<%=basePath%>/admin/goods_list.htm&ndash;%&gt;<%=basePath%>/system/competition_stulist.do','main_workspace','set_site_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目</span></a></li>--%>
+                            <li><a href="javascript:void(0);" id="complex_stat"  onclick="openURL('url','<%--<%=basePath%>/admin/welcome.htm--%><%=basePath%>/system/competition_stulist.do','main_workspace','complex_stat')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目</span></a> </li>
 
-                            <li><a href="javascript:void(0);" id="goods_manage_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/goods_list.htm--%><%=basePath%>/system/competition_stulist.do','main_workspace','goods_manage_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目</span></a></li>
+
                             <li><a href="javascript:void(0);" id="order_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/enter_stulist.do','main_workspace','order_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛报名</span></a></li>
-                            <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/information_list.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料管理</span></a></li>
-                            <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/pay_list.htm--%><%=basePath%>/system/result_list.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果管理</span></a></li>
+                            <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/information_stulist.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料</span></a></li>
+                            <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/pay_list.htm--%><%=basePath%>/system/result_stulist.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果</span></a></li>
 
 
                         </c:if>
+
+
+
+<c:if test="${sessionScope.role=='teacher'}">
+
+    <li><a href="javascript:void(0);" id="set_site_op_q" onclick="openURL('url','<%=basePath%>/system/teacher_tealist.do','main_workspace','set_site_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>个人信息</span></a></li>
+    <li><a href="javascript:void(0);" id="user_list_op_q" onclick="openURL('url','<%=basePath%>/system/news_stulist.do','main_workspace','user_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛新闻</span></a></li>
+    <li><a href="javascript:void(0);" id="store_list_op_q" onclick="openURL('url','<%=basePath%>/system/notice_stulist.do','main_workspace','store_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛通知</span></a></li>
+    <li><a href="javascript:void(0);" id="goods_manage_op_q" onclick="openURL('url','<%=basePath%>/system/competition_stulist.do','main_workspace','goods_manage_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目</span></a></li>
+
+
+    <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%=basePath%>/system/information_stulist.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料</span></a></li>
+
+    <li><a href="javascript:void(0);" id="order_list_op_q" onclick="openURL('url','<%=basePath%>/system/enter_tealist.do','main_workspace','order_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛报名</span></a></li>
+
+    <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%=basePath%>/system/result_tealist.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果</span></a></li>
+
+    </c:if>
 
 
 

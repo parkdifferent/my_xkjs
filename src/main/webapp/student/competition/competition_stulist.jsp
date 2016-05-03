@@ -136,16 +136,16 @@
                 <tr>
 
                     <th width="4%" align="left">&nbsp;</th>
-                    <th width="15%" ><span class="form_btna">竞赛名称</span></th>
-                    <th width="15%" ><span class="form_btna">主办单位</span></th>
-                    <th width="15%" ><span class="form_btna">校内负责单位</span></th>
+                    <th width="12%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="12%" ><span class="form_btna">主办单位</span></th>
+                    <th width="12%" ><span class="form_btna">校内负责单位</span></th>
                     <th width="8%" ><span class="form_btna">竞赛类别</span></th>
                     <th width="8%" ><span class="form_btna">竞赛级别</span></th>
-                    <th width="12%" ><span class="form_btna">开始时间</span></th>
+                    <th width="10%" ><span class="form_btna">开始时间</span></th>
 
                     <th width="12%" ><span class="form_btna">附件</span></th>
 
-                    <th width="12%" ><span class="form_btna">竞赛状态</span></th>
+                    <th width="10%" ><span class="form_btna">竞赛状态</span></th>
                     <th align="center" ><span class="form_btna">操作</span></th>
 
                 </tr>

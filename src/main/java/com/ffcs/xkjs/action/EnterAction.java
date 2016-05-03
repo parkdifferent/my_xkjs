@@ -46,6 +46,10 @@ public class EnterAction extends BaseAction<Enter> {
     IUserService userService;
 
 
+    @Resource(name= ITeacherService.SERVICE_NAME)
+    ITeacherService teacherService;
+
+
     public String list() {
 
 
@@ -356,7 +360,7 @@ public class EnterAction extends BaseAction<Enter> {
             //2.获得工作表
             Sheet rs = rwb.getSheet(0);
             List<Enter> enterList = new ArrayList<Enter>();
-            for (int i = 2; i < rs.getRows()+1; i++) {
+            for (int i = 2; i < rs.getRows(); i++) {
                 Enter enter2 = new Enter();
 				/*Cell fcell=rs.getCell(1,i);
 				if(fcell.getType()==CellType.NUMBER){
@@ -408,15 +412,20 @@ public class EnterAction extends BaseAction<Enter> {
                 System.out.println(email);
 
                 Cell fCell8 = rs.getCell(8, i);
-                String comName = fCell8.getContents();
+                String tutor = fCell8.getContents();
+                enter2.setTutor(tutor);
+                System.out.println(tutor);
+
+                Cell fCell9 = rs.getCell(9, i);
+                String comName = fCell9.getContents();
                 enter2.setComName(comName);
                 System.out.println(comName);
 
 
                 //报名时间
-                Cell fCell9 = rs.getCell(9, i);
-                if (fCell9.getType() == CellType.DATE) {
-                    DateCell dateCell = (DateCell) fCell9;
+                Cell fCell10 = rs.getCell(10, i);
+                if (fCell10.getType() == CellType.DATE) {
+                    DateCell dateCell = (DateCell) fCell10;
                     Date result = dateCell.getDate();
                     enter2.setEnterDate(result);
                     System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(result));
@@ -535,6 +544,9 @@ public class EnterAction extends BaseAction<Enter> {
 
 
 
+
+
+
         try {
             grade = new String(grade.getBytes("ISO8859-1"),"UTF-8");
             academe = new String(academe.getBytes("ISO8859-1"),"UTF-8");
@@ -562,6 +574,19 @@ public class EnterAction extends BaseAction<Enter> {
             enter1.setAcademe(academe);
             title1 += academe;
         }
+
+        //教师信息  指导教师姓名
+        Map session=ActionContext.getContext().getSession();
+        if(session.get("role").equals("teacher")) {
+            String teaId = (String)session.get("teaId");
+            Teacher teacher1=teacherService.findTeacherByID(teaId);
+            String name=teacher1.getName();
+            if (!TUtil.null2String(name).equals("")) {
+                enter1.setTutor(name);
+            }
+
+        }
+
         /*if (!TUtil.null2String(professionId).equals("")) {
             enter1.setProfession(professionName);
             title1 += profession;
@@ -576,9 +601,6 @@ public class EnterAction extends BaseAction<Enter> {
                 title1 += professionName;
             }
         }
-
-
-
 
 
         if (!TUtil.null2String(comName).equals("")) {
@@ -651,7 +673,8 @@ public class EnterAction extends BaseAction<Enter> {
         time1 = TUtil.formatDate(beginTime);
         time2 = TUtil.formatDate(endTime);
         String Time = TUtil.null2String(TUtil.formatShortDate(time1) + " - " + TUtil.formatShortDate(time2));
-        cell.setCellValue(title + "(" + Time + ")");
+       // cell.setCellValue(title + "(" + Time + ")");
+        cell.setCellValue(title);
 
         // 设置单元格内容格式时间
         HSSFCellStyle style1 = wb.createCellStyle();
@@ -946,6 +969,130 @@ public class EnterAction extends BaseAction<Enter> {
         return "stulist";
 
     }
+
+
+    public String tealist() {
+
+        //教师信息
+        Map session=ActionContext.getContext().getSession();
+        String teaId = (String)session.get("teaId");
+        Teacher teacher1=teacherService.findTeacherByID(teaId);
+
+
+        String sno = request.getParameter("sno");
+        String trueName = request.getParameter("trueName");
+        String grade = request.getParameter("grade");
+
+        String academe = request.getParameter("academe");   //null
+        String profession = request.getParameter("profession");
+        String comName = request.getParameter("comName");
+        String beginTime = request.getParameter("beginTime");
+        String endTime = request.getParameter("endTime");
+
+        //String tutor = request.getParameter("tutor");
+        String tutor=teacher1.getName();
+
+
+        String auditStatus = request.getParameter("auditStatus");
+
+        //获取专业id
+        String proId = request.getParameter("profession");
+        //System.out.println(comName+"      "+category+"         "+level);
+
+
+        Enter enter1 = new Enter();
+
+        if (!TUtil.null2String(auditStatus).equals("")) {
+            enter1.setAuditStatus(new Integer(auditStatus));
+            request.setAttribute("auditStatus",auditStatus);
+        }
+
+
+
+        if (!TUtil.null2String(sno).equals("")) {
+            enter1.setSno(sno);
+        }
+        if (!TUtil.null2String(trueName).equals("")) {
+            enter1.setTrueName(trueName);
+        }
+        if (!TUtil.null2String(grade).equals("")) {
+            enter1.setGrade(grade);
+        }
+
+        //如果有学院，那么要加载学院下所属的专业
+        if (!TUtil.null2String(academe).equals("")) {
+            enter1.setAcademe(academe);
+
+            //专业下拉列表框的值
+            List<Academe> academeList1 = academeService.findAcademeByCondition(academe);
+
+            if (!academeList1.isEmpty()) {
+                Academe academe1 = academeList1.get(0);
+                //Integer academeId=academe1.getAcademeId();
+
+                //根据academeId查询专业
+                Set<Profession> professionSet = academe1.getProfessions();
+                request.setAttribute("professionSet", professionSet);
+            }
+
+            //获取专业名称
+            if (!TUtil.null2String(proId).equals("")) {
+
+                Profession profession1 = professionService.findProfessionByID(new Integer(proId));
+                String professionName = profession1.getProfessionName();
+                //按专业名称查询
+                if (!TUtil.null2String(professionName).equals("")) {
+                    enter1.setProfession(professionName);
+                }
+                request.setAttribute("profession", professionName);
+
+            }
+        }
+        /*request.setAttribute("professionName", null);*/
+
+
+        if (!TUtil.null2String(comName).equals("")) {
+            enter1.setComName(comName);
+        }
+
+        if (!TUtil.null2String(tutor).equals("")) {
+            enter1.setTutor(tutor);
+        }
+
+        List<Enter> list = enterService.findEnterByCondition(enter1, beginTime, endTime);
+
+        List<Academe> academeList = academeService.findAcademeByCondition(null);
+        List<Competition> competitionList = competitionService.findCompetitionsNoPage();
+
+        request.setAttribute("enterList", list);
+
+        request.setAttribute("academeList", academeList);
+        request.setAttribute("competitionList", competitionList);
+
+        request.setAttribute("beginTime", beginTime);
+
+        request.setAttribute("endTime", endTime);
+
+        request.setAttribute("sno", sno);
+        request.setAttribute("trueName", trueName);
+        request.setAttribute("grade", grade);
+        request.setAttribute("academe", academe);
+        request.setAttribute("tutor", tutor);
+
+        request.setAttribute("proId", proId);
+
+        request.setAttribute("comName1", comName);
+
+        return "tealist";
+
+    }
+
+
+
+
+
+
+
 
 
 

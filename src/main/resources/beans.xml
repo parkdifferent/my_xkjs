@@ -88,6 +88,10 @@
 
                 <value>/domain/Information.hbm.xml</value>
 
+                <value>/domain/Teacher.hbm.xml</value>
+
+                <value>/domain/Admin.hbm.xml</value>
+
             </list>
         </property>
 

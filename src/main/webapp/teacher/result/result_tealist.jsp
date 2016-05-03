@@ -105,14 +105,14 @@
     <h3 class="seth">竞赛结果管理</h3>
     <div class="nav_list">
         <ul>
-            <li><a href="<%=basePath%>/system/result_list.do"  class="this"><b>管理</b></a> </li>
-            <li><a href="<%=basePath%>/system/result_add.do" ><b>新增</b></a></li>
+            <li><a href="<%=basePath%>/system/result_tealist.do"  class="this"><b>主页</b></a> </li>
+           <%-- <li><a href="<%=basePath%>/system/result_add.do" ><b>新增</b></a></li>--%>
 
-            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/result_importExcel.do"> <b class="add_btn_b">导入Excel</b></a></li>
+            <%--<li><a class="add_btn" &lt;%&ndash;onclick="payoff_excel()"&ndash;%&gt; href="<%=basePath%>/system/result_importExcel.do"> <b class="add_btn_b">导入Excel</b></a></li>--%>
             <li><a class="add_btn" onclick="export_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>
         </ul>
     </div>
-    <form action="<%=basePath%>/system/result_list.do" method="post" name="ListForm" id="ListForm">
+    <form action="<%=basePath%>/system/result_tealist.do" method="post" name="ListForm" id="ListForm">
         <div class="search">
             <ul>
                 <li>
@@ -183,9 +183,9 @@
       </select>
       </span>
 
-                    <span>指导教师</span> <span class="size150">
+                    <%--<span>指导教师</span> <span class="size150">
           <input name="tutor" type="text" id="tutor" value="${request.tutor}" />
-          </span>
+          </span>--%>
 
                     <span>获奖时间</span><span class="size100">
         <input name="beginTime" type="text" id="beginTime" value="${beginTime}"  readonly="readonly"/>
@@ -204,7 +204,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>到期已提交续费申请的店铺请尽快与店主联系并完成线下续费流程，待店主续费成功后请编辑店铺状态为正常营业</li>
+                <li>查询所指导学生的竞赛成绩</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -227,9 +227,7 @@
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 
                     <th width="6%" ><span class="form_btna">获奖时间</span></th>
-                    <th align="center" ><span class="form_btna">操作</span></th>
-
-
+                   <%-- <th align="center" ><span class="form_btna">操作</span></th>--%>
 
                 </tr>
                 <s:if test="#request.resultList!=null && #request.resultList.size()>0">
@@ -253,11 +251,9 @@
 
                             <td align="center"><s:date name="#result.getTime" format="yyyy-MM-dd"/></td>
 
-
-
-                            <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/result_edit.do?resultId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
+                            <%--<td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/result_edit.do?resultId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
                                 |<a href="javascript:void(0);" onclick="if(confirm('删除竞赛成绩后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/result_del.do?mulitId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
-                            </td>
+                            </td>--%>
                         </tr>
 
                     </s:iterator>
@@ -267,41 +263,30 @@
 
         </div>
 
-        <%-- <tr>
-             <td colspan="9" style="border-bottom:0px; padding:0px;">--%>
+
         <div class="operate_bar">
-            <%-- <div class="fenye">
-             <input type="hidden" name="currentPage" id="currentPage" value="$!currentPage" />
-             <input name="mulitId" type="hidden" id="mulitId" />
-
-            <s:property value="#request.gotoPageFormHTML"/>
-
-             </div>   --%>
 
             <div class="fenye">
                 <input name="mulitId" type="hidden" id="mulitId" />
                 <input type="hidden" name="currentPage" id="currentPage" value="<s:property value='#request.currentPage'/>" />
                 ${request.gotoPageFormHTML}
 
-                <%-- <s:property value="#request.gotoPageFormHTML"/> --%>
 
-                <%-- <s:property value="#request.gotoPageFormHTML"/> --%>
 
             </div>
 
-            <div class="oper_sp"> <span class="oper_check"><label><input name="all" type="checkbox" id="all" onclick="selectAll(this)" value="" />全部</label></span>
+            <%--<div class="oper_sp"> <span class="oper_check"><label><input name="all" type="checkbox" id="all" onclick="selectAll(this)" value="" />全部</label></span>
                 <span class="oper_del">  <input name="" type="button" value="删除" style="cursor:pointer;" onclick="cmd('<%=basePath%>/system/result_del.do?currentPage=${request.currentPage}')"/></span>
 
-            </div>
+            </div>--%>
 
         </div>
-        <%--          </td>
-              </tr>--%>
+
 
     </FORM>
 </div>
 
-<%--  <%@include file="/WEB-INF/page/pageUI.jsp" %>      --%>
+
 
 </body>
 </html>

@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: tianf
   Date: 2016/4/12
-  Time: 0:45
+  Time: 0:21
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -29,7 +29,7 @@
     <script src="<%=basePath%>/resources/js/jquery-ui-1.8.21.js"></script>
     <script src="<%=basePath%>/resources/js/jquery.zh.cn.js" charset="utf-8"></script>
 
-    <script>
+    <script type="text/javascript">
 
         //ajax的二级联动，根据选择的学院，查询该学院下对应的专业
         function selectProfession(o){
@@ -79,40 +79,46 @@
                 changeMonth: true,
                 changeYear: true
             });
-            //
-
-            /* jQuery('pageHtml').html(); */
-
         });
 
 
-        function export_excel() {
 
-            var grade = $("#grade").val();
-            var academe = $("#academe").val();
-            var profession = $("#profession").val();
-            var comName = $("#comName").val();
-            var beginTime = $("#beginTime").val();
-            var endTime = $("#endTime").val();
-            window.location.href="<%=basePath%>/system/result_exportExcel.do?grade="+grade+"&academe="+academe+"&profession="+profession+"&comName="+comName+"&beginTime="+beginTime+"&endTime="+endTime;
+
+
+        function export_excel(){
+
+            var grade=$("#grade").val();
+            var academe=$("#academe").val();
+            var profession=$("#profession").val();
+            var comName=$("#comName").val();
+            var beginTime=$("#beginTime").val();
+            var endTime=$("#endTime").val();
+
+
+            <!--20160223新增代码-->
+
+            window.location.href="<%=basePath%>/system/enter_exportExcel.do?grade="+grade+"&academe="+academe+"&profession="+profession+"&comName="+comName+"&beginTime="+beginTime+"&endTime="+endTime;
 
         }
+
+
+
 
     </script>
 </head>
 <body>
 <div class="cont">
-    <h3 class="seth">竞赛结果管理</h3>
+    <h3 class="seth">竞赛报名</h3>
     <div class="nav_list">
         <ul>
-            <li><a href="<%=basePath%>/system/result_list.do"  class="this"><b>管理</b></a> </li>
-            <li><a href="<%=basePath%>/system/result_add.do" ><b>新增</b></a></li>
+            <li><a href="<%=basePath%>/system/enter_tealist.do"  class="this"><b>主页</b></a> </li>
+           <%-- <li><a href="<%=basePath%>/system/enter_add.do" ><b>新增</b></a></li>--%>
 
-            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/result_importExcel.do"> <b class="add_btn_b">导入Excel</b></a></li>
+            <%--<li><a class="add_btn" &lt;%&ndash;onclick="payoff_excel()"&ndash;%&gt; href="<%=basePath%>/system/enter_importExcel.do"> <b class="add_btn_b">导入Excel</b></a></li>--%>
             <li><a class="add_btn" onclick="export_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>
         </ul>
     </div>
-    <form action="<%=basePath%>/system/result_list.do" method="post" name="ListForm" id="ListForm">
+    <form action="<%=basePath%>/system/enter_tealist.do" method="post" name="ListForm" id="ListForm">
         <div class="search">
             <ul>
                 <li>
@@ -122,8 +128,9 @@
           </span>
 
                     <span>姓名</span> <span class="size150">
-          <input name="name" type="text" id="name" value="${request.name}" />
+          <input name="trueName" type="text" id="trueName" value="${request.trueName}" />
           </span>
+
 
                     <span>年级</span> <span>
       <select name="grade" id="grade">
@@ -136,13 +143,14 @@
 
       </select></span>
 
+
                     <span>学院</span> <span>
-      <select name="academe" id="academe" onchange="selectProfession(this)">
+      <select name="academe" id="academe"  onchange="selectProfession(this)">
           <option value="" ${request.academe ==null?'selected':''}>请选择...</option>
           <s:if test="#request.academeList!=null && #request.academeList.size()>0">
               <s:iterator value="#request.academeList" id="academe1">
 
-                  <option value=${academe1.academeName} ${academe1.academeName ==request.academe?'selected':''}>${academe1.academeName}</option>
+                  <option value="${academe1.academeName}" ${academe1.academeName ==request.academe?'selected':''}>${academe1.academeName}</option>
               </s:iterator>
           </s:if>
 
@@ -166,7 +174,6 @@
       </select>
       </span>
 
-
                     <span>竞赛名称</span> <span>
       <select name="comName" id="comName">
           <option value="" ${request.comName ==null?'selected':''}>请选择...</option>
@@ -174,7 +181,7 @@
               <s:iterator value="#request.competitionList" id="competition1">
 
                   <%--<option value=<s:property value='#competition.comName'/> &lt;%&ndash;${competition.comName ==request.comName?'selected':''}&ndash;%&gt;><s:property value='#competition.comName'/></option>--%>
-                  <option value=${competition1.comName} ${competition1.comName ==request.comName1?'selected':''}>${competition1.comName}</option>
+                  <option value="${competition1.comName}" ${competition1.comName ==request.comName1?'selected':''}>${competition1.comName}</option>
 
               </s:iterator>
           </s:if>
@@ -183,11 +190,22 @@
       </select>
       </span>
 
-                    <span>指导教师</span> <span class="size150">
+                   <%-- <span>指导教师</span> <span class="size150">
           <input name="tutor" type="text" id="tutor" value="${request.tutor}" />
-          </span>
+          </span>--%>
 
-                    <span>获奖时间</span><span class="size100">
+
+                    <span>审核状态</span> <span>
+      <select name="auditStatus" id="auditStatus">
+          <option value="" ${request.auditStatus ==null?'selected':''}>请选择...</option>
+          <option value="0" ${request.auditStatus =="0"?'selected':''}>未审核</option>
+          <option value="1" ${request.auditStatus =="1"?'selected':''}>已审核</option>
+
+      </select>
+      </span>
+
+
+                    <span>开始时间</span><span class="size100">
         <input name="beginTime" type="text" id="beginTime" value="${beginTime}"  readonly="readonly"/>
         </span><span>—</span><span class="size100">
         <input name="endTime" type="text" id="endTime" value="${endTime}"  readonly="readonly" /></span>
@@ -204,7 +222,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>到期已提交续费申请的店铺请尽快与店主联系并完成线下续费流程，待店主续费成功后请编辑店铺状态为正常营业</li>
+                <li>指导教师可以查看所指导学生的报名信息</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -212,7 +230,6 @@
                 <tr>
 
                     <th width="4%" align="left">&nbsp;</th>
-
                     <th width="6%" ><span class="form_btna">学号</span></th>
                     <th width="6%" ><span class="form_btna">姓名</span></th>
                     <th width="6%" ><span class="form_btna">年级</span></th>
@@ -220,44 +237,62 @@
                     <th width="6%" ><span class="form_btna">专业</span></th>
 
                     <th width="6%" ><span class="form_btna">班级</span></th>
-                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
-                    <th width="6%" ><span class="form_btna">参赛形式</span></th>
+                    <th width="6%" ><span class="form_btna">手机</span></th>
+                    <th width="6%" ><span class="form_btna">邮箱</span></th>
 
-                    <th width="6%" ><span class="form_btna">奖项</span></th>
+                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
+                    <%--<th width="10%" align="center"><span class="form_btna">参赛形式</span></th>--%>
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 
-                    <th width="6%" ><span class="form_btna">获奖时间</span></th>
-                    <th align="center" ><span class="form_btna">操作</span></th>
+                    <th width="6%" ><span class="form_btna">报名时间</span></th>
+                    <th width="6%" ><span class="form_btna">状态</span></th>
 
+
+                   <%-- <th align="center" ><span class="form_btna">操作</span></th>
+--%>
 
 
                 </tr>
-                <s:if test="#request.resultList!=null && #request.resultList.size()>0">
-                    <s:iterator value="#request.resultList" var="result">
+                <s:if test="#request.enterList!=null && #request.enterList.size()>0">
+                    <s:iterator value="#request.enterList" var="enter">
                         <tr>
-                            <td class="check_position"><input name="id" type="checkbox" id="id" style="width:16px; border:none;" value="<s:property value='#result.resultId'/>" /></td>
+                            <td class="check_position"><input name="id" type="checkbox" id="id" style="width:16px; border:none;" value="<s:property value='#enter.enterId'/>" /></td>
 
-                            <td align="center"><s:property value="#result.sno"/></td>
-                            <td align="center"><s:property value="#result.name"/></td>
-                            <td align="center"><s:property value="#result.grade"/></td>
-                            <td align="center"><s:property value="#result.academe"/></td>
-                            <td align="center"><s:property value="#result.profession"/></td>
-                            <td align="center"><s:property value="#result.classes"/></td>
+                            <td align="center"><s:property value="#enter.sno"/></td>
+                            <td align="center"><s:property value="#enter.trueName"/></td>
+                            <td align="center"><s:property value="#enter.grade"/></td>
+                            <td align="center"><s:property value="#enter.academe"/></td>
+                            <td align="center"><s:property value="#enter.profession"/></td>
+                            <td align="center"><s:property value="#enter.classes"/></td>
+
+                            <td align="center"><s:property value="#enter.telephone"/></td>
+                            <td align="center"><s:property value="#enter.email"/></td>
+
+                            <td align="center"><s:property value="#enter.comName"/></td>
+
+                            <td align="center"><s:property value="#enter.tutor"/></td>
+
+                            <td align="center"><s:date name="#enter.enterDate" format="yyyy-MM-dd"/></td>
 
 
+                            <td align="center">
+                                <s:if test="#enter.auditStatus==0">
+                                    未审核
+                                </s:if>
+                                <s:if test="#enter.auditStatus==1">
+                                    已审核
+                                </s:if>
 
-                            <td align="center"><s:property value="#result.comName"/></td>
-                            <td align="center"><s:property value="#result.form"/></td>
-                            <td align="center"><s:property value="#result.prize"/></td>
-                            <td align="center"><s:property value="#result.tutor"/></td>
 
-                            <td align="center"><s:date name="#result.getTime" format="yyyy-MM-dd"/></td>
-
-
-
-                            <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/result_edit.do?resultId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
-                                |<a href="javascript:void(0);" onclick="if(confirm('删除竞赛成绩后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/result_del.do?mulitId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
                             </td>
+
+
+                            <%--<td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/enter_edit.do?enterId=<s:property value='#enter.enterId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
+                                |<a href="javascript:void(0);" onclick="if(confirm('删除新闻后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/enter_del.do?mulitId=<s:property value='#enter.enterId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
+                                <s:if test="#enter.auditStatus==0">
+                                |<a href="<%=basePath%>/system/enter_audit.do?mulitId=<s:property value='#enter.enterId'/>&currentPage=${request.currentPage}" class="blue" >审核</a>
+                                </s:if>
+                            </td>--%>
                         </tr>
 
                     </s:iterator>
@@ -267,41 +302,29 @@
 
         </div>
 
-        <%-- <tr>
-             <td colspan="9" style="border-bottom:0px; padding:0px;">--%>
+        <%--<tr>
+            <td colspan="9" style="border-bottom:0px; padding:0px;">--%>
         <div class="operate_bar">
-            <%-- <div class="fenye">
-             <input type="hidden" name="currentPage" id="currentPage" value="$!currentPage" />
-             <input name="mulitId" type="hidden" id="mulitId" />
-
-            <s:property value="#request.gotoPageFormHTML"/>
-
-             </div>   --%>
 
             <div class="fenye">
                 <input name="mulitId" type="hidden" id="mulitId" />
                 <input type="hidden" name="currentPage" id="currentPage" value="<s:property value='#request.currentPage'/>" />
                 ${request.gotoPageFormHTML}
 
-                <%-- <s:property value="#request.gotoPageFormHTML"/> --%>
-
-                <%-- <s:property value="#request.gotoPageFormHTML"/> --%>
 
             </div>
 
-            <div class="oper_sp"> <span class="oper_check"><label><input name="all" type="checkbox" id="all" onclick="selectAll(this)" value="" />全部</label></span>
-                <span class="oper_del">  <input name="" type="button" value="删除" style="cursor:pointer;" onclick="cmd('<%=basePath%>/system/result_del.do?currentPage=${request.currentPage}')"/></span>
+           <%-- <div class="oper_sp"> <span class="oper_check"><label><input name="all" type="checkbox" id="all" onclick="selectAll(this)" value="" />全部</label></span>
+                <span class="oper_del">  <input name="" type="button" value="删除" style="cursor:pointer;" onclick="cmd('<%=basePath%>/system/enter_del.do?currentPage=${request.currentPage}')"/></span>
 
-            </div>
+                <span class="oper_del">  <input name="" type="button" value="批量审核" style="cursor:pointer;" onclick="cmd('<%=basePath%>/system/enter_audit.do?currentPage=${request.currentPage}')"/></span>
+            </div>--%>
 
         </div>
-        <%--          </td>
-              </tr>--%>
+
 
     </FORM>
 </div>
-
-<%--  <%@include file="/WEB-INF/page/pageUI.jsp" %>      --%>
 
 </body>
 </html>

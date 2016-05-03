@@ -89,6 +89,19 @@
                 <div class="login_box_tab">
                     <h3>用户登录</h3>
                     <ul>
+
+                        <li>
+
+                            <select name="role" id="role" >
+                                <option value="student">学生</option>
+                                <option value="teacher">指导教师</option>
+                                <option value="admin">管理员</option>
+                                </select>
+
+                        </li>
+
+
+
                         <%--#if(!$!user)--%>
                         <li><span class="username"></span>
                             <input name="username" type="text" id="username"  autocomplete="false" class="login_txt" onblur="checkUser()"  />

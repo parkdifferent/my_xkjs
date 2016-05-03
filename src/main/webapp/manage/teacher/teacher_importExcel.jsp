@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: tianf
-  Date: 2016/4/22
-  Time: 9:42
+  teacher: tianf
+  Date: 2016/4/27
+  Time: 14:11
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
@@ -40,7 +40,7 @@
         }
 
         jQuery(document).ready(function(){
-            jQuery('#userDate').attr("readyonly","readyonly").datepicker({
+            jQuery('#teacherDate').attr("readyonly","readyonly").datepicker({
                 dateFormat:"yy-mm-dd",
                 changeMonth: true,
                 changeYear: true
@@ -61,25 +61,25 @@
 </head>
 <body>
 <div class="cont">
-    <h1 class="seth">学生管理</h1>
+    <h1 class="seth">指导教师管理</h1>
     <div class="nav_list">
         <ul>
-            <li><a href="<%=basePath%>/system/user_list.do"><b>管理</b></a> </li>
-            <li><a href="<%=basePath%>/system/user_add.do" ><b>新增</b></a></li>
+            <li><a href="<%=basePath%>/system/teacher_list.do"><b>管理</b></a> </li>
+            <li><a href="<%=basePath%>/system/teacher_add.do" ><b>新增</b></a></li>
 
-            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/user_importExcel.do" class="this"> <b class="add_btn_b">导入Excel</b></a></li>
-           <%-- <li><a class="add_btn" onclick="payoff_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>--%>
+            <li><a class="add_btn" <%--onclick="payoff_excel()"--%> href="<%=basePath%>/system/teacher_importExcel.do" class="this"> <b class="add_btn_b">导入Excel</b></a></li>
+            <%-- <li><a class="add_btn" onclick="payoff_excel()" href="javascript:void(0);"> <b class="add_btn_b">导出Excel</b></a></li>--%>
         </ul>
     </div>
     <br />
-    <form id="" action="<%=basePath%>/system/user_importJava.do"
+    <form id="" action="<%=basePath%>/system/teacher_importJava.do"
           method="post" enctype="multipart/form-data">
         <div class="edit">
             <div class="editul setcont" id="base">
 
                 <ul class="set1">
                     <li class="setcont_bg">模板下载</li>
-                    <li><a id="down" href="<%=basePath%>/resources/file/xkjs_user.xls<%--<%=basePath%>/upload/20160420005303.jpg--%>"><b>导入学生模板下载</b></a></li>
+                    <li><a id="down" href="<%=basePath%>/resources/file/xkjs_teacher.xls<%--<%=basePath%>/upload/20160420005303.jpg--%>"><b>导入教师模板下载</b></a></li>
                 </ul>
                 <ul class="set1">
                     <li class="setcont_bg"><strong class="sred">*</strong>批量导入</li>

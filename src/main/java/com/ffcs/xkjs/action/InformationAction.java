@@ -286,6 +286,27 @@ public class InformationAction extends BaseAction<Information> {
 
 
 
+    public String stulist() {
+
+
+        //fileName
+        String fileName=request.getParameter("fileName");
+
+        Information information1=new Information();
+
+        if(!TUtil.null2String(fileName).equals("")) {
+            information1.setFileName(fileName);
+            request.setAttribute("fileName", fileName);
+        }
+
+        List<Information> list=iInformationService.findInformationByCondition(information1);
+        request.setAttribute("informationList",list);
+        return "stulist";
+    }
+
+
+
+
 
 
 

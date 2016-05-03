@@ -320,7 +320,9 @@ public class UserAction extends BaseAction<User>{
             //competitionService.saveCompetition(competition);
 
             //设置初始密码
-            user.setPassword(user.getSno());
+            user.setPassword(MD5Util.getMD5String(user.getSno()).toUpperCase());
+
+            //MD5Util.getMD5String(user.getSno()).toUpperCase();
             //设置角色
             user.setRole("student");
 
@@ -425,7 +427,7 @@ public class UserAction extends BaseAction<User>{
             //2.获得工作表
             Sheet rs = rwb.getSheet(0);
             List<User> userList = new ArrayList<User>();
-            for (int i = 2; i < rs.getRows()+1; i++) {
+            for (int i = 2; i < rs.getRows(); i++) {
                 User user2 = new User();
 				/*Cell fcell=rs.getCell(1,i);
 				if(fcell.getType()==CellType.NUMBER){
@@ -480,7 +482,7 @@ public class UserAction extends BaseAction<User>{
                 //设置初始密码
                 user2.setPassword(MD5Util.getMD5String(sno).toUpperCase());
                 //设置角色
-                user2.setRole("USER");
+                user2.setRole("student");
 
                 //加入到List集合中
                 userList.add(user2);

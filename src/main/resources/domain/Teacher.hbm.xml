@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ffcs.xkjs.domain.Teacher" table="xkjs_teacher">
+
+        <id name="teaId" type="string" column="teaId">
+            <generator class="uuid"></generator>
+        </id>
+        <property name="tno" type="java.lang.String">
+            <column name="tno" length="30" />
+        </property>
+
+        <property name="name" type="java.lang.String">
+            <column name="name" length="30" />
+        </property>
+        <property name="academe" type="java.lang.String">
+            <column name="academe" length="60" />
+        </property>
+        <property name="rank" type="java.lang.String">
+            <column name="rank" length="30" />
+        </property>
+
+        <property name="research" type="java.lang.String">
+            <column name="research" length="255" />
+        </property>
+        <property name="honor" type="java.lang.String">
+            <column name="honor" length="255" />
+        </property>
+
+        <property name="brief" type="java.lang.String">
+            <column name="brief" length="512" />
+        </property>
+
+        <property name="email" type="java.lang.String">
+            <column name="email" length="60" />
+        </property>
+
+        <property name="education" type="java.lang.String">
+            <column name="education" length="60" />
+        </property>
+
+        <property name="password" type="java.lang.String">
+            <column name="password" length="60" />
+        </property>
+
+
+        <property name="role" type="java.lang.String">
+            <column name="role" length="30" />
+        </property>
+
+    </class>
+</hibernate-mapping>

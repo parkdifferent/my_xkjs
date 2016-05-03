@@ -91,7 +91,7 @@
 
 
 <div class="cont">
-    <h3 class="seth">用户管理</h3>
+    <h3 class="seth">学生管理</h3>
     <div class="nav_list">
         <ul>
             <li><a href="<%=basePath%>/system/user_list.do"  class="this"><b>管理</b></a></li>

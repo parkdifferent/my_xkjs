@@ -286,6 +286,13 @@
 
 
 
+            <!--教师登陆-->
+            <result name="tealist">/teacher/enter/enter_tealist.jsp</result>
+            <result name="teaedit">/teacher/enter/enter_teaadd.jsp</result>
+            <result name="teasave">/teacher/success.jsp</result>
+
+
+
         </action>
 
         <!--竞赛结果管理-->
@@ -323,6 +330,17 @@
             <result name="del" type="redirectAction">
                 <param name="actionName">result_list.do?currentPage=${#request.currentPage}</param>
             </result>
+
+
+
+            <!--学生登陆-->
+            <result name="stulist">/student/result/result_stulist.jsp</result>
+
+            <!--教师登陆-->
+            <result name="tealist">/teacher/result/result_tealist.jsp</result>
+
+
+
         </action>
 
 
@@ -346,7 +364,52 @@
                 <param name="bufferSize">1024</param>
             </result>
 
+
+            <!--学生登陆-->
+            <result name="stulist">/student/information/information_stulist.jsp</result>
+
+
+
+
                 </action>
+
+
+
+        <!--指导教师管理-->
+
+        <action name="teacher_*" class="teacherAction" method="{1}">
+            <result name="list">/manage/teacher/teacher_list1.jsp</result>
+
+            <result name="save">/manage/success.jsp</result>
+            <result name="edit">/manage/teacher/teacher_add.jsp</result>
+            <result name="add">/manage/teacher/teacher_add.jsp</result>
+            <result name="del" type="redirectAction">
+                <param name="actionName">teacher_list.do?currentPage=${#request.currentPage}</param>
+            </result>
+
+            <result name="importExcel">/manage/teacher/teacher_importExcel.jsp</result>
+            <result name="importJava" type="redirectAction">
+                <param name="actionName">teacher_list.do</param>
+            </result>
+
+
+
+
+
+
+
+            <!--教师登陆-->
+            <result name="tealist">/teacher/teacher/teacher_tealist.jsp</result>
+            <result name="teaedit">/teacher/teacher/teacher_teaadd.jsp</result>
+            <result name="teasave">/teacher/success.jsp</result>
+
+            <!--学生登陆-->
+            <result name="stulist">/student/teacher/teacher_stulist.jsp</result>
+            <result name="stuedit">/student/teacher/teacher_stuadd.jsp</result>
+
+
+
+        </action>
 		
 		
 		

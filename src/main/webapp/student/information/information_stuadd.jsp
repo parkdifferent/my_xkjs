@@ -48,10 +48,9 @@
 
     <script type="text/javascript">
         function saveForm(){
-           /* editor1.sync();
-             html=$('.description').val();
-             jQuery("#theForm").submit();*/
-
+            editor1.sync();
+            html=$('.description').val();
+            //alert(html);
             jQuery("#theForm").submit();
         }
 
