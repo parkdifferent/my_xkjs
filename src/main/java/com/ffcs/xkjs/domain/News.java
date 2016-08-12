@@ -13,6 +13,11 @@ public class News  implements java.io.Serializable{
     private Date newsTime;    //发布时间
     private String content;   //内容
 
+    private String fileName;   //文件名
+    private String filePath;   //文件路径
+
+
+
     public String getNewsId() {
         return newsId;
     }
@@ -53,6 +58,22 @@ public class News  implements java.io.Serializable{
         this.content = content;
     }
 
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
     @Override
     public String toString() {
         return "News{" +
@@ -61,6 +82,8 @@ public class News  implements java.io.Serializable{
                 ", publisher='" + publisher + '\'' +
                 ", newsTime=" + newsTime +
                 ", content='" + content + '\'' +
+                ", fileName='" + fileName + '\'' +
+                ", filePath='" + filePath + '\'' +
                 '}';
     }
 }

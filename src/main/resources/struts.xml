@@ -284,14 +284,10 @@
 
             <result name="stulist">/student/enter/enter_stulist.jsp</result>
 
-
-
             <!--教师登陆-->
             <result name="tealist">/teacher/enter/enter_tealist.jsp</result>
             <result name="teaedit">/teacher/enter/enter_teaadd.jsp</result>
             <result name="teasave">/teacher/success.jsp</result>
-
-
 
         </action>
 
@@ -309,13 +305,11 @@
             <result name="exportExcel" type="stream">
                 <param name="contentType">application/vnd.ms-excel</param>
                 <!--<param name="contentType">application/x-download</param>-->
-
                 <!-- 使用inputName输出值栈中流的值 -->
                 <param name="inputName">inputStream</param>
                 <param name="contentDisposition">attachment;filename="result.xls"</param>
                 <param name="bufferSize">1024</param>
             </result>
-
 
             <!-- 获取学院下专业的json-->
             <result name="getProfessionJson" type="json">
@@ -331,15 +325,11 @@
                 <param name="actionName">result_list.do?currentPage=${#request.currentPage}</param>
             </result>
 
-
-
             <!--学生登陆-->
             <result name="stulist">/student/result/result_stulist.jsp</result>
 
             <!--教师登陆-->
             <result name="tealist">/teacher/result/result_tealist.jsp</result>
-
-
 
         </action>
 
@@ -371,7 +361,7 @@
 
 
 
-                </action>
+        </action>
 
 
 
@@ -393,11 +383,6 @@
             </result>
 
 
-
-
-
-
-
             <!--教师登陆-->
             <result name="tealist">/teacher/teacher/teacher_tealist.jsp</result>
             <result name="teaedit">/teacher/teacher/teacher_teaadd.jsp</result>
@@ -406,6 +391,24 @@
             <!--学生登陆-->
             <result name="stulist">/student/teacher/teacher_stulist.jsp</result>
             <result name="stuedit">/student/teacher/teacher_stuadd.jsp</result>
+
+
+
+        </action>
+
+
+        <!--统计分析-->
+        <action name="stat_*" class="statAction" method="{1}">
+
+            <!-- 自加 -->
+            <result name="list">/manage/statistics/pie1Test.jsp</result>
+
+            <result name="categoryList">/manage/statistics/pie2Test.jsp</result>
+
+            <result name="canSai">/manage/statistics/bar1Test.jsp</result>
+
+            <result name="huoJiang">/manage/statistics/bar2Test.jsp</result>
+
 
 
 

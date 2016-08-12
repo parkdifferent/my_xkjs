@@ -33,7 +33,7 @@
 
 
         <property name="sno" type="java.lang.String">
-            <column name="sno" length="25" />
+            <column name="sno" length="60" />
         </property>
 
         <property name="grade" type="java.lang.String">

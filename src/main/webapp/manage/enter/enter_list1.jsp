@@ -141,6 +141,10 @@
           <option value="14级" ${request.grade =="14级"?'selected':''}>14级</option>
           <option value="15级" ${request.grade =="15级"?'selected':''}>15级</option>
 
+          <option value="16级" ${request.grade =="16级"?'selected':''}>16级</option>
+          <option value="17级" ${request.grade =="17级"?'selected':''}>17级</option>
+          <option value="18级" ${request.grade =="18级"?'selected':''}>18级</option>
+
       </select></span>
 
 
@@ -157,8 +161,7 @@
 
       </select>
       </span>
-                    </li>
-                <li>
+
 
                     <span>专业</span> <span>
       <select name="profession" id="profession" >
@@ -173,6 +176,10 @@
 
       </select>
       </span>
+
+                </li>
+                <li>
+
 
                     <span>竞赛名称</span> <span>
       <select name="comName" id="comName">
@@ -224,7 +231,9 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>到期已提交续费申请的店铺请尽快与店主联系并完成线下续费流程，待店主续费成功后请编辑店铺状态为正常营业</li>
+                <li>您可以按条件查询报名信息，新增、编辑、删除、批量删除报名信息</li>
+                <li>报名信息需要审核，您可以单条记录审核，也可以批量审核</li>
+                <li>您可以通过Excel批量导入报名信息、按条件导出Excel报名信息</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -242,7 +251,7 @@
                     <th width="6%" ><span class="form_btna">手机</span></th>
                     <th width="6%" ><span class="form_btna">邮箱</span></th>
 
-                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="12%" ><span class="form_btna">竞赛名称</span></th>
                     <%--<th width="10%" align="center"><span class="form_btna">参赛形式</span></th>--%>
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 

@@ -1,9 +1,11 @@
 package com.ffcs.xkjs.action;
 
 import com.ffcs.xkjs.domain.Admin;
+import com.ffcs.xkjs.domain.Enter;
 import com.ffcs.xkjs.domain.Teacher;
 import com.ffcs.xkjs.domain.User;
 import com.ffcs.xkjs.service.IAdminService;
+import com.ffcs.xkjs.service.IEnterService;
 import com.ffcs.xkjs.service.ITeacherService;
 import com.ffcs.xkjs.service.IUserService;
 import com.ffcs.xkjs.utils.MD5Util;
@@ -13,6 +15,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Map;
 
 
@@ -35,6 +38,9 @@ public class LoginAction extends BaseAction<User> {
 
     @Resource(name= IAdminService.SERVICE_NAME)
     IAdminService adminService;
+
+    @Resource(name = IEnterService.SERVICE_NAME)
+    IEnterService enterService;
 
     /*private String vcode;
 
@@ -130,6 +136,28 @@ public class LoginAction extends BaseAction<User> {
             //session.put("teaId",teacher1.getTno());
             session.put("userName", admin1.getUserName());
             session.put("role",admin1.getRole());
+
+            /*List<User> userList=userService.findUserByCondition(null);
+            if(userList.size()>0) {
+                session.put("userSize", userList.size());
+            }       *///学生总数
+
+            /*List<Teacher> teacherList=teacherService.findTeacherByCondition(null);
+            if(teacherList.size()>0) {
+                session.put("teacherSize", teacherList.size());
+            }*/
+
+           /*List<Enter> enterList =enterService.findEnterByCondition(null,null,null);
+            if(enterList.size()>0) {
+                session.put("enterSize",enterList.size());
+            }*/
+
+
+
+
+
+
+
             return this.SUCCESS;
 
         }

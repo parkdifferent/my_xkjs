@@ -117,7 +117,7 @@
       </span></li>
                 </ul>
 
-                <ul class="set1">
+<%--                <ul class="set1">
                     <li class="setcont_bg">姓名</li>
                     <li><span class="webname">
         <input name="name" type="text" id="name" value="<s:property value="#request.result.name"/>" />
@@ -138,7 +138,6 @@
 
          </select>
         </span>
-                        <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
                     </li>
                 </ul>
 
@@ -153,7 +152,6 @@
         <s:if test="#request.academeList!=null && #request.academeList.size()>0">
             <s:iterator value="#request.academeList" id="academe11">
 
-             <%--<option value="11级" ${request.result.grade =="11级"?'selected':''}>11级</option>--%>
                 <option value=${academe11.academeName} ${academe11.academeName ==request.academe1?'selected':''}>${academe11.academeName}</option>
                 </s:iterator>
             </s:if>
@@ -163,7 +161,6 @@
 
 
         </span>
-                        <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
                     </li>
                 </ul>
 
@@ -183,7 +180,6 @@
 
          </select>
         </span>
-                        <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
                     </li>
                 </ul>
 
@@ -195,7 +191,7 @@
       </span>
                         <span id="nothis"><strong class="q"></strong><strong class="w">数字请用1，2，3</strong><strong class="c"></strong></span>
                     </li>
-                </ul>
+                </ul>--%>
 
 
 
@@ -249,19 +245,18 @@
                     <li><span class="webname">
         <input name="prize" type="text" id="prize" value="<s:property value="#request.result.prize"/>" />
       </span>
-                        <span id="nothis"><strong class="q"></strong><strong class="w">数字请用写的一、二、三</strong><strong class="c"></strong></span>
+                        <span id="nothis"><strong class="q"></strong><strong class="w">数字请用大写的一、二、三</strong><strong class="c"></strong></span>
                     </li>
                 </ul>
 
 
-                <ul class="set1">
+               <%-- <ul class="set1">
                     <li class="setcont_bg">指导教师</li>
                     <li><span class="webname">
         <input name="tutor" type="text" id="tutor" value="<s:property value="#request.result.tutor"/>" />
       </span>
-                       <%-- <span id="nothis"><strong class="q"></strong><strong class="w">数字请用写的一、二、三</strong><strong class="c"></strong></span>--%>
                     </li>
-                </ul>
+                </ul>--%>
 
 
 
@@ -283,6 +278,8 @@
 
             </div>
         </div>
+
+<c:if test="${sessionScope.role=='admin'}">
         <div class="submit">
    			<span class="pad120">
    			<input name="save" type="button" value="提交" onclick="saveForm()" />
@@ -294,6 +291,7 @@
    </span>
 
         </div>
+    </c:if>
 
 
     </form>

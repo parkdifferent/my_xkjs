@@ -81,6 +81,39 @@
 
 
 
+       /* jQuery("#theForm").validate({
+
+            rules:{
+            email:{
+                required :true,
+                email:true
+            }
+            },
+            messages:{
+                email:{required:"电子邮箱不能为空",email:"邮箱格式不对"}
+            }
+
+
+
+        });
+*/
+
+        /*jQuery("#theForm").validate({
+
+            rules:{
+                sno:{required:true},
+                password:{required:true},
+                code:{required:true}
+            },
+            messages:{
+                sno:{required:"用户名不能为空"},
+                password:{required:"密码不能为空"},
+                code:{required:"验证码不能为空"}
+            }
+        });*/
+
+
+
 
     </script>
 
@@ -136,6 +169,10 @@
              <option value="13级" ${request.user.grade =="13级"?'selected':''}>13级</option>
              <option value="14级" ${request.user.grade =="14级"?'selected':''}>14级</option>
              <option value="15级" ${request.user.grade =="15级"?'selected':''}>15级</option>
+
+             <option value="16级" ${request.grade =="16级"?'selected':''}>16级</option>
+             <option value="17级" ${request.grade =="17级"?'selected':''}>17级</option>
+             <option value="18级" ${request.grade =="18级"?'selected':''}>18级</option>
 
          </select>
         </span>

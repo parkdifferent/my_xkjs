@@ -116,7 +116,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>可以查询指导老师的信息</li>
+                <li>您可以按条件查询指导教师信息，查看指导教师信息</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -125,20 +125,20 @@
 
                     <th width="4%" align="left">&nbsp;</th>
 
-                    <th width="15%" ><span class="form_btna">工号</span></th>
+                    <th width="13%" ><span class="form_btna">工号</span></th>
 
-                    <th width="15%" ><span class="form_btna">姓名</span></th>
+                    <th width="8%" ><span class="form_btna">姓名</span></th>
 
-                    <th width="15%" ><span class="form_btna">学院</span></th>
-                    <th width="15%" ><span class="form_btna">学历</span></th>
+                    <th width="13%" ><span class="form_btna">学院</span></th>
+                    <th width="8%" ><span class="form_btna">学历</span></th>
 
-                    <th width="15%" ><span class="form_btna">职称</span></th>
-                    <th width="15%" ><span class="form_btna">研究方向</span></th>
+                    <th width="8%" ><span class="form_btna">职称</span></th>
+                    <th width="13%" ><span class="form_btna">研究方向</span></th>
 
                     <%-- <th width="15%" ><span class="form_btna">所获荣誉</span></th>--%>
 
-                   <%-- <th width="15%" ><span class="form_btna">简介</span></th>--%>
-                    <th width="15%" ><span class="form_btna">邮箱</span></th>
+                   <%-- <th width="8%" ><span class="form_btna">简介</span></th>--%>
+                    <th width="12%" ><span class="form_btna">邮箱</span></th>
 
                     <th align="center" ><span class="form_btna">操作</span></th>
 

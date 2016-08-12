@@ -6,61 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c7bf3ce-60b0-4b51-8daa-6e1ac568e5f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/file/xkjs_teacher.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/domain/Admin.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Admin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/AdminAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/impl/AdminDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/AdminServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/IAdminDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IAdminService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/ITeacherDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/ITeacherService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/domain/Teacher.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Teacher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/TeacherAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/impl/TeacherDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/TeacherServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/teacher/enter/enter_tealist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/student/information/information_stuadd.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/student/information/information_stulist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/student/result/result_stuadd.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/student/result/result_stulist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/teacher/result/result_tealist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/teacher/success.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_importExcel.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_list1.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stuadd.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stulist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_teaadd.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_tealist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/EnterAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/EnterAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/LoginAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/LoginAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/utils/MD5Util.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/utils/MD5Util.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/ResultAction.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/action/ResultAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ffcs/xkjs/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/InformationAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/InformationAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/utils/MD5Util.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/utils/MD5Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/UserAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/UserAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/student/competition/competition_stulist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/student/competition/competition_stulist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/system/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/system/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/information/information_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/information/information_add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/information/information_list1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/information/information_list1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/menu/login1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/menu/login1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/User/user_importExcel.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/User/user_importExcel.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/User/user_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/User/user_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5c7bf3ce-60b0-4b51-8daa-6e1ac568e5f3" name="Default" comment="" />
     <list id="ffa3e255-414f-439f-8693-46980ee3efb2" name="Failed commit: Default" comment="周三啊3" />
     <ignored path="ffcs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,75 +23,38 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ffcs" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TeacherAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/TeacherAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5546" max-vertical-offset="7990">
-              <caret line="366" column="7" selection-start-line="366" selection-start-column="7" selection-end-line="366" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="EnterAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0" vertical-offset="9083" max-vertical-offset="18394">
-              <caret line="587" column="9" selection-start-line="577" selection-start-column="8" selection-end-line="587" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4666667" vertical-offset="9313" max-vertical-offset="16847">
-              <caret line="573" column="0" selection-start-line="573" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="31" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#11894#11895#0" expanded="false" />
+                <element signature="e#11931#11932#0" expanded="false" />
+                <element signature="e#11991#11992#0" expanded="false" />
+                <element signature="e#12043#12044#0" expanded="false" />
+                <element signature="e#12074#12075#0" expanded="false" />
+                <element signature="e#12103#12104#0" expanded="false" />
+                <element signature="e#12145#12146#0" expanded="false" />
+                <element signature="e#12181#12182#0" expanded="false" />
+                <element signature="e#12225#12226#0" expanded="false" />
+                <element signature="e#12265#12266#0" expanded="false" />
+                <element signature="e#12331#12332#0" expanded="false" />
+                <element signature="e#12389#12390#0" expanded="false" />
+                <marker date="1464951320000" expanded="true" signature="6106:6403" placeholder="{...}" />
+                <marker date="1464951320000" expanded="true" signature="33286:33573" placeholder="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/UserAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="9169" max-vertical-offset="9962">
-              <caret line="574" column="8" selection-start-line="574" selection-start-column="8" selection-end-line="574" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_tealist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher/result/result_tealist.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.153847" vertical-offset="4216" max-vertical-offset="5083">
-              <caret line="288" column="0" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6909091" vertical-offset="1620" max-vertical-offset="7344">
-              <caret line="104" column="23" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,38 +62,223 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/system/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.9615383" vertical-offset="3457" max-vertical-offset="8840">
-              <caret line="214" column="274" selection-start-line="214" selection-start-column="274" selection-end-line="214" selection-end-column="274" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="153" column="66" selection-start-line="153" selection-start-column="66" selection-end-line="153" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://C:/jdk1.7.0_71/src/javax/swing/GroupLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3510" column="9" selection-start-line="3510" selection-start-column="9" selection-end-line="3510" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#142874#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#16085#16086#0" expanded="false" />
+                <element signature="e#16124#16125#0" expanded="false" />
+                <element signature="e#18412#18413#0" expanded="false" />
+                <element signature="e#18452#18453#0" expanded="false" />
+                <element signature="e#19612#19613#0" expanded="false" />
+                <element signature="e#19661#19662#0" expanded="false" />
+                <element signature="e#22451#22452#0" expanded="false" />
+                <element signature="e#22495#22496#0" expanded="false" />
+                <element signature="e#22860#22861#0" expanded="false" />
+                <element signature="e#22921#22922#0" expanded="false" />
+                <element signature="e#23513#23514#0" expanded="false" />
+                <element signature="e#23572#23573#0" expanded="false" />
+                <element signature="e#31372#31373#0" expanded="false" />
+                <element signature="e#31406#31407#0" expanded="false" />
+                <element signature="e#46297#46298#0" expanded="false" />
+                <element signature="e#46366#46367#0" expanded="false" />
+                <element signature="e#49324#49325#0" expanded="false" />
+                <element signature="e#49372#49373#0" expanded="false" />
+                <element signature="e#50236#50237#0" expanded="false" />
+                <element signature="e#50280#50281#0" expanded="false" />
+                <element signature="e#50380#50381#0" expanded="false" />
+                <element signature="e#50417#50418#0" expanded="false" />
+                <element signature="e#50591#50592#0" expanded="false" />
+                <element signature="e#50641#50642#0" expanded="false" />
+                <element signature="e#50757#50758#0" expanded="false" />
+                <element signature="e#50797#50798#0" expanded="false" />
+                <element signature="e#52160#52161#0" expanded="false" />
+                <element signature="e#52215#52216#0" expanded="false" />
+                <element signature="e#52301#52302#0" expanded="false" />
+                <element signature="e#52336#52337#0" expanded="false" />
+                <element signature="e#52372#52373#0" expanded="false" />
+                <element signature="e#52435#52436#0" expanded="false" />
+                <element signature="e#52464#52465#0" expanded="false" />
+                <element signature="e#52497#52498#0" expanded="false" />
+                <element signature="e#52559#52560#0" expanded="false" />
+                <element signature="e#52618#52619#0" expanded="false" />
+                <element signature="e#56604#56605#0" expanded="false" />
+                <element signature="e#56661#56662#0" expanded="false" />
+                <element signature="e#56884#56885#0" expanded="false" />
+                <element signature="e#56931#56932#0" expanded="false" />
+                <element signature="e#58375#58376#0" expanded="false" />
+                <element signature="e#58430#58431#0" expanded="false" />
+                <element signature="e#58892#58893#0" expanded="false" />
+                <element signature="e#58963#58964#0" expanded="false" />
+                <element signature="e#59002#59003#0" expanded="false" />
+                <element signature="e#59051#59052#0" expanded="false" />
+                <element signature="e#59089#59090#0" expanded="false" />
+                <element signature="e#59143#59144#0" expanded="false" />
+                <element signature="e#60296#60297#0" expanded="false" />
+                <element signature="e#60356#60357#0" expanded="false" />
+                <element signature="e#60404#60405#0" expanded="false" />
+                <element signature="e#60465#60466#0" expanded="false" />
+                <element signature="e#60511#60512#0" expanded="false" />
+                <element signature="e#60571#60572#0" expanded="false" />
+                <element signature="e#66763#66764#0" expanded="false" />
+                <element signature="e#66832#66833#0" expanded="false" />
+                <element signature="e#69682#69683#0" expanded="false" />
+                <element signature="e#69748#69749#0" expanded="false" />
+                <element signature="e#75605#75606#0" expanded="false" />
+                <element signature="e#75679#75680#0" expanded="false" />
+                <element signature="e#77015#77016#0" expanded="false" />
+                <element signature="e#77073#77074#0" expanded="false" />
+                <element signature="e#93096#93097#0" expanded="false" />
+                <element signature="e#93142#93143#0" expanded="false" />
+                <element signature="e#98366#98367#0" expanded="false" />
+                <element signature="e#98433#98434#0" expanded="false" />
+                <element signature="e#98548#98549#0" expanded="false" />
+                <element signature="e#98623#98624#0" expanded="false" />
+                <element signature="e#98971#98972#0" expanded="false" />
+                <element signature="e#99035#99036#0" expanded="false" />
+                <element signature="e#99151#99152#0" expanded="false" />
+                <element signature="e#99225#99226#0" expanded="false" />
+                <element signature="e#101478#101479#0" expanded="false" />
+                <element signature="e#101518#101519#0" expanded="false" />
+                <element signature="e#101556#101557#0" expanded="false" />
+                <element signature="e#101601#101602#0" expanded="false" />
+                <element signature="e#118829#118830#0" expanded="false" />
+                <element signature="e#118904#118905#0" expanded="false" />
+                <element signature="e#120771#120772#0" expanded="false" />
+                <element signature="e#120808#120809#0" expanded="false" />
+                <element signature="e#120858#120859#0" expanded="false" />
+                <element signature="e#120908#120909#0" expanded="false" />
+                <element signature="e#120944#120945#0" expanded="false" />
+                <element signature="e#120984#120985#0" expanded="false" />
+                <element signature="e#121541#121542#0" expanded="false" />
+                <element signature="e#121614#121615#0" expanded="false" />
+                <element signature="e#121660#121661#0" expanded="false" />
+                <element signature="e#121733#121734#0" expanded="false" />
+                <element signature="e#122186#122187#0" expanded="false" />
+                <element signature="e#122229#122230#0" expanded="false" />
+                <element signature="e#122913#122914#0" expanded="false" />
+                <element signature="e#122960#122961#0" expanded="false" />
+                <element signature="e#123970#123971#0" expanded="false" />
+                <element signature="e#124006#124007#0" expanded="false" />
+                <element signature="e#124643#124644#0" expanded="false" />
+                <element signature="e#124678#124679#0" expanded="false" />
+                <element signature="e#124951#124952#0" expanded="false" />
+                <element signature="e#124987#124988#0" expanded="false" />
+                <element signature="e#126258#126259#0" expanded="false" />
+                <element signature="e#126302#126303#0" expanded="false" />
+                <element signature="e#126504#126505#0" expanded="false" />
+                <element signature="e#126558#126559#0" expanded="false" />
+                <element signature="e#126601#126602#0" expanded="false" />
+                <element signature="e#126643#126644#0" expanded="false" />
+                <element signature="e#130234#130235#0" expanded="false" />
+                <element signature="e#130269#130270#0" expanded="false" />
+                <element signature="e#130702#130703#0" expanded="false" />
+                <element signature="e#130776#130777#0" expanded="false" />
+                <element signature="e#130812#130813#0" expanded="false" />
+                <element signature="e#130883#130884#0" expanded="false" />
+                <element signature="e#130974#130975#0" expanded="false" />
+                <element signature="e#131032#131033#0" expanded="false" />
+                <element signature="e#131508#131509#0" expanded="false" />
+                <element signature="e#131570#131571#0" expanded="false" />
+                <element signature="e#131606#131607#0" expanded="false" />
+                <element signature="e#131690#131691#0" expanded="false" />
+                <element signature="e#136828#136829#0" expanded="false" />
+                <element signature="e#136864#136865#0" expanded="false" />
+                <element signature="e#138969#138970#0" expanded="false" />
+                <element signature="e#139033#139034#0" expanded="false" />
+                <element signature="e#139249#139250#0" expanded="false" />
+                <element signature="e#139287#139288#0" expanded="false" />
+                <element signature="e#140775#140776#0" expanded="false" />
+                <element signature="e#140815#140816#0" expanded="false" />
+                <element signature="e#141501#141502#0" expanded="false" />
+                <element signature="e#141555#141556#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/system/welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6869245" vertical-offset="3469" max-vertical-offset="4199">
-              <caret line="239" column="46" selection-start-line="239" selection-start-column="38" selection-end-line="239" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="152" column="15" selection-start-line="152" selection-start-column="15" selection-end-line="152" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="success.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/success.jsp">
+      <file leaf-file-name="IUserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="510" max-vertical-offset="1139">
-              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enter_tealist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher/enter/enter_tealist.jsp">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="1632" max-vertical-offset="5729">
-              <caret line="113" column="83" selection-start-line="113" selection-start-column="83" selection-end-line="113" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="166" column="29" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result_add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="271" column="18" selection-start-line="271" selection-start-column="18" selection-end-line="271" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -198,63 +292,70 @@
       <GitPushTagMode />
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Enter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student/enter/enter_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/news/news_stulist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/notice/notice_stulist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stulist.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/student/enter/enter_stulist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/ITeacherDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/impl/TeacherDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/teacher.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/information/information_list1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/InformationAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_importExcel.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/information/information_stulist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/user/user_stulist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_tealist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/teacher/enter/enter_tealist.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/User/user_importExcel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Teacher.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/domain/Teacher.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/teacher/teacher_tealist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/ITeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student/teacher.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/domain/Admin.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/IAdminDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/impl/AdminDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Admin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IAdminService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/AdminAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/menu/login1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/style/system/manage/blue/template.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/beans.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/result/result_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/result/result_stulist.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_teaadd.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_tealist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/information/information_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stulist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student/competition/competition_stulist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/teacher/result/result_tealist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Enter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/uploadAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/statistics/pie1Test.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/statistics/echartsTest.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/User/user_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_list1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student/result/result_stulist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/utils/MD5Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/TeacherAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/UserAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/TeacherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/student/information/information_stulist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/teacher/enter/enter_tealist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/notice/notice_add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/teacher/result/result_tealist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/News.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/domain/News.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/news/news_add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/NewsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/news/news_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/notice/notice_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/competition/competition_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/user/user_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/ITeacherService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/statistics/bar1Test.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/StatAction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/system/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/competition/competition_stulist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/CompetitionAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/enter/enter_stuadd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/result/result_add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/system/welcome.jsp" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -264,6 +365,13 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/apache-maven-3.3.3-bin/apache-maven-3.3.3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -287,62 +395,8 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ffcs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="install" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ffcs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="compiler" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ffcs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="clean" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -356,7 +410,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -382,8 +436,12 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,148 +493,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="information" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -688,127 +604,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="information" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -860,40 +656,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffcs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xkjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -904,34 +669,35 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/zhsq" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.30890054" />
+    <property name="project.structure.side.proportion" value="0.40723562" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;login1&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/menu/login1.jsp&#10;index.jsp&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;login.jsp&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/menu/login1.jsp&#10;index.j&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;login&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/java/com/ffcs/xkjs/action/LoginAction.java&#10;news_lis&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/manage/news/news_list1.jsp&#10;login1.jsp&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/menu/login1.jsp&#10;index.&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;enter_lis&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/manage/enter/enter_list1.jsp" />
+    <property name="SearchEverywhereHistoryKey" value="Maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;LinkInf&#9;PSI&#9;JAVA://javax.swing.GroupLayout.LinkInfo&#10;userservice&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java&#10;welcome&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/welcome.jsp&#10;index.jsp&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;index.j&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;index.&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;User&#9;PSI&#9;JAVA://com.ffcs.xkjs.domain.User&#10;template.css&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/resources/style/system/manage/blue/template.css&#10;index.js&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/system/index.jsp&#10;皮肤&#9;null&#9;null&#10;index&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/resources/echarts-2.2.7/doc/example/www/index.html&#10;validate.min.&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/resources/js/jquery.validate.min.js&#10;login1&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/menu/login1.jsp&#10;web.xml&#9;FILE&#9;file://F:/xkjs/xkjs/target/ffcs/WEB-INF/web.xml&#10;login.jsp&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/menu/login1.jsp&#10;login&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/java/com/ffcs/xkjs/action/LoginAction.java&#10;news_lis&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/manage/news/news_list1.jsp&#10;login1.jsp&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/menu/login1.jsp&#10;enter_lis&#9;FILE&#9;file://F:/xkjs/xkjs/src/main/webapp/manage/enter/enter_list1.jsp" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="editorconfig.notification" value="Applied .editorconfig settings" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\xkjs\xkjs\src\main\webapp\teacher\result" />
-      <recent name="F:\xkjs\xkjs\src\main\webapp\teacher\enter" />
-      <recent name="F:\xkjs\xkjs\src\main\resources\domain" />
-      <recent name="F:\xkjs\xkjs\src\main\webapp\teacher" />
-      <recent name="F:\xkjs\xkjs\src\main\webapp\resources\file" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\xkjs\xkjs\src\main\webapp\teacher\teacher" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xkjs\xkjs" />
+      <recent name="F:\xkjs\xkjs\src\main\webapp\resources\file" />
+      <recent name="F:\xkjs\xkjs\src\main\java\com\ffcs\xkjs\service" />
+      <recent name="F:\xkjs\xkjs\src\main\java\com\ffcs\xkjs\service\impl" />
+      <recent name="F:\xkjs\xkjs\src\main\java\com\ffcs\xkjs\dao\impl" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.xkjs">
@@ -961,55 +727,6 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1083,107 +800,33 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -1205,6 +848,117 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -1242,6 +996,20 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1258,28 +1026,66 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -1293,8 +1099,150 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ffcs" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
     <configuration default="false" name="xkjs" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.65" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/menu/login1.jsp" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="ffcs:war exploded">
           <settings>
@@ -1458,7 +1406,37 @@
       <workItem from="1461806554045" duration="2381000" />
       <workItem from="1461861654294" duration="8240000" />
       <workItem from="1462276366853" duration="10000" />
-      <workItem from="1462276395747" duration="17801000" />
+      <workItem from="1462276395747" duration="18021000" />
+      <workItem from="1462412587214" duration="1507000" />
+      <workItem from="1462414201141" duration="675000" />
+      <workItem from="1462414913239" duration="1136000" />
+      <workItem from="1462416317589" duration="25190000" />
+      <workItem from="1462495370037" duration="15618000" />
+      <workItem from="1462527519628" duration="885000" />
+      <workItem from="1462547311212" duration="2883000" />
+      <workItem from="1462587395512" duration="17968000" />
+      <workItem from="1462627276703" duration="12861000" />
+      <workItem from="1462671823436" duration="6733000" />
+      <workItem from="1462762872773" duration="14495000" />
+      <workItem from="1462797232203" duration="6319000" />
+      <workItem from="1462842176633" duration="5433000" />
+      <workItem from="1462896370025" duration="632000" />
+      <workItem from="1462930252313" duration="852000" />
+      <workItem from="1462973769600" duration="1918000" />
+      <workItem from="1463016112380" duration="1485000" />
+      <workItem from="1464675703110" duration="6170000" />
+      <workItem from="1464682736653" duration="7918000" />
+      <workItem from="1464765170813" duration="672000" />
+      <workItem from="1464847166726" duration="267000" />
+      <workItem from="1464920960233" duration="21684000" />
+      <workItem from="1464953883617" duration="2556000" />
+      <workItem from="1464969216912" duration="606000" />
+      <workItem from="1465001060391" duration="790000" />
+      <workItem from="1465003511111" duration="2027000" />
+      <workItem from="1465010154469" duration="3280000" />
+      <workItem from="1465208945750" duration="351000" />
+      <workItem from="1466052228716" duration="1932000" />
+      <workItem from="1466215538114" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="change">
       <created>1460891433865</created>
@@ -1532,81 +1510,54 @@
       <option name="project" value="LOCAL" />
       <updated>1461525655062</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="5 3 1:08">
+      <created>1462295400420</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1462295400433</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246444000" />
+    <option name="totallyTimeSpent" value="411739000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6348123" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2034188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16068377" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25438598" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32526475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6348123" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25438598" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2804699" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60567826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7641026" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63418806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7965812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6348123" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14358975" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16068377" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25438598" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27760968" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1620,9 +1571,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
     <MESSAGE value="change" />
     <MESSAGE value="sunday" />
     <MESSAGE value="sunday1" />
@@ -1638,11 +1586,12 @@
     <MESSAGE value="422 0:12" />
     <MESSAGE value="424 18:56" />
     <MESSAGE value="425 3:12" />
-    <option name="LAST_COMMIT_MESSAGE" value="425 3:12" />
+    <MESSAGE value="5 3 1:08" />
+    <option name="LAST_COMMIT_MESSAGE" value="5 3 1:08" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="44" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1651,406 +1600,538 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/statistics/echartsTest.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-          <caret line="12" column="28" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Area.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.052158274" vertical-offset="73" max-vertical-offset="629">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24460432" vertical-offset="0" max-vertical-offset="556">
-          <caret line="8" column="83" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="11" column="72" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IAcademeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27517986" vertical-offset="0" max-vertical-offset="556">
-          <caret line="11" column="94" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/IAdminDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21402878" vertical-offset="0" max-vertical-offset="556">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/dao/impl/AdminDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7032374" vertical-offset="0" max-vertical-offset="556">
-          <caret line="26" column="35" selection-start-line="14" selection-start-column="4" selection-end-line="26" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78084713" vertical-offset="2041" max-vertical-offset="3094">
-          <caret line="161" column="20" selection-start-line="152" selection-start-column="8" selection-end-line="161" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/menu/login1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="1377" max-vertical-offset="2448">
-          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70183486" vertical-offset="1224" max-vertical-offset="2720">
-          <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Admin.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="561">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="2754">
-          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IAdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="544">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="916" max-vertical-offset="1853">
-          <caret line="101" column="52" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.038462" vertical-offset="2118" max-vertical-offset="5457">
-          <caret line="143" column="21" selection-start-line="128" selection-start-column="16" selection-end-line="143" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.696429" vertical-offset="2214" max-vertical-offset="3553">
-          <caret line="149" column="21" selection-start-line="135" selection-start-column="16" selection-end-line="149" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_teaadd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.307693" vertical-offset="2121" max-vertical-offset="3485">
-          <caret line="139" column="77" selection-start-line="139" selection-start-column="77" selection-end-line="139" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/notice/notice_list1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46034816" vertical-offset="2601" max-vertical-offset="3944">
-          <caret line="167" column="149" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/xwork/xwork-core/2.2.3/xwork-core-2.2.3-sources.jar!/com/opensymphony/xwork2/DefaultActionInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1233885" vertical-offset="5630" max-vertical-offset="7446">
-          <caret line="454" column="0" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/notice/notice_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4796906" vertical-offset="765" max-vertical-offset="3978">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13152805" vertical-offset="578" max-vertical-offset="5287">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/user/user_stulist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1564481" vertical-offset="1020" max-vertical-offset="2448">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43164062" vertical-offset="0" max-vertical-offset="646">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/information/information_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2896406" vertical-offset="1801" max-vertical-offset="3723">
-          <caret line="114" column="83" selection-start-line="114" selection-start-column="79" selection-end-line="114" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/InformationAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9058115" vertical-offset="3456" max-vertical-offset="5066">
-          <caret line="141" column="25" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stuadd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.562189" vertical-offset="1050" max-vertical-offset="3468">
-          <caret line="146" column="21" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/result/result_stuadd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2985075" vertical-offset="1326" max-vertical-offset="5287">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stulist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6766169" vertical-offset="867" max-vertical-offset="3519">
-          <caret line="67" column="54" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="54" />
-          <folding />
+        <state vertical-scroll-proportion="-10.153846">
+          <caret line="114" column="42" selection-start-line="114" selection-start-column="42" selection-end-line="114" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/User/user_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="1428" max-vertical-offset="5151">
-          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-          <folding />
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="126" column="81" selection-start-line="124" selection-start-column="9" selection-end-line="126" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/User/user_add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66341466" vertical-offset="1275" max-vertical-offset="4301">
-          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-          <folding />
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="174" column="84" selection-start-line="174" selection-start-column="84" selection-end-line="174" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/competition/competition_stulist.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_list1.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7634146" vertical-offset="2186" max-vertical-offset="3621">
-          <caret line="147" column="77" selection-start-line="147" selection-start-column="77" selection-end-line="147" selection-end-column="77" />
-          <folding />
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="145" column="71" selection-start-line="145" selection-start-column="71" selection-end-line="145" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/teacher/teacher_list1.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IEnterService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="2176" max-vertical-offset="4199">
-          <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/result/result_stulist.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/EnterServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41951218" vertical-offset="1188" max-vertical-offset="3281">
-          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/utils/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6995413" vertical-offset="1208" max-vertical-offset="1768">
-          <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
-          <folding>
-            <element signature="e#3184#3185#0" expanded="false" />
-            <element signature="e#3264#3265#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_tealist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.26923" vertical-offset="1524" max-vertical-offset="3519">
-          <caret line="139" column="79" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/TeacherServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="2091">
-          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/AdminAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24460432" vertical-offset="0" max-vertical-offset="556">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/ITeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="510">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/information/information_stulist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.769231" vertical-offset="945" max-vertical-offset="2482">
-          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/TeacherAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5546" max-vertical-offset="7990">
-          <caret line="366" column="7" selection-start-line="366" selection-start-column="7" selection-end-line="366" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="40" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_list1.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5918762" vertical-offset="4080" max-vertical-offset="5338">
-          <caret line="258" column="90" selection-start-line="258" selection-start-column="90" selection-end-line="258" selection-end-column="90" />
-          <folding />
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="138" column="71" selection-start-line="138" selection-start-column="71" selection-end-line="138" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/UserAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/news/news_list1.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9322" max-vertical-offset="9962">
-          <caret line="574" column="8" selection-start-line="574" selection-start-column="8" selection-end-line="574" selection-end-column="8" />
+        <state vertical-scroll-proportion="71.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Notice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="37" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Notice.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="19" selection-start-line="25" selection-start-column="7" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/News.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/notice/notice_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="115" column="126" selection-start-line="115" selection-start-column="97" selection-end-line="115" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/NoticeAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.6">
+          <caret line="250" column="30" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/news/news_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2307692">
+          <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/NewsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.866667">
+          <caret line="346" column="42" selection-start-line="346" selection-start-column="42" selection-end-line="346" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/news/news_stuadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.384615">
+          <caret line="168" column="84" selection-start-line="168" selection-start-column="84" selection-end-line="168" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/notice/notice_stuadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.730769">
+          <caret line="141" column="97" selection-start-line="141" selection-start-column="97" selection-end-line="141" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/teacher/teacher_stuadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="130" column="103" selection-start-line="130" selection-start-column="103" selection-end-line="130" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/result/result_stulist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.730769">
+          <caret line="86" column="13" selection-start-line="74" selection-start-column="38" selection-end-line="86" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/news/news_stulist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/user/user_stuadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="138" column="79" selection-start-line="138" selection-start-column="79" selection-end-line="138" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/competition/competition_stuadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.115385">
+          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/enter/enter_stulist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="135" column="47" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/TeacherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46961325">
+          <caret line="34" column="35" selection-start-line="33" selection-start-column="4" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/ICompetitionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/ITeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/CompetitionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="20" selection-start-line="122" selection-start-column="8" selection-end-line="148" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="35" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/domain/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3057554">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/enter/enter_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.892857">
+          <caret line="248" column="63" selection-start-line="248" selection-start-column="63" selection-end-line="248" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/StatAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="409" column="32" selection-start-line="409" selection-start-column="32" selection-end-line="409" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher/teacher/teacher_teaadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.951644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/enter/enter_stuadd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/AdminAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/BaseAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0" vertical-offset="9083" max-vertical-offset="18394">
-          <caret line="587" column="9" selection-start-line="577" selection-start-column="8" selection-end-line="587" selection-end-column="9" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/CompetitionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5570247">
+          <caret line="397" column="0" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/competition/competition_stulist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029360967">
+          <caret line="170" column="21" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/ResultAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4666667" vertical-offset="9313" max-vertical-offset="16847">
-          <caret line="573" column="0" selection-start-line="573" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="371" column="0" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#14487#14488#0" expanded="false" />
+            <element signature="e#14527#14528#0" expanded="false" />
+            <element signature="e#14593#14594#0" expanded="false" />
+            <element signature="e#14651#14652#0" expanded="false" />
+            <element signature="e#14682#14683#0" expanded="false" />
+            <element signature="e#14711#14712#0" expanded="false" />
+            <element signature="e#14753#14754#0" expanded="false" />
+            <element signature="e#14789#14790#0" expanded="false" />
+            <element signature="e#14830#14831#0" expanded="false" />
+            <element signature="e#14867#14868#0" expanded="false" />
+            <element signature="e#14927#14928#0" expanded="false" />
+            <element signature="e#14979#14980#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher/enter/enter_tealist.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/statistics/bar1Test.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="1632" max-vertical-offset="5729">
-          <caret line="113" column="83" selection-start-line="113" selection-start-column="83" selection-end-line="113" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="41" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/result/result_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="271" column="18" selection-start-line="271" selection-start-column="18" selection-end-line="271" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/system/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9615383" vertical-offset="3457" max-vertical-offset="8840">
-          <caret line="214" column="274" selection-start-line="214" selection-start-column="274" selection-end-line="214" selection-end-column="274" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="66" selection-start-line="153" selection-start-column="66" selection-end-line="153" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/EnterAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6909091" vertical-offset="1620" max-vertical-offset="7344">
-          <caret line="104" column="23" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher/result/result_tealist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.153847" vertical-offset="4216" max-vertical-offset="5083">
-          <caret line="288" column="0" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="510" max-vertical-offset="1139">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="31" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#11894#11895#0" expanded="false" />
+            <element signature="e#11931#11932#0" expanded="false" />
+            <element signature="e#11991#11992#0" expanded="false" />
+            <element signature="e#12043#12044#0" expanded="false" />
+            <element signature="e#12074#12075#0" expanded="false" />
+            <element signature="e#12103#12104#0" expanded="false" />
+            <element signature="e#12145#12146#0" expanded="false" />
+            <element signature="e#12181#12182#0" expanded="false" />
+            <element signature="e#12225#12226#0" expanded="false" />
+            <element signature="e#12265#12266#0" expanded="false" />
+            <element signature="e#12331#12332#0" expanded="false" />
+            <element signature="e#12389#12390#0" expanded="false" />
+            <marker date="1464951320000" expanded="true" signature="6106:6403" placeholder="{...}" />
+            <marker date="1464951320000" expanded="true" signature="33286:33573" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/action/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6869245" vertical-offset="3469" max-vertical-offset="4199">
-          <caret line="239" column="46" selection-start-line="239" selection-start-column="38" selection-end-line="239" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="152" column="15" selection-start-line="152" selection-start-column="15" selection-end-line="152" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/system/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="166" column="29" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ffcs/xkjs/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/jdk1.7.0_71/src/javax/swing/GroupLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3510" column="9" selection-start-line="3510" selection-start-column="9" selection-end-line="3510" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#142874#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#16085#16086#0" expanded="false" />
+            <element signature="e#16124#16125#0" expanded="false" />
+            <element signature="e#18412#18413#0" expanded="false" />
+            <element signature="e#18452#18453#0" expanded="false" />
+            <element signature="e#19612#19613#0" expanded="false" />
+            <element signature="e#19661#19662#0" expanded="false" />
+            <element signature="e#22451#22452#0" expanded="false" />
+            <element signature="e#22495#22496#0" expanded="false" />
+            <element signature="e#22860#22861#0" expanded="false" />
+            <element signature="e#22921#22922#0" expanded="false" />
+            <element signature="e#23513#23514#0" expanded="false" />
+            <element signature="e#23572#23573#0" expanded="false" />
+            <element signature="e#31372#31373#0" expanded="false" />
+            <element signature="e#31406#31407#0" expanded="false" />
+            <element signature="e#46297#46298#0" expanded="false" />
+            <element signature="e#46366#46367#0" expanded="false" />
+            <element signature="e#49324#49325#0" expanded="false" />
+            <element signature="e#49372#49373#0" expanded="false" />
+            <element signature="e#50236#50237#0" expanded="false" />
+            <element signature="e#50280#50281#0" expanded="false" />
+            <element signature="e#50380#50381#0" expanded="false" />
+            <element signature="e#50417#50418#0" expanded="false" />
+            <element signature="e#50591#50592#0" expanded="false" />
+            <element signature="e#50641#50642#0" expanded="false" />
+            <element signature="e#50757#50758#0" expanded="false" />
+            <element signature="e#50797#50798#0" expanded="false" />
+            <element signature="e#52160#52161#0" expanded="false" />
+            <element signature="e#52215#52216#0" expanded="false" />
+            <element signature="e#52301#52302#0" expanded="false" />
+            <element signature="e#52336#52337#0" expanded="false" />
+            <element signature="e#52372#52373#0" expanded="false" />
+            <element signature="e#52435#52436#0" expanded="false" />
+            <element signature="e#52464#52465#0" expanded="false" />
+            <element signature="e#52497#52498#0" expanded="false" />
+            <element signature="e#52559#52560#0" expanded="false" />
+            <element signature="e#52618#52619#0" expanded="false" />
+            <element signature="e#56604#56605#0" expanded="false" />
+            <element signature="e#56661#56662#0" expanded="false" />
+            <element signature="e#56884#56885#0" expanded="false" />
+            <element signature="e#56931#56932#0" expanded="false" />
+            <element signature="e#58375#58376#0" expanded="false" />
+            <element signature="e#58430#58431#0" expanded="false" />
+            <element signature="e#58892#58893#0" expanded="false" />
+            <element signature="e#58963#58964#0" expanded="false" />
+            <element signature="e#59002#59003#0" expanded="false" />
+            <element signature="e#59051#59052#0" expanded="false" />
+            <element signature="e#59089#59090#0" expanded="false" />
+            <element signature="e#59143#59144#0" expanded="false" />
+            <element signature="e#60296#60297#0" expanded="false" />
+            <element signature="e#60356#60357#0" expanded="false" />
+            <element signature="e#60404#60405#0" expanded="false" />
+            <element signature="e#60465#60466#0" expanded="false" />
+            <element signature="e#60511#60512#0" expanded="false" />
+            <element signature="e#60571#60572#0" expanded="false" />
+            <element signature="e#66763#66764#0" expanded="false" />
+            <element signature="e#66832#66833#0" expanded="false" />
+            <element signature="e#69682#69683#0" expanded="false" />
+            <element signature="e#69748#69749#0" expanded="false" />
+            <element signature="e#75605#75606#0" expanded="false" />
+            <element signature="e#75679#75680#0" expanded="false" />
+            <element signature="e#77015#77016#0" expanded="false" />
+            <element signature="e#77073#77074#0" expanded="false" />
+            <element signature="e#93096#93097#0" expanded="false" />
+            <element signature="e#93142#93143#0" expanded="false" />
+            <element signature="e#98366#98367#0" expanded="false" />
+            <element signature="e#98433#98434#0" expanded="false" />
+            <element signature="e#98548#98549#0" expanded="false" />
+            <element signature="e#98623#98624#0" expanded="false" />
+            <element signature="e#98971#98972#0" expanded="false" />
+            <element signature="e#99035#99036#0" expanded="false" />
+            <element signature="e#99151#99152#0" expanded="false" />
+            <element signature="e#99225#99226#0" expanded="false" />
+            <element signature="e#101478#101479#0" expanded="false" />
+            <element signature="e#101518#101519#0" expanded="false" />
+            <element signature="e#101556#101557#0" expanded="false" />
+            <element signature="e#101601#101602#0" expanded="false" />
+            <element signature="e#118829#118830#0" expanded="false" />
+            <element signature="e#118904#118905#0" expanded="false" />
+            <element signature="e#120771#120772#0" expanded="false" />
+            <element signature="e#120808#120809#0" expanded="false" />
+            <element signature="e#120858#120859#0" expanded="false" />
+            <element signature="e#120908#120909#0" expanded="false" />
+            <element signature="e#120944#120945#0" expanded="false" />
+            <element signature="e#120984#120985#0" expanded="false" />
+            <element signature="e#121541#121542#0" expanded="false" />
+            <element signature="e#121614#121615#0" expanded="false" />
+            <element signature="e#121660#121661#0" expanded="false" />
+            <element signature="e#121733#121734#0" expanded="false" />
+            <element signature="e#122186#122187#0" expanded="false" />
+            <element signature="e#122229#122230#0" expanded="false" />
+            <element signature="e#122913#122914#0" expanded="false" />
+            <element signature="e#122960#122961#0" expanded="false" />
+            <element signature="e#123970#123971#0" expanded="false" />
+            <element signature="e#124006#124007#0" expanded="false" />
+            <element signature="e#124643#124644#0" expanded="false" />
+            <element signature="e#124678#124679#0" expanded="false" />
+            <element signature="e#124951#124952#0" expanded="false" />
+            <element signature="e#124987#124988#0" expanded="false" />
+            <element signature="e#126258#126259#0" expanded="false" />
+            <element signature="e#126302#126303#0" expanded="false" />
+            <element signature="e#126504#126505#0" expanded="false" />
+            <element signature="e#126558#126559#0" expanded="false" />
+            <element signature="e#126601#126602#0" expanded="false" />
+            <element signature="e#126643#126644#0" expanded="false" />
+            <element signature="e#130234#130235#0" expanded="false" />
+            <element signature="e#130269#130270#0" expanded="false" />
+            <element signature="e#130702#130703#0" expanded="false" />
+            <element signature="e#130776#130777#0" expanded="false" />
+            <element signature="e#130812#130813#0" expanded="false" />
+            <element signature="e#130883#130884#0" expanded="false" />
+            <element signature="e#130974#130975#0" expanded="false" />
+            <element signature="e#131032#131033#0" expanded="false" />
+            <element signature="e#131508#131509#0" expanded="false" />
+            <element signature="e#131570#131571#0" expanded="false" />
+            <element signature="e#131606#131607#0" expanded="false" />
+            <element signature="e#131690#131691#0" expanded="false" />
+            <element signature="e#136828#136829#0" expanded="false" />
+            <element signature="e#136864#136865#0" expanded="false" />
+            <element signature="e#138969#138970#0" expanded="false" />
+            <element signature="e#139033#139034#0" expanded="false" />
+            <element signature="e#139249#139250#0" expanded="false" />
+            <element signature="e#139287#139288#0" expanded="false" />
+            <element signature="e#140775#140776#0" expanded="false" />
+            <element signature="e#140815#140816#0" expanded="false" />
+            <element signature="e#141501#141502#0" expanded="false" />
+            <element signature="e#141555#141556#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2065,7 +2146,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.30890054" />
+                <option value="0.40723562" />
                 <option value="0.5" />
               </list>
             </option>
@@ -2074,11 +2155,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate (ffcs)|Hibernate</last-edited>
+          <last-edited>Struts 2 (ffcs)|Struts 2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.30890054" />
+                <option value="0.40723562" />
               </list>
             </option>
           </splitter-proportions>
@@ -2113,7 +2194,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.30890054" />
+                <option value="0.40723562" />
               </list>
             </option>
           </splitter-proportions>
@@ -2121,11 +2202,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: rt:rt:1.7</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.30890054" />
+                <option value="0.40723562" />
               </list>
             </option>
           </splitter-proportions>

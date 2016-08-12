@@ -1,12 +1,9 @@
 package com.ffcs.xkjs.action;
 
 import java.io.PrintWriter;
-import java.lang.reflect.Array;
 import java.util.*;
 
 import javax.annotation.Resource;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletResponse;
 
 import com.alibaba.fastjson.JSON;
 import com.ffcs.xkjs.domain.Area;
@@ -16,11 +13,8 @@ import com.ffcs.xkjs.service.IElecTextService;
 import com.ffcs.xkjs.utils.TUtil;
 import com.ffcs.xkjs.utils.ValueUtils;
 
-import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.util.ValueStack;
 
 /**
  * Created by tianf on 2016/3/27.

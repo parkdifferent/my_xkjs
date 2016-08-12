@@ -4,10 +4,14 @@ import com.ffcs.xkjs.domain.News;
 import com.ffcs.xkjs.service.INewsService;
 import com.ffcs.xkjs.utils.TUtil;
 import com.opensymphony.xwork2.ActionContext;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -105,6 +109,8 @@ public class NewsAction extends BaseAction<News> {
             request.setAttribute("news", news2);
             //编辑，初始化kindeditor的显示值
             request.setAttribute("content",news2.getContent());
+
+            request.setAttribute("filePath",news2.getFilePath());
         }
 
         request.setAttribute("edit", true);
@@ -157,11 +163,112 @@ public class NewsAction extends BaseAction<News> {
 
 
         if(TUtil.null2String(news.getNewsId()).equals("")) {
+
+            if(!TUtil.null2String(upload).equals("")) {
+
+                try {
+                    InputStream is =new FileInputStream(upload);
+                    //获取文件扩展名
+                    int index=uploadFileName.lastIndexOf(".");
+                    String extFileName=uploadFileName.substring(index,uploadFileName.length());
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                    String fileName = sdf.format(new Date());
+
+                    String path= "/upload/" + fileName;
+
+                    File destFile = new File(ServletActionContext.getServletContext()
+                            .getRealPath(path));
+
+                    // File destFile = new File(ServletActionContext.getServletContext()
+                    // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+
+               /* if(!destFile.exists()){
+                    destFile.mkdirs();
+                }*/
+                    //FileUtils.copyFile(upload, destFile);
+                    //File toFile=new File(uploadPath,this.getUploadFileName());
+                    OutputStream os=new FileOutputStream(destFile+extFileName);
+                    byte[] buffer=new byte[1024];
+                    int length=0;
+                    while((length=is.read(buffer))>0) {
+                        os.write(buffer,0,length);
+                    }
+                    is.close();
+                    os.close();
+                    System.out.println(destFile);
+                    System.out.println(uploadFileName);
+                    System.out.println(uploadContentType);
+                    news.setFileName(uploadFileName);
+                    news.setFilePath(path+extFileName);
+                    // notice.setFilePath(destFile);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+
+                }
+            }
+
+
+
+
+
             newsService.saveNews(news);
         }
 
 
         else {
+
+            if(!TUtil.null2String(upload).equals("")) {
+                try {
+                    InputStream is =new FileInputStream(upload);
+                    //获取文件扩展名
+                    int index=uploadFileName.lastIndexOf(".");
+                    String extFileName=uploadFileName.substring(index,uploadFileName.length());
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+                    String fileName = sdf.format(new Date());
+                    String path= "/upload/" + fileName;
+                    File destFile = new File(ServletActionContext.getServletContext()
+                            .getRealPath(path));
+
+                    // File destFile = new File(ServletActionContext.getServletContext()
+                    // .getRealPath("/")+"upload/"+fileName+uploadFileName.substring(uploadFileName.lastIndexOf(".")));
+
+               /* if(!destFile.exists()){
+                    destFile.mkdirs();
+                }*/
+                    //FileUtils.copyFile(upload, destFile);
+                    //File toFile=new File(uploadPath,this.getUploadFileName());
+                    OutputStream os=new FileOutputStream(destFile+extFileName);
+                    byte[] buffer=new byte[1024];
+                    int length=0;
+                    while((length=is.read(buffer))>0) {
+                        os.write(buffer,0,length);
+                    }
+                    is.close();
+                    os.close();
+
+                    System.out.println(destFile);
+                    System.out.println(uploadFileName);
+                    System.out.println(uploadContentType);
+                    news.setFileName(uploadFileName);
+                    news.setFilePath(path+extFileName);
+
+                }catch (Exception e) {
+                    e.printStackTrace();
+
+                }
+            }
+
+            if(TUtil.null2String(upload).equals("")) {
+                News news1 = new News();
+                news1.setNewsId(news.getNewsId());
+                News news2 = newsService.findNewsByID(news1);
+                String fileName1 = news2.getFileName();
+                String filePath1 = news2.getFilePath();
+                news.setFileName(fileName1);
+                news.setFilePath(filePath1);
+            }
+
 
             newsService.update(news);
         }
@@ -236,6 +343,8 @@ public class NewsAction extends BaseAction<News> {
             request.setAttribute("news", news2);
             //编辑，初始化kindeditor的显示值
             request.setAttribute("content",news2.getContent());
+
+            request.setAttribute("filePath",news2.getFilePath());
         }
 
         request.setAttribute("edit", true);
@@ -246,15 +355,31 @@ public class NewsAction extends BaseAction<News> {
     }
 
 
+    private File upload;
+    private String uploadContentType;
+    private String uploadFileName; // 真实文件名
 
+    public File getUpload() {
+        return upload;
+    }
 
+    public void setUpload(File upload) {
+        this.upload = upload;
+    }
 
+    public String getUploadContentType() {
+        return uploadContentType;
+    }
 
+    public void setUploadContentType(String uploadContentType) {
+        this.uploadContentType = uploadContentType;
+    }
 
+    public String getUploadFileName() {
+        return uploadFileName;
+    }
 
-
-
-
-
-
+    public void setUploadFileName(String uploadFileName) {
+        this.uploadFileName = uploadFileName;
+    }
 }

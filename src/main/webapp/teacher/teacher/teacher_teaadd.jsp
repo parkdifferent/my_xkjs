@@ -161,7 +161,7 @@
                     <li><span class="webname">
 
         <%--<input name="brief" type="text" id="brief" value="<s:property value="#request.teacher.brief"/>" />--%>
-                        <textarea name="brief" cols="100" rows="10" style="width:700px;height:300px;"><s:property value="#request.teacher.brief"/></textarea>
+                        <textarea name="brief" cols="100" rows="10" style="width:500px;height:120px;"><s:property value="#request.teacher.brief"/></textarea>
 
       </span></li>
                 </ul>

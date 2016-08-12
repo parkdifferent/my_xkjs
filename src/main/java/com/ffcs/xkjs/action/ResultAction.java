@@ -47,6 +47,9 @@ public class ResultAction extends BaseAction<Result> {
     @Resource(name= ITeacherService.SERVICE_NAME)
     ITeacherService teacherService;
 
+    @Resource(name = IEnterService.SERVICE_NAME)
+    IEnterService enterService;
+
 
     public String list() {
 
@@ -309,13 +312,64 @@ public class ResultAction extends BaseAction<Result> {
         if(TUtil.null2String(resultId).equals("")) {
             //noticeService.saveNotice(notice);
             //competitionService.saveCompetition(competition);
+           // resultService.saveResult(result);
+
+            String sno=result.getSno();
+            User user=userService.findUserBySno(sno);
+            if(!TUtil.null2String(user).equals("")) {
+                result.setName(user.getUserName());              //姓名
+                result.setGrade(user.getGrade());                //年级
+                result.setAcademe(user.getAcademe());              //学院
+                result.setProfession(user.getProfession());            //专业
+                result.setClasses(user.getClasses());              //班级
+            }
+
+            //指导教师
+            Enter enter1=new Enter();
+            enter1.setSno(sno);
+            enter1.setComName(result.getComName());
+            List<Enter> enterList = enterService.findEnterByCondition(enter1,null,null);
+            if(!TUtil.null2String(enterList).equals("") && enterList.size()>0) {
+                Enter enter2 = enterList.get(0);
+                result.setTutor(enter2.getTutor());            //指导教师
+            }
+
+
+
+
+
+
             resultService.saveResult(result);
+
         }
 
 
         else {
             // noticeService.update(notice);
             // competitionService.update(competition);
+            String sno=result.getSno();
+            User user=userService.findUserBySno(sno);
+            if(!TUtil.null2String(user).equals("")) {
+                result.setName(user.getUserName());              //姓名
+                result.setGrade(user.getGrade());                //年级
+                result.setAcademe(user.getAcademe());              //学院
+                result.setProfession(user.getProfession());            //专业
+                result.setClasses(user.getClasses());              //班级
+            }
+
+            //指导教师
+            Enter enter1=new Enter();
+            enter1.setSno(sno);
+            enter1.setComName(result.getComName());
+            List<Enter> enterList = enterService.findEnterByCondition(enter1,null,null);
+            if(!TUtil.null2String(enterList).equals("") && enterList.size()>0) {
+                Enter enter2 = enterList.get(0);
+                result.setTutor(enter2.getTutor());            //指导教师
+            }
+
+
+
+
             resultService.update(result);
         }
 
@@ -424,7 +478,21 @@ public class ResultAction extends BaseAction<Result> {
                 result2.setSno(sno);
                 System.out.println(sno);
 
-                Cell fCell1=rs.getCell(1,i);
+
+                User user=userService.findUserBySno(sno);
+                if(!TUtil.null2String(user).equals("")) {
+                    result2.setName(user.getUserName());              //姓名
+                    result2.setGrade(user.getGrade());                //年级
+                    result2.setAcademe(user.getAcademe());              //学院
+                    result2.setProfession(user.getProfession());            //专业
+                    result2.setClasses(user.getClasses());              //班级
+                }
+
+
+
+
+
+               /* Cell fCell1=rs.getCell(1,i);
                 String name=fCell1.getContents();
                 result2.setName(name);
                 System.out.println(name);
@@ -447,31 +515,43 @@ public class ResultAction extends BaseAction<Result> {
                 Cell fCell5=rs.getCell(5,i);
                 String classes=fCell5.getContents();
                 result2.setClasses(classes);
-                System.out.println(classes);
+                System.out.println(classes);*/
 
-                Cell fCell6=rs.getCell(6,i);
+                Cell fCell6=rs.getCell(1,i);
                 String comName=fCell6.getContents();
                 result2.setComName(comName);
                 System.out.println(comName);
 
-                Cell fCell7=rs.getCell(7,i);
+                Cell fCell7=rs.getCell(2,i);
                 String form=fCell7.getContents();
                 result2.setForm(form);
                 System.out.println(form);
 
-                Cell fCell8=rs.getCell(8,i);
+                Cell fCell8=rs.getCell(3,i);
                 String prize=fCell8.getContents();
                 result2.setPrize(prize);
                 System.out.println(prize);
 
-                Cell fCell9=rs.getCell(9,i);
+
+
+                //指导教师
+                Enter enter1=new Enter();
+                enter1.setSno(sno);
+                enter1.setComName(comName);
+              List<Enter> enterList = enterService.findEnterByCondition(enter1,null,null);
+                if(!TUtil.null2String(enterList).equals("") && enterList.size()>0) {
+                  Enter enter2 = enterList.get(0);
+                    result2.setTutor(enter2.getTutor());            //指导教师
+                }
+
+                /*Cell fCell9=rs.getCell(4,i);
                 String tutor=fCell9.getContents();
                 result2.setTutor(tutor);
-                System.out.println(tutor);
+                System.out.println(tutor);*/
 
 
                 //获奖时间
-                Cell fCell10=rs.getCell(10,i);
+                Cell fCell10=rs.getCell(4,i);
                 if(fCell10.getType()== CellType.DATE){
                     DateCell dateCell=(DateCell) fCell10;
                     Date result= dateCell.getDate();
@@ -485,8 +565,6 @@ public class ResultAction extends BaseAction<Result> {
 
                 //加入到List集合中
                 resultList.add(result2);
-
-
             }
             // 主体内容生成结束
             // 写入文件
@@ -607,15 +685,16 @@ public class ResultAction extends BaseAction<Result> {
         // 设置excel每列宽度
         sheet.setColumnWidth(0, 6000);
         sheet.setColumnWidth(1, 4000);
-        sheet.setColumnWidth(2, 8000);
+        sheet.setColumnWidth(2, 3000);
         sheet.setColumnWidth(3, 6000);
         sheet.setColumnWidth(4, 6000);
-        sheet.setColumnWidth(5, 6000);
-        sheet.setColumnWidth(6, 6000);
-        sheet.setColumnWidth(7, 6000);
-        sheet.setColumnWidth(8, 6000);
-        sheet.setColumnWidth(9, 6000);
-        sheet.setColumnWidth(10, 6000);
+        sheet.setColumnWidth(5, 4000);
+
+        sheet.setColumnWidth(6, 10000);
+        sheet.setColumnWidth(7, 3000);
+        sheet.setColumnWidth(8, 4000);
+        sheet.setColumnWidth(9, 3000);
+        sheet.setColumnWidth(10, 4000);
 
         // 创建字体样式
         HSSFFont font = wb.createFont();
@@ -642,7 +721,7 @@ public class ResultAction extends BaseAction<Result> {
         // 创建一个Excel的单元格
         HSSFCell cell = row.createCell(0);
         // 合并单元格(startRow，endRow，startColumn，endColumn)
-        sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 11));
+        sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 10));
         // 给Excel的单元格设置样式和赋值
         cell.setCellStyle(style);
         String title = "竞赛成绩表";

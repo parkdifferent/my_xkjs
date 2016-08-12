@@ -105,6 +105,6 @@ public class MD5Util {
     }
 
     public static void main(String[] args) {
-        System.out.println(MD5Util.getMD5String("999999").toUpperCase());
+        System.out.println(MD5Util.getMD5String("123456781").toUpperCase());
     }
 }

@@ -222,7 +222,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>指导教师可以查看所指导学生的报名信息</li>
+                <li>您可以按条件查询所指导学生的竞赛报名信息、查看竞赛报名信息</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -240,7 +240,7 @@
                     <th width="6%" ><span class="form_btna">手机</span></th>
                     <th width="6%" ><span class="form_btna">邮箱</span></th>
 
-                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="12%" ><span class="form_btna">竞赛名称</span></th>
                     <%--<th width="10%" align="center"><span class="form_btna">参赛形式</span></th>--%>
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 

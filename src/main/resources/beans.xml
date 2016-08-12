@@ -17,59 +17,77 @@
     <context:component-scan base-package="com.ffcs.xkjs"/>
     <!-- 2:? -->
 
+    <!--properties配置文件读取-->
+    <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:config.properties</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+        <property name="properties" ref="configProperties"></property>
+    </bean>
 
-    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
-        <property name="url" value="jdbc:mysql://localhost:3306/xkjs?useUnicode=true&amp;characterEncoding=UTF-8" />
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
-        <!-- 配置初始化大小、最小、最大 -->
+
+    <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="" />
+        <property name="username" value=""/>
+        <property name="password" value=""/>
+        &lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;
         <property name="initialSize"><value>1</value></property>
         <property name="maxActive"><value>5</value></property>
         <property name="minIdle"><value>1</value></property>
-        <!-- 配置获取连接等待超时的时间 -->
+        &lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;
         <property name="maxWait"><value>60000</value></property>
-        <!-- 配置监控统计拦截的filters -->
+        &lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;
         <property name="filters"><value>stat</value></property>
-        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;
         <property name="timeBetweenEvictionRunsMillis"><value>60000</value></property>
-        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;
         <property name="minEvictableIdleTimeMillis"><value>300000</value></property>
-        <!--
+        &lt;!&ndash;
         <property name="validationQuery"><value>SELECT 'x'</value></property>
         <property name="testWhileIdle"><value>true</value></property>
         <property name="testOnBorrow"><value>false</value></property>
         <property name="testOnReturn"><value>false</value></property>
         <property name="poolPreparedStatements"><value>true</value></property>
         <property name="maxOpenPreparedStatements"><value>20</value></property>
-         -->
+         &ndash;&gt;
+    </bean>-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="${ds.url}" />
+        <property name="username" value="${ds.username}" />
+        <property name="password" value="${ds.password}" />
+        <property name="filters" value="stat" />
+        <property name="maxActive" value="20" />
+        <property name="initialSize" value="1" />
+        <property name="maxWait" value="60000" />
+        <property name="minIdle" value="1" />
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+        <property name="validationQuery" value="SELECT 'x'" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+        <property name="poolPreparedStatements" value="true" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="50" />
     </bean>
 
 
+
     <!-- 配置SessionFactory -->
-
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-
         <property name="dataSource" ref="dataSource" />
-
         <property name="hibernateProperties">
-
             <props>
-
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
-
                 <!--<prop key="hibernate.hbm2ddl.auto">create</prop>自动创建表结构-->
-
                 <prop key="hibernate.hbm2ddl.auto">update</prop> <!--自动更新表结构-->
-
                 <prop key="hibernate.show_sql">true</prop>
-
                 <prop key="hibernate.format_sql">true</prop>
-
             </props>
-
         </property>
-
-
         <!-- 添加映射 -->
         <property name="mappingResources">
             <list>
@@ -77,24 +95,17 @@
                 <value>/domain/Area.hbm.xml</value>
                 <value>/domain/News.hbm.xml</value>
                 <value>/domain/Notice.hbm.xml</value>
-
                 <value>/domain/User.hbm.xml</value>
                 <value>/domain/Competition.hbm.xml</value>
                 <value>/domain/Enter.hbm.xml</value>
                 <value>/domain/Result.hbm.xml</value>
-
                 <value>/domain/Academe.hbm.xml</value>
                 <value>/domain/Profession.hbm.xml</value>
-
                 <value>/domain/Information.hbm.xml</value>
-
                 <value>/domain/Teacher.hbm.xml</value>
-
                 <value>/domain/Admin.hbm.xml</value>
-
             </list>
         </property>
-
     </bean>
 
     <!-- 3:spring整合hibernate的核心 -->
@@ -128,8 +139,8 @@
     -->
 
 
-    <!-- 1、制定任务信息 -->
-   <!-- <bean id="orderPayTask"
+    <!--&lt;!&ndash; 1、制定任务信息 &ndash;&gt;
+    <bean id="orderPayTask"
           class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
         &lt;!&ndash; 调用的类 &ndash;&gt;
         <property name="targetObject" ref="elecTextAction"/>
@@ -147,11 +158,8 @@
           class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="triggers">
             <list>
-
                 <ref bean="order_cronTrigger"/>
-
             </list>
         </property>
     </bean>-->
-
 </beans>

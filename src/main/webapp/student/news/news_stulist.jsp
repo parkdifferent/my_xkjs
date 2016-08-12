@@ -93,7 +93,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>查看竞赛新闻</li>
+                <li>您可以按条件查询竞赛新闻，查看竞赛新闻</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -102,11 +102,11 @@
 
                     <th width="4%" align="left">&nbsp;</th>
 
-                    <th width="15%" ><span class="form_btna">新闻标题</span></th>
+                    <th width="40%" ><span class="form_btna">新闻标题</span></th>
 
-                    <th width="15%" ><span class="form_btna">新闻内容</span></th>
-                    <th width="15%" ><span class="form_btna">发布时间</span></th>
-                    <th width="15%" ><span class="form_btna">发布者</span></th>
+                    <th width="10%" ><span class="form_btna">新闻内容</span></th>
+                    <th width="10%" ><span class="form_btna">发布时间</span></th>
+                    <th width="10%" ><span class="form_btna">发布者</span></th>
 
                     <th align="center" ><span class="form_btna">操作</span></th>
 

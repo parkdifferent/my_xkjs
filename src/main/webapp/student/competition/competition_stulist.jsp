@@ -71,19 +71,35 @@
             <ul>
                 <li>
 
-                    <span>竞赛名称</span> <span class="size150">
+                    <span>竞赛名称</span> <%--<span class="size150">
           <input name="comName" type="text" id="comName" value="${request.comName}" />
-          </span>
+          </span>--%>
+            <span>
+      <select name="comName" id="comName">
+          <option value="" ${request.comName1 ==null?'selected':''}>请选择...</option>
+          <s:if test="#request.comList!=null && #request.comList.size()>0">
+              <s:iterator value="#request.comList" id="competition1">
+
+                  <%--<option value=<s:property value='#competition.comName'/> &lt;%&ndash;${competition.comName ==request.comName?'selected':''}&ndash;%&gt;><s:property value='#competition.comName'/></option>--%>
+                  <option value=${competition1.comName} ${competition1.comName ==request.comName1?'selected':''}>${competition1.comName}</option>
+
+              </s:iterator>
+          </s:if>
+      </select>
+      </span>
+
+
+
+
 
                     <span>竞赛类别</span> <span>
       <select name="category" id="category">
 
 
           <option value="" ${request.category ==null?'selected':''}>请选择...</option>
-          <option value="学科知识类" ${request.category =="学科知识类"?'selected':''}>学科知识类</option>
-          <option value="创新创业类" ${request.category =="创新创业类"?'selected':''}>创新创业类</option>
-          <option value="文化素质类" ${request.category =="文化素质类"?'selected':''}>文化素质类</option>
-          <option value="体育竞赛类" ${request.category =="体育竞赛类"?'selected':''}>体育竞赛类</option>
+          <option value="A类" ${request.category =="A类"?'selected':''}>A类</option>
+          <option value="B类" ${request.category =="B类"?'selected':''}>B类</option>
+          <option value="C类" ${request.category =="C类"?'selected':''}>C类</option>
       </select>
       </span>
 
@@ -98,6 +114,9 @@
           <option value="国家级" ${request.level =="国家级"?'selected':''}>国家级</option>
       </select>
       </span>
+
+                    </li>
+                <li>
 
 
 
@@ -128,7 +147,8 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>竞赛项目</li>
+                <li>您可以按条件查询竞赛项目，查看竞赛项目</li>
+                <li>学生可以通知点击报名按钮进行报名</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -136,16 +156,16 @@
                 <tr>
 
                     <th width="4%" align="left">&nbsp;</th>
-                    <th width="12%" ><span class="form_btna">竞赛名称</span></th>
-                    <th width="12%" ><span class="form_btna">主办单位</span></th>
-                    <th width="12%" ><span class="form_btna">校内负责单位</span></th>
-                    <th width="8%" ><span class="form_btna">竞赛类别</span></th>
-                    <th width="8%" ><span class="form_btna">竞赛级别</span></th>
+                    <th width="14%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="14%" ><span class="form_btna">主办单位</span></th>
+                    <th width="14%" ><span class="form_btna">校内负责单位</span></th>
+                    <th width="6%" ><span class="form_btna">竞赛类别</span></th>
+                    <th width="6%" ><span class="form_btna">竞赛级别</span></th>
                     <th width="10%" ><span class="form_btna">开始时间</span></th>
 
                     <th width="12%" ><span class="form_btna">附件</span></th>
 
-                    <th width="10%" ><span class="form_btna">竞赛状态</span></th>
+                    <th width="8%" ><span class="form_btna">竞赛状态</span></th>
                     <th align="center" ><span class="form_btna">操作</span></th>
 
                 </tr>
@@ -178,7 +198,11 @@
 
         <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/competition_stuedit.do?comId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}" class="blue" >查看</a>
         <%--|<a href="javascript:void(0);" onclick="if(confirm('删除竞赛项目后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/competition_del.do?mulitId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>--%>
+
+            <c:if test="${sessionScope.role=='student'}">
             |<a href="<%=basePath%>/system/enter_stuedit.do?comId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}" class="blue" >报名</a>
+            </c:if>
+
         </td>
         </tr>
         </s:iterator>

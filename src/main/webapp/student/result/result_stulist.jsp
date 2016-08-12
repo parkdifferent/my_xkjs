@@ -105,7 +105,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>我的竞赛结果</li>
+                <li>您可以按条件查询自己的竞赛结果、查看竞赛结果</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -114,17 +114,17 @@
 
                     <th width="4%" align="left">&nbsp;</th>
 
-                    <th width="6%" ><span class="form_btna">学号</span></th>
+                    <th width="8%" ><span class="form_btna">学号</span></th>
                     <th width="6%" ><span class="form_btna">姓名</span></th>
                     <th width="6%" ><span class="form_btna">年级</span></th>
-                    <th width="6%" ><span class="form_btna">学院</span></th>
-                    <th width="6%" ><span class="form_btna">专业</span></th>
+                    <th width="12%" ><span class="form_btna">学院</span></th>
+                    <th width="12%" ><span class="form_btna">专业</span></th>
 
                     <th width="6%" ><span class="form_btna">班级</span></th>
-                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="8%" ><span class="form_btna">竞赛名称</span></th>
                     <th width="6%" ><span class="form_btna">参赛形式</span></th>
 
-                    <th width="6%" ><span class="form_btna">奖项</span></th>
+                    <th width="8%" ><span class="form_btna">奖项</span></th>
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 
                     <th width="6%" ><span class="form_btna">获奖时间</span></th>
@@ -152,7 +152,7 @@
 
 
 
-                            <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/result_edit.do?resultId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
+                            <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/result_edit.do?resultId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}" class="blue" >查看</a>
                                <%-- |<a href="javascript:void(0);" onclick="if(confirm('删除新闻后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/result_del.do?mulitId=<s:property value='#result.resultId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>--%>
                             </td>
                         </tr>

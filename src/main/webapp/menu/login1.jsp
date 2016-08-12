@@ -83,11 +83,12 @@
                     #end&ndash;%&gt;
                     <img src="&lt;%&ndash;$!imgUrl&ndash;%&gt;" width="401" height="62" />
                 </a></h1>--%>
+                <img src="<%=basePath%>/resources/style/system/manage/blue/images/login/xkjs.png" width="401" height="62"/>
             <div class="login_box">
                 <div class="login_box_bg"></div>
                 <div class="login_bg_left"></div>
                 <div class="login_box_tab">
-                    <h3>用户登录</h3>
+                    <%--<h3>用户登录</h3>--%>
                     <ul>
 
                         <li>

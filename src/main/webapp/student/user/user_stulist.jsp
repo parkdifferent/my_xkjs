@@ -76,7 +76,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>用户的个人信息</li>
+                <li>您可以查看、编辑个人信息</li>
             </ul>
         </div>
         <div class="fshoptb">

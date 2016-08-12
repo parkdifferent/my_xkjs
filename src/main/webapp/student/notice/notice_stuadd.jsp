@@ -139,7 +139,7 @@
                     <li class="setcont_bg">通知内容</li>
                     <li><span class="webname">
        <%-- <input name="content" type="text" id="content" value="<s:property value="#request.notice.content"/>" />--%>
-                        <textarea name="content" cols="100" rows="10" style="width:700px;height:300px;visibility:hidden;" readonly><%=htmlspecialchars(contentData)%></textarea>
+                        <textarea name="content" cols="100" rows="10" style="width:700px;height:800px;visibility:hidden;" readonly><%=htmlspecialchars(contentData)%></textarea>
       </span></li>
                 </ul>
 

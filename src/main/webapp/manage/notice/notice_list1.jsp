@@ -109,7 +109,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>到期已提交续费申请的店铺请尽快与店主联系并完成线下续费流程，待店主续费成功后请编辑店铺状态为正常营业</li>
+                <li>您可以按条件查询通知信息，新增、编辑、删除、批量删除通知，通过点击查看可以查看通知，并且发布通知可以上传附件</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -118,14 +118,14 @@
 
                     <th width="4%" align="left">&nbsp;</th>
 
-                    <th width="15%" ><span class="form_btna">通知标题</span></th>
+                    <th width="30%" ><span class="form_btna">通知标题</span></th>
 
-                    <th width="15%" ><span class="form_btna">通知内容</span></th>
+                    <th width="10%" ><span class="form_btna">通知内容</span></th>
 
-                    <th width="15%" ><span class="form_btna">附件</span></th>
+                    <th width="20%" ><span class="form_btna">附件</span></th>
 
-                    <th width="15%" ><span class="form_btna">发布时间</span></th>
-                    <th width="15%" ><span class="form_btna">发布者</span></th>
+                    <th width="10%" ><span class="form_btna">发布时间</span></th>
+                    <th width="10%" ><span class="form_btna">发布者</span></th>
 
                     <th align="center" ><span class="form_btna">操作</span></th>
 

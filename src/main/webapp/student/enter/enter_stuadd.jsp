@@ -242,8 +242,33 @@
                 <ul class="set1">
                     <li class="setcont_bg">指导教师</li>
                     <li><span class="webname">
-        <input name="tutor" type="text" id="tutor" value="<s:property value="#request.enter.tutor"/>" />
+
+        <%--<input name="tutor" type="text" id="tutor" value="<s:property value="#request.enter.tutor"/>" />--%>
+
+
+                <select name="tutor" id="tutor">
+
+                    <option value="" ${request.enter.tutor ==null?'selected':''}>请选择...</option>
+
+
+                    <s:if test="#request.teacherList!=null && #request.teacherList.size()>0">
+                        <s:iterator value="#request.teacherList" id="teacher1">
+
+                            <%--<option value="11级" ${request.enter.grade =="11级"?'selected':''}>11级</option>--%>
+                            <option value="${teacher1.name}" ${teacher1.name ==request.tutor1?'selected':''}>${teacher1.name}</option>
+                        </s:iterator>
+                    </s:if>
+
+                </select>
+
+
+
       </span></li>
+
+
+
+
+
                 </ul>
 
 

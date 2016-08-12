@@ -114,21 +114,17 @@
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>竞赛类别</li>
                     <li><span class="webname">
-         <select name="category" id="category" >
-
-             <%--<option value="学科知识类">学科知识类</option>
-             <option value="创新创业类">创新创业类</option>
-             <option value="文化素质类">文化素质类</option>
-             <option value="体育竞赛类">体育竞赛类</option>--%>
-
+         <%--<select name="category" id="category" >
 
              <option value="" ${request.competition.category ==null?'selected':''}>请选择...</option>
-             <option value="学科知识类" ${request.competition.category =="学科知识类"?'selected':''}>学科知识类</option>
-             <option value="创新创业类" ${request.competition.category =="创新创业类"?'selected':''}>创新创业类</option>
-             <option value="文化素质类" ${request.competition.category =="文化素质类"?'selected':''}>文化素质类</option>
-             <option value="体育竞赛类" ${request.competition.category =="体育竞赛类"?'selected':''}>体育竞赛类</option>
+             <option value="A类" ${request.competition.category =="A类"?'selected':''}>A类</option>
+             <option value="B类" ${request.competition.category =="B类"?'selected':''}>B类</option>
+             <option value="C类" ${request.competition.category =="C类"?'selected':''}>C类</option>
 
-         </select>
+         </select>--%>
+
+               <input name="category" type="text" id="category" value="<s:property value="#request.competition.category"/>" readonly/>
+
         </span>
                         <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
                     </li>
@@ -138,12 +134,7 @@
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>竞赛级别</li>
                     <li><span class="webname">
-         <select name="level" id="level">
-
-            <%-- <option value="校级">校级</option>
-             <option value="市级">市级</option>
-             <option value="省级">省级</option>
-             <option value="国家级">国家级</option>--%>
+         <%--<select name="level" id="level">
 
              <option value="" ${request.competition.level ==null?'selected':''}>请选择...</option>
              <option value="校级" ${request.competition.level =="校级"?'selected':''}>校级</option>
@@ -151,7 +142,11 @@
              <option value="省级" ${request.competition.level =="省级"?'selected':''}>省级</option>
              <option value="国家级" ${request.competition.level =="国家级"?'selected':''}>国家级</option>
 
-         </select>
+         </select>--%>
+
+                   <input name="level" type="text" id="level" value="<s:property value="#request.competition.level"/>" readonly/>
+
+
         </span>
                         <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
                     </li>
@@ -181,12 +176,25 @@
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>竞赛状态</li>
                     <li><span class="webname">
-                <select name="status" id="status">
+                <%--<select name="status" id="status">
 
                     <option value="0" ${request.competition.status =="0"?'selected':''}>未开始</option>
                     <option value="1" ${request.competition.status =="1"?'selected':''}>开始报名</option>
                     <option value="2" ${request.competition.status =="2"?'selected':''}>报名结束</option>
-                </select>
+                </select>--%>
+
+                        <c:if test="${request.competition.status =='0'}">
+                            <input name="status" type="text" id="status" value="未开始" readonly/>
+                        </c:if>
+
+                        <c:if test="${request.competition.status =='1'}">
+                            <input name="status" type="text" id="status" value="开始报名" readonly/>
+                        </c:if>
+
+                        <c:if test="${request.competition.status =='2'}">
+                            <input name="status" type="text" id="status" value="报名结束" readonly/>
+                        </c:if>
+
                         </span>
                     </li>
                 </ul>
@@ -208,13 +216,6 @@
                     </li>
                 </ul>
 
-
-
-
-
-
-
-
             <%-- <ul class="set1">
                     <li class="setcont_bg"><strong class="sred">*</strong>附件</li>
                     <li><span> <input id="upload" type="file" name="upload" />
@@ -225,7 +226,6 @@
 
                  <%--<li><a id="down" href="<%=basePath%>/system/competition_download.do?comId=<s:property value='#request.competition.comId'/>"><b>导入竞赛报名模板下载</b></a></li>--%>
 
-
             </div>
         </div>
         <%--<div class="submit">
@@ -235,11 +235,9 @@
    				<input name="currentPage" type="hidden"  id="currentPage" value="<s:property value='#request.currentPage'/>" />
   				<input name="list_url" type="hidden" id="list_url" value="<%=basePath%>/system/competition_list.do" />
  				 <input name="add_url" type="hidden" id="add_url" value="<%=basePath%>/system/competition_add.do" />
-   
    </span>
 
         </div>--%>
-
 
     </form>
 

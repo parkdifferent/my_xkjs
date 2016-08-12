@@ -80,10 +80,9 @@
 
 
           <option value="" ${request.category ==null?'selected':''}>请选择...</option>
-          <option value="学科知识类" ${request.category =="学科知识类"?'selected':''}>学科知识类</option>
-          <option value="创新创业类" ${request.category =="创新创业类"?'selected':''}>创新创业类</option>
-          <option value="文化素质类" ${request.category =="文化素质类"?'selected':''}>文化素质类</option>
-          <option value="体育竞赛类" ${request.category =="体育竞赛类"?'selected':''}>体育竞赛类</option>
+          <option value="A类" ${request.category =="A类"?'selected':''}>A类</option>
+          <option value="B类" ${request.category =="B类"?'selected':''}>B类</option>
+          <option value="C类" ${request.category =="C类"?'selected':''}>C类</option>
       </select>
       </span>
 
@@ -132,7 +131,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>到期已提交续费申请的店铺请尽快与店主联系并完成线下续费流程，待店主续费成功后请编辑店铺状态为正常营业</li>
+                <li>您可以按条件查询竞赛项目，新增、编辑、删除、批量删除竞赛项目，并且新增竞赛项目可以上传附件</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -140,16 +139,16 @@
                 <tr>
 
                     <th width="4%" align="left">&nbsp;</th>
-                    <th width="15%" ><span class="form_btna">竞赛名称</span></th>
-                    <th width="15%" ><span class="form_btna">主办单位</span></th>
-                    <th width="15%" ><span class="form_btna">校内负责单位</span></th>
-                    <th width="8%" ><span class="form_btna">竞赛类别</span></th>
-                    <th width="8%" ><span class="form_btna">竞赛级别</span></th>
-                    <th width="12%" ><span class="form_btna">开始时间</span></th>
+                    <th width="14%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="14%" ><span class="form_btna">主办单位</span></th>
+                    <th width="14%" ><span class="form_btna">校内负责单位</span></th>
+                    <th width="6%" ><span class="form_btna">竞赛类别</span></th>
+                    <th width="6%" ><span class="form_btna">竞赛级别</span></th>
+                    <th width="10%" ><span class="form_btna">开始时间</span></th>
 
                     <th width="12%" ><span class="form_btna">附件</span></th>
 
-                    <th width="12%" ><span class="form_btna">竞赛状态</span></th>
+                    <th width="8%" ><span class="form_btna">竞赛状态</span></th>
                     <th align="center" ><span class="form_btna">操作</span></th>
 
                 </tr>
@@ -181,13 +180,6 @@
             </td>
 
 
-
-        <!-- <td class="lightred"><ul>
-        <li>$!CommUtil.formatLongDate($!obj.lastLoginDate)</li>
-        <li>$!obj.lastLoginIp</li>
-        </ul></td> -->
-        <!--  #set($store_url=$!storeTools.query_user_store_url("$!obj.id","$!webPath")) -->
-        <!-- <td align="center">#if($!store_url!="")<a href="$!store_url" target="_blank"  class="blue" >店铺</a>#else <span style="color:#F00">未开店</span>#end</td> -->
         <td align="center" class="hui oprate_con" style="min-width:80px"><a href="<%=basePath%>/system/competition_edit.do?comId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}" class="blue" >编辑</a>
         |<a href="javascript:void(0);" onclick="if(confirm('删除竞赛项目后不可恢复，是否继续？'))window.location.href='<%=basePath%>/system/competition_del.do?mulitId=<s:property value='#competition.comId'/>&currentPage=${request.currentPage}'" class="blue">删除</a>
         </td>

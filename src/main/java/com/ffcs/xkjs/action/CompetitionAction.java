@@ -359,15 +359,19 @@ public class CompetitionAction extends BaseAction<Competition> {
             request.setAttribute("level",level );
         }
 
-        List<Competition> list=competitionService.findCompetitionByCondition(competition1,beginTime,endTime);
+        List<Competition> list=competitionService.findCompetitionByCondition(competition1, beginTime, endTime);
+
+        List<Competition> competitionList=competitionService.findCompetitionsNoPage();        //查询条件
 
         request.setAttribute("competitionList", list);
+        request.setAttribute("comList", competitionList);
+
         // request.setAttribute("condition", condition);
         request.setAttribute("beginTime", beginTime);
         //request.setAttribute("value", value);
         request.setAttribute("endTime", endTime);
 
-        request.setAttribute("comName", comName);
+        request.setAttribute("comName1", comName);
 
 
         return "stulist";
@@ -392,6 +396,8 @@ public class CompetitionAction extends BaseAction<Competition> {
             request.setAttribute("competition",competition2);
 
         }
+
+
 
         request.setAttribute("edit", true);
         request.setAttribute("currentPage", currentPage);

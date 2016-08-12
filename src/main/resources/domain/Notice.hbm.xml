@@ -20,11 +20,11 @@
         <property name="noticeTime" type="date" column="noticeTime"></property>
 
         <property name="content" type="java.lang.String">
-            <column name="content" length="65535"  />
+            <column name="content" length="6000"  />
         </property>
 
         <property name="fileName" type="java.lang.String">
-            <column name="fileName" length="255" />
+            <column name="fileName" length="120" />
         </property>
 
         <property name="filePath" type="java.lang.String">

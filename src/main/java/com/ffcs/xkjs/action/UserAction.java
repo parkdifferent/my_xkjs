@@ -333,7 +333,20 @@ public class UserAction extends BaseAction<User>{
         else {
             // noticeService.update(notice);
             // competitionService.update(competition);
-            userService.update(user);
+
+            //取回原来的密码
+            User user1=new User();
+            user1.setUserId(userId);
+            User user2=userService.findUserByID(user1);
+
+                user.setRole("student");        //默认角色
+                user.setPassword(user2.getPassword());   //原来密码
+                userService.update(user);
+
+
+
+
+            //userService.update(user);
         }
 
         //String textDate = request.getParameter("textDate");

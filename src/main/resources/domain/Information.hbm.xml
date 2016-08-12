@@ -11,16 +11,16 @@
         </id>
 
         <property name="fileName" type="java.lang.String">
-            <column name="fileName" length="150" />
+            <column name="fileName" length="120" />
         </property>
 
         <property name="filePath" type="java.lang.String">
-            <column name="filePath" length="150" />
+            <column name="filePath" length="120" />
         </property>
 
 
         <property name="description" type="java.lang.String">
-            <column name="description" length="65535" />
+            <column name="description" length="255" />
         </property>
 
         <property name="addTime" type="date" column="addTime"></property>

@@ -104,27 +104,33 @@
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>学院</li>
                     <li><span class="webname">
-                        <select name="academe" id="academe">
+                        <%--<select name="academe" id="academe">
                             <option value="" ${request.enter.academe ==null?'selected':''}>请选择...</option>
                             <s:if test="#request.academeList!=null && #request.academeList.size()>0">
                                 <s:iterator value="#request.academeList" id="academe11">
                                     <option value="${academe11.academeName}" ${academe11.academeName ==request.academe1?'selected':''}>${academe11.academeName}</option>
                                 </s:iterator>
                             </s:if>
-                        </select></span>
+                        </select>--%>
+                     <input name="academe" type="text" id="academe" value="<s:property value="#request.academe1"/>" />
+
+                    </span>
                     </li>
                 </ul>
 
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>学历</li>
                     <li><span class="webname">
-         <select name="education" id="education">
+        <%-- <select name="education" id="education">
              <option value="" ${request.teacher.education ==null?'selected':''}>请选择...</option>
              <option value="本科" ${request.teacher.education =="本科"?'selected':''}>本科</option>
              <option value="硕士" ${request.teacher.education =="硕士"?'selected':''}>硕士</option>
              <option value="博士" ${request.teacher.education =="博士"?'selected':''}>博士</option>
 
-         </select>
+         </select>--%>
+                         <input name="education" type="text" id="education" value="<s:property value="#request.teacher.education"/>" />
+
+
         </span>
                         <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
                     </li>
@@ -133,14 +139,15 @@
                 <ul class="set1">
                     <li  class="setcont_bg"><strong class=""></strong>职称</li>
                     <li><span class="webname">
-         <select name="rank" id="rank">
+        <%-- <select name="rank" id="rank">
              <option value="" ${request.teacher.rank ==null?'selected':''}>请选择...</option>
              <option value="助教" ${request.teacher.rank =="助教"?'selected':''}>助教</option>
              <option value="讲师" ${request.teacher.rank =="讲师"?'selected':''}>讲师</option>
              <option value="副教授" ${request.teacher.rank =="副教授"?'selected':''}>副教授</option>
              <option value="教授" ${request.teacher.rank =="教授"?'selected':''}>教授</option>
 
-         </select>
+         </select>--%>
+                         <input name="rank" type="text" id="rank" value="<s:property value="#request.teacher.rank"/>" />
         </span>
                         <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
                     </li>
@@ -161,7 +168,7 @@
                     <li><span class="webname">
 
         <%--<input name="brief" type="text" id="brief" value="<s:property value="#request.teacher.brief"/>" />--%>
-                        <textarea name="brief" cols="100" rows="10" style="width:700px;height:300px;"><s:property value="#request.teacher.brief"/></textarea>
+                        <textarea name="brief" cols="100" rows="10" style="width:500px;height:140px;"><s:property value="#request.teacher.brief"/></textarea>
 
       </span></li>
                 </ul>

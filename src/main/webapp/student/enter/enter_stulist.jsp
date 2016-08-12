@@ -172,7 +172,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>我参与的学科竞赛</li>
+                <li>您可以按条件查询您参与的学科竞赛、查看竞赛报名信息</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -190,7 +190,7 @@
                     <th width="6%" ><span class="form_btna">手机</span></th>
                     <th width="6%" ><span class="form_btna">邮箱</span></th>
 
-                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="12%" ><span class="form_btna">竞赛名称</span></th>
                     <%--<th width="10%" align="center"><span class="form_btna">参赛形式</span></th>--%>
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 

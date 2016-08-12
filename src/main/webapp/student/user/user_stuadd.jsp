@@ -135,6 +135,10 @@
              <option value="14级" ${request.user.grade =="14级"?'selected':''}>14级</option>
              <option value="15级" ${request.user.grade =="15级"?'selected':''}>15级</option>
 
+             <option value="16级" ${request.user.grade =="16级"?'selected':''}>16级</option>
+             <option value="17级" ${request.user.grade =="17级"?'selected':''}>17级</option>
+             <option value="18级" ${request.user.grade =="18级"?'selected':''}>18级</option>
+
          </select>
         </span>
                         <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>

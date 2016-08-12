@@ -204,26 +204,26 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>查询所指导学生的竞赛成绩</li>
+                <li>您可以按条件查询所指导学生的竞赛结果、查看竞赛结果、按条件Excel导出所指导学生的竞赛结果</li>
             </ul>
         </div>
         <div class="fshoptb">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" class="fshop_table">
                 <tr>
 
-                    <th width="4%" align="left">&nbsp;</th>
+                    <th width="3%" align="left">&nbsp;</th>
 
-                    <th width="6%" ><span class="form_btna">学号</span></th>
+                    <th width="8%" ><span class="form_btna">学号</span></th>
                     <th width="6%" ><span class="form_btna">姓名</span></th>
                     <th width="6%" ><span class="form_btna">年级</span></th>
-                    <th width="6%" ><span class="form_btna">学院</span></th>
-                    <th width="6%" ><span class="form_btna">专业</span></th>
+                    <th width="12%" ><span class="form_btna">学院</span></th>
+                    <th width="12%" ><span class="form_btna">专业</span></th>
 
                     <th width="6%" ><span class="form_btna">班级</span></th>
-                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="12%" ><span class="form_btna">竞赛名称</span></th>
                     <th width="6%" ><span class="form_btna">参赛形式</span></th>
 
-                    <th width="6%" ><span class="form_btna">奖项</span></th>
+                    <th width="8%" ><span class="form_btna">奖项</span></th>
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 
                     <th width="6%" ><span class="form_btna">获奖时间</span></th>

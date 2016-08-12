@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -18,21 +17,16 @@ import com.ffcs.xkjs.domain.ElecText;
 import com.ffcs.xkjs.service.IAreaService;
 import com.ffcs.xkjs.service.IElecTextService;
 import jxl.Cell;
-import jxl.CellType;
-import jxl.DateCell;
-import jxl.NumberCell;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 import jxl.write.DateFormat;
 import jxl.write.DateTime;
 import jxl.write.Label;
-import jxl.write.Number;
 import jxl.write.WritableCellFormat;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -399,10 +393,6 @@ public class uploadAction {
 
 
 
-
-
-
-
     public void setUpload(File upload) {
         this.upload = upload;
     }
@@ -426,9 +416,6 @@ public class uploadAction {
     public String getUploadFileName() {
         return uploadFileName;
     }
-
-
-
 
 }
 

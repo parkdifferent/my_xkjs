@@ -123,7 +123,7 @@
             #set($imgUrl ="$!imageWebServer/$!config.admin_manage_logo.path/$!config.admin_manage_logo.name")
             #else
             #set($imgUrl ="<%=basePath%>/resources/style/system/manage/blue/images/logo.png")
-            #end--%> <a href="javascript:void(0);" onclick="openURL('show','common_operation')"><img src="<%--$!{imgUrl}--%>" width="247" height="35" /></a> </div>
+            #end--%> <%--<a href="javascript:void(0);" onclick="openURL('show','common_operation')"><img src="&lt;%&ndash;$!{imgUrl}&ndash;%&gt;" width="247" height="35" /></a>--%> </div>
        <%-- <div class="nav">
             <ul>
                 <li class="this"><a href="javascript:void(0);" id="common_operation_menu" onclick="openURL('show','common_operation')"><em class="nav_home"></em><b>首页</b></a></li>
@@ -147,7 +147,7 @@
                 <div class="lefttop"> </div>
                 <div class="left_ul">
                     <ul class="ulleft" id="common_operation" style="display:block">
-                        <div class="leftone">竞赛管理</div>
+                        <div class="leftone">学科竞赛</div>
                        <%-- <li><a class="this" id="welcome_op" href="javascript:void(0);" onclick="openURL('url','&lt;%&ndash;<%=basePath%>/admin/welcome.htm&ndash;%&gt;<%=basePath%>/system/welcome.jsp','main_workspace','welcome_op')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>欢迎页面000</span></a> </li>--%>
 
 
@@ -164,7 +164,7 @@
                                <ul id="stat_info"  style="display:none;">
                                    <li><a href="javascript:void(0);" id="stat_user_op" onclick="openURL('url','<%=basePath%>/system/user_list.do','main_workspace','stat_user_op')"><span>学生管理</span></a></li>
                                    <li><a href="javascript:void(0);" id="stat_order_op" onclick="openURL('url','<%=basePath%>/system/teacher_list.do','main_workspace','stat_order_op')"><span>指导教师管理</span></a></li>
-                                   <li><a href="javascript:void(0);" id="stat_goods_op" onclick="openURL('url','<%=basePath%>/system/admin_list.do','main_workspace','stat_goods_op')"><span>管理员管理</span></a></li>
+                                   <%--<li><a href="javascript:void(0);" id="stat_goods_op" onclick="openURL('url','<%=basePath%>/system/admin_list.do','main_workspace','stat_goods_op')"><span>管理员管理</span></a></li>--%>
                                </ul>
                            </li>
 
@@ -176,7 +176,14 @@
                         <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/information_list.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料管理</span></a></li>
                         <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/pay_list.htm--%><%=basePath%>/system/result_list.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果管理</span></a></li>
 
-
+                           <li><a href="javascript:void(0);"id="complex_kuaidi" suffix="kuaidi_"><img id="kuaidi_img" src="<%=basePath%>/resources/style/system/manage/blue/images/spread.jpg" width="13" height="13" /><span>统计分析</span></a>
+                               <ul id="kuaidi_info" style="display:none;">
+                                   <li><a href="javascript:void(0);" id="kaudi_set_op" onclick="openURL('url','<%=basePath%>/system/stat_list.do','main_workspace','kaudi_set_op')"><span>各学院报名统计</span></a></li>
+                                   <li><a href="javascript:void(0);" id="kaudi_company_op" onclick="openURL('url','<%=basePath%>/system/stat_categoryList.do','main_workspace','kaudi_company_op')"><span>竞赛分类统计</span></a></li>
+                                   <li><a href="javascript:void(0);" id="kaudi_callback_op" onclick="openURL('url','<%=basePath%>/system/stat_canSai.do','main_workspace','kaudi_callback_op')"><span>报名/获奖统计</span></a></li>
+                                   <li><a href="javascript:void(0);" id="kaudi_callback_op1" onclick="openURL('url','<%=basePath%>/system/stat_huoJiang.do','main_workspace','kaudi_callback_op1')"><span>获奖分布统计</span></a></li>
+                               </ul>
+                           </li>
 
 
                        </c:if>
@@ -193,7 +200,7 @@
                             <li><a href="javascript:void(0);" id="complex_stat"  onclick="openURL('url','<%--<%=basePath%>/admin/welcome.htm--%><%=basePath%>/system/competition_stulist.do','main_workspace','complex_stat')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目</span></a> </li>
 
 
-                            <li><a href="javascript:void(0);" id="order_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/enter_stulist.do','main_workspace','order_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛报名</span></a></li>
+                            <li><a href="javascript:void(0);" id="order_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/enter_stulist.do','main_workspace','order_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>我的竞赛</span></a></li>
                             <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/order_list.htm--%><%=basePath%>/system/information_stulist.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料</span></a></li>
                             <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%--<%=basePath%>/admin/pay_list.htm--%><%=basePath%>/system/result_stulist.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果</span></a></li>
 
@@ -209,7 +216,6 @@
     <li><a href="javascript:void(0);" id="store_list_op_q" onclick="openURL('url','<%=basePath%>/system/notice_stulist.do','main_workspace','store_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛通知</span></a></li>
     <li><a href="javascript:void(0);" id="goods_manage_op_q" onclick="openURL('url','<%=basePath%>/system/competition_stulist.do','main_workspace','goods_manage_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛项目</span></a></li>
 
-
     <li><a href="javascript:void(0);" id="information_list_op_q" onclick="openURL('url','<%=basePath%>/system/information_stulist.do','main_workspace','information_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛资料</span></a></li>
 
     <li><a href="javascript:void(0);" id="order_list_op_q" onclick="openURL('url','<%=basePath%>/system/enter_tealist.do','main_workspace','order_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛报名</span></a></li>
@@ -217,10 +223,6 @@
     <li><a href="javascript:void(0);" id="pay_list_op_q" onclick="openURL('url','<%=basePath%>/system/result_tealist.do','main_workspace','pay_list_op_q')"><img src="<%=basePath%>/resources/style/system/manage/blue/images/menu_empty.gif" width="5" height="9" /><span>竞赛结果</span></a></li>
 
     </c:if>
-
-
-
-
 
 
                     </ul>
@@ -460,15 +462,15 @@
                 </div>
 
             </div>
-            <div class="statement"><%--$!{config.poweredby}--%>poweredby V2015
-                ©<%--$!{config.company_name}--%>company_name Inc.</div>
+            <%--<div class="statement">&lt;%&ndash;$!{config.poweredby}&ndash;%&gt;poweredby V2015
+                ©&lt;%&ndash;$!{config.company_name}&ndash;%&gt;company_name Inc.</div>--%>
         </div>
         <div class="content">
             <div class="content_box">
                 <div class="content_bar">
                     <div class="right_news" id="bar_online" style="display:none"><a id="speak" onclick="open_im('','<%=basePath%>','plat');" href="javascript:void(0);">在线客服</a></div>
                     <span class="webmap"><a href="javascript:void(0);">管理地图</a></span> <span class="webskin"> <b>更换皮肤：</b> <em> <a href="javascript:void(0);" class="this"<%--#if($!config.websiteCss=="blue") class="this" #end--%>> <i><img src="<%=basePath%>/resources/style/common/images/skin_blue.gif" width="15" height="16" webcss="blue" /></i> </a> <a href="javascript:void(0);" <%--#if($!config.websiteCss=="black") class="this" #end--%>> <i><img src="<%=basePath%>/resources/style/common/images/skin_black.gif" width="15" height="16" webcss="black" /></i> </a></em> </span>
-                    <div class="position"> 您的位置：<a href="">首页</a> > <span id="top_nav_info">站点设置</span></div>
+                    <div class="position"> 您的位置：<a href="">首页</a> > <span id="top_nav_info">欢迎页面</span></div>
                 </div>
                 <div class="content_bottom">
                     <iframe id="main_workspace" name="main_workspace" src="<%=basePath%>/system/welcome.jsp" style="overflow:auto;height:550px" frameborder="0" width="100%" height="100%" scrolling="yes" onload="window.parent"></iframe>

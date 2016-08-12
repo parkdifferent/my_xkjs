@@ -118,110 +118,96 @@
       </span></li>
                 </ul>
 
-                <ul class="set1">
-                    <li class="setcont_bg">姓名</li>
-                    <li><span class="webname">
-        <input name="trueName" type="text" id="trueName" value="<s:property value="#request.enter.trueName"/>" />
-      </span></li>
-                </ul>
+                <%--              <ul class="set1">
+                                  <li class="setcont_bg">姓名</li>
+                                  <li><span class="webname">
+                      <input name="trueName" type="text" id="trueName" value="<s:property value="#request.enter.trueName"/>" />
+                    </span></li>
+                              </ul>
 
 
-                <ul class="set1">
-                    <li  class="setcont_bg"><strong class=""></strong>年级</li>
-                    <li><span class="webname">
-         <select name="grade" id="grade">
-             <option value="" ${request.enter.grade ==null?'selected':''}>请选择...</option>
-             <option value="11级" ${request.enter.grade =="11级"?'selected':''}>11级</option>
-             <option value="12级" ${request.enter.grade =="12级"?'selected':''}>12级</option>
-             <option value="13级" ${request.enter.grade =="13级"?'selected':''}>13级</option>
-             <option value="14级" ${request.enter.grade =="14级"?'selected':''}>14级</option>
-             <option value="15级" ${request.enter.grade =="15级"?'selected':''}>15级</option>
+                              <ul class="set1">
+                                  <li  class="setcont_bg"><strong class=""></strong>年级</li>
+                                  <li><span class="webname">
+                       <select name="grade" id="grade">
+                           <option value="" ${request.enter.grade ==null?'selected':''}>请选择...</option>
+                           <option value="11级" ${request.enter.grade =="11级"?'selected':''}>11级</option>
+                           <option value="12级" ${request.enter.grade =="12级"?'selected':''}>12级</option>
+                           <option value="13级" ${request.enter.grade =="13级"?'selected':''}>13级</option>
+                           <option value="14级" ${request.enter.grade =="14级"?'selected':''}>14级</option>
+                           <option value="15级" ${request.enter.grade =="15级"?'selected':''}>15级</option>
 
-         </select>
-        </span>
-                        <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
-                    </li>
-                </ul>
+                       </select>
+                      </span>
 
-
-                <ul class="set1">
-                    <li  class="setcont_bg"><strong class=""></strong>学院</li>
-                    <li><span class="webname">
-                        <select name="academe" id="academe" onchange="selectProfession(this)">
-
-             <option value="" ${request.enter.academe ==null?'selected':''}>请选择...</option>
-
-        <s:if test="#request.academeList!=null && #request.academeList.size()>0">
-            <s:iterator value="#request.academeList" id="academe11">
-
-             <%--<option value="11级" ${request.enter.grade =="11级"?'selected':''}>11级</option>--%>
-                <option value="${academe11.academeName}" ${academe11.academeName ==request.academe1?'selected':''}>${academe11.academeName}</option>
-                </s:iterator>
-            </s:if>
+                                  </li>
+                              </ul>
 
 
-         </select>
+                              <ul class="set1">
+                                  <li  class="setcont_bg"><strong class=""></strong>学院</li>
+                                  <li><span class="webname">
+                                      <select name="academe" id="academe" onchange="selectProfession(this)">
+
+                           <option value="" ${request.enter.academe ==null?'selected':''}>请选择...</option>
+
+                      <s:if test="#request.academeList!=null && #request.academeList.size()>0">
+                          <s:iterator value="#request.academeList" id="academe11">
+
+                              <option value="${academe11.academeName}" ${academe11.academeName ==request.academe1?'selected':''}>${academe11.academeName}</option>
+                              </s:iterator>
+                          </s:if>
 
 
-        </span>
-                        <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
-                    </li>
-                </ul>
+                       </select>
 
 
+                      </span>
+                                  </li>
+                              </ul>
+
+                              <ul class="set1">
+                                  <li  class="setcont_bg"><strong class=""></strong>专业</li>
+                                  <li><span class="webname">
+                       <select name="profession" id="profession" >
+                           <option value="" ${request.enter.profession ==null?'selected':''}>请选择...</option>
+
+                           <s:if test="#request.professionSet!=null && #request.professionSet.size()>0">
+                               <s:iterator value="#request.professionSet" id="profession11">
+
+                                   <option value="${profession11.professionName}" ${profession11.professionName ==request.profession1?'selected':''}>${profession11.professionName}</option>
+                               </s:iterator>
+                           </s:if>
+
+                       </select>
+                      </span>
+                                  </li>
+                              </ul>
 
 
+                              <ul class="set1">
+                                  <li class="setcont_bg">班级</li>
+                                  <li><span class="webname">
+                      <input name="classes" type="text" id="classes" value="<s:property value="#request.enter.classes"/>" />
+                    </span>
+                                      <span id="nothis"><strong class="q"></strong><strong class="w">数字请用阿拉伯数字</strong><strong class="c"></strong></span>
+                                  </li>
+                              </ul>
+
+                              <ul class="set1">
+                                  <li class="setcont_bg">手机</li>
+                                  <li><span class="webname">
+                      <input name="telephone" type="text" id="telephone" value="<s:property value="#request.enter.telephone"/>" />
+                    </span></li>
+                              </ul>
 
 
-
-                <ul class="set1">
-                    <li  class="setcont_bg"><strong class=""></strong>专业</li>
-                    <li><span class="webname">
-         <select name="profession" id="profession" >
-             <option value="" ${request.enter.profession ==null?'selected':''}>请选择...</option>
-
-             <s:if test="#request.professionSet!=null && #request.professionSet.size()>0">
-                 <s:iterator value="#request.professionSet" id="profession11">
-
-                     <option value="${profession11.professionName}" ${profession11.professionName ==request.profession1?'selected':''}>${profession11.professionName}</option>
-                 </s:iterator>
-             </s:if>
-
-         </select>
-        </span>
-                        <%--<span id="nothis"><strong class="q"></strong><strong class="w">该平台对应的商城分类，商家选择该分类时会显示该品牌</strong><strong class="c"></strong></span>--%>
-                    </li>
-                </ul>
-
-
-                <ul class="set1">
-                    <li class="setcont_bg">班级</li>
-                    <li><span class="webname">
-        <input name="classes" type="text" id="classes" value="<s:property value="#request.enter.classes"/>" />
-      </span>
-                        <span id="nothis"><strong class="q"></strong><strong class="w">数字请用阿拉伯数字</strong><strong class="c"></strong></span>
-                    </li>
-                </ul>
-
-
-
-
-
-
-                <ul class="set1">
-                    <li class="setcont_bg">手机</li>
-                    <li><span class="webname">
-        <input name="telephone" type="text" id="telephone" value="<s:property value="#request.enter.telephone"/>" />
-      </span></li>
-                </ul>
-
-
-                <ul class="set1">
-                    <li class="setcont_bg">邮箱</li>
-                    <li><span class="webname">
-        <input name="email" type="text" id="email" value="<s:property value="#request.enter.email"/>" />
-      </span></li>
-                </ul>
+                              <ul class="set1">
+                                  <li class="setcont_bg">邮箱</li>
+                                  <li><span class="webname">
+                      <input name="email" type="text" id="email" value="<s:property value="#request.enter.email"/>" />
+                    </span></li>
+                              </ul>--%>
 
 
 
@@ -256,8 +242,30 @@
                 <ul class="set1">
                     <li class="setcont_bg">指导教师</li>
                     <li><span class="webname">
-        <input name="tutor" type="text" id="tutor" value="<s:property value="#request.enter.tutor"/>" />
-      </span></li>
+       <%-- <input name="tutor" type="text" id="tutor" value="<s:property value="#request.enter.tutor"/>" />--%>
+
+                        <select name="tutor" id="tutor">
+
+                            <%-- <option value="校级">校级</option>
+                             <option value="市级">市级</option>
+                             <option value="省级">省级</option>
+                             <option value="国家级">国家级</option>--%>
+
+                            <option value="" ${request.enter.tutor ==null?'selected':''}>请选择...</option>
+
+
+                            <s:if test="#request.teacherList!=null && #request.teacherList.size()>0">
+                                <s:iterator value="#request.teacherList" id="teacher1">
+
+                                    <%--<option value="11级" ${request.enter.grade =="11级"?'selected':''}>11级</option>--%>
+                                    <option value="${teacher1.name}" ${teacher1.name ==request.tutor1?'selected':''}>${teacher1.name}</option>
+                                </s:iterator>
+                            </s:if>
+
+                        </select>
+
+                    </span>
+                    </li>
                 </ul>
 
 

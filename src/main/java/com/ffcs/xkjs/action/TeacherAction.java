@@ -153,7 +153,9 @@ public class TeacherAction extends BaseAction<Teacher> {
         //String content=request.getParameter("content");
         String currentPage=request.getParameter("currentPage");
 
-        if(TUtil.null2String(teacher.getTeaId()).equals("")) {
+        String teaId=teacher.getTeaId();
+
+        if(TUtil.null2String(teaId).equals("")) {
 
 
             //设置初始密码
@@ -169,7 +171,20 @@ public class TeacherAction extends BaseAction<Teacher> {
         }
 
         else {
-            teacherService.update(teacher);
+            Teacher teacher1=teacherService.findTeacherByID(teaId);
+
+            //找回初始密码
+            String password=teacher1.getPassword();
+                //设置初始密码
+                teacher.setPassword(password);
+                //设置角色
+                teacher.setRole("teacher");
+                teacherService.update(teacher);
+
+
+
+
+            //teacherService.update(teacher);
         }
 
         //String textDate = request.getParameter("textDate");

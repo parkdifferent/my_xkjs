@@ -1,5 +1,6 @@
 package com.ffcs.xkjs.service;
 
+import com.ffcs.xkjs.domain.Competition;
 import com.ffcs.xkjs.domain.Teacher;
 
 import java.io.Serializable;
@@ -24,4 +25,6 @@ public interface ITeacherService {
 
 
     Teacher findTeacherByTno(String tno);
+
+    public List<Teacher> findTeachersNoPage();
 }

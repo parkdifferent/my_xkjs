@@ -98,7 +98,7 @@
 <body>
 
 <div class="cont">
-    <h1 class="seth">竞赛新闻管理</h1>
+    <h1 class="seth">竞赛通知管理</h1>
     <div class="nav_list">
         <ul>
             <li><a href="<%=basePath%>/system/notice_list.do"><b>管理</b></a> </li>
@@ -132,7 +132,7 @@
                     <li class="setcont_bg">通知内容</li>
                     <li><span class="webname">
        <%-- <input name="content" type="text" id="content" value="<s:property value="#request.notice.content"/>" />--%>
-                        <textarea name="content" cols="100" rows="10" style="width:700px;height:300px;visibility:hidden;"><%=htmlspecialchars(contentData)%></textarea>
+                        <textarea name="content" cols="100" rows="10" style="width:700px;height:800px;visibility:hidden;"><%=htmlspecialchars(contentData)%></textarea>
       </span></li>
                 </ul>
 

@@ -32,9 +32,6 @@
 
 
 
-
-
-
     </script>
 
 
@@ -51,8 +48,6 @@
      }
      });
      */
-
-
 
     // 使用 option.legend.data=result.legend
     var myChart = echarts.init(document.getElementById('main'));
@@ -93,11 +88,6 @@
 
 
     function test() {
-
-
-
-
-
 
         $.ajax({
             type: 'post',

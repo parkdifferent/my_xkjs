@@ -85,7 +85,7 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>竞赛资料</li>
+                <li>您可以按条件查询竞赛资料、下载竞赛资料</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -93,7 +93,7 @@
                 <tr>
 
                     <th width="4%" align="left">&nbsp;</th>
-                    <th width="15%" ><span class="form_btna">文件名称</span></th>
+                    <th width="40%" ><span class="form_btna">文件名称</span></th>
                     <th width="15%" ><span class="form_btna">文件描述</span></th>
                     <th width="15%" ><span class="form_btna">上传时间</span></th>
                     <th align="center" ><span class="form_btna">操作</span></th>

@@ -134,13 +134,39 @@
 
 
                 <ul class="set1">
+                    <li class="setcont_bg"><strong class="sred">*</strong>图片</li>
+
+                    <li>
+                        <s:if test="#request.edit">
+                            <%--<s:property value="#request.notice.fileName"/>--%>
+                            <img src="<%=basePath%>/${request.filePath}">
+                        </s:if>
+                    </li>
+                    <li><%--<span> <input id="upload" type="file" name="upload" /></span>--%>
+
+
+                        <%-- <s:if test="${request.edit}">
+                             <s:property value="#request.notice.fileName"/>
+                         </s:if>--%>
+
+                        <%-- <span id="nothis">
+                             <strong class="q"></strong>
+                             <strong class="w">选择要导入文件</strong><strong class="c"></strong>
+                         </span>--%>
+
+
+                    </li>
+                </ul>
+
+
+                <ul class="set1">
                     <li class="setcont_bg">新闻内容</li>
                     <li><span class="webname">
 
         <%--<input name="content" type="text" id="content" value="<s:property value="#request.news.content"/>" />--%>
                         <%--<s:property value="#request.news.content"/>--%>
                <%--<%=htmlspecialchars(contentData)%>--%>  <%--${requestScope.content}--%>
-           <textarea name="content" cols="100" rows="10" style="width:700px;height:300px;visibility:hidden;" readonly><%=htmlspecialchars(contentData)%></textarea>
+           <textarea name="content" cols="100" rows="10" style="width:700px;height:800px;visibility:hidden;" readonly><%=htmlspecialchars(contentData)%></textarea>
 
 
       </span></li>

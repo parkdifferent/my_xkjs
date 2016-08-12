@@ -188,6 +188,10 @@ public class EnterAction extends BaseAction<Enter> {
 
         List<Academe> academeList = academeService.findAcademeByCondition(null);
         List<Competition> competitionList = competitionService.findCompetitionsNoPage();
+//指导教师
+        List<Teacher> teacherList=teacherService.findTeachersNoPage();
+
+        request.setAttribute("teacherList", teacherList);
 
         request.setAttribute("academeList", academeList);
         request.setAttribute("competitionList", competitionList);
@@ -232,9 +236,16 @@ public class EnterAction extends BaseAction<Enter> {
             }
 
 
+            //获取指导教师
+            List<Teacher> teacherList=teacherService.findTeachersNoPage();
+            request.setAttribute("teacherList", teacherList);
+            request.setAttribute("tutor1", enter2.getTutor());
+
             request.setAttribute("academe1", enter2.getAcademe());
             request.setAttribute("profession1", enter2.getProfession());
             request.setAttribute("comName1", enter2.getComName());
+
+
 
         }
 
@@ -286,9 +297,23 @@ public class EnterAction extends BaseAction<Enter> {
 
 
         if (TUtil.null2String(enterId).equals("")) {
-            //noticeService.saveNotice(notice);
-            //competitionService.saveCompetition(competition);
+
+
+
+            String sno=enter.getSno();
+            User user=userService.findUserBySno(sno);
+            if(!TUtil.null2String(user).equals("")) {
+                enter.setTrueName(user.getUserName());           //姓名
+                enter.setGrade(user.getGrade());                //年级
+                enter.setAcademe(user.getAcademe());              //学院
+                enter.setProfession(user.getProfession());            //专业
+                enter.setClasses(user.getClasses());              //班级
+                enter.setEmail(user.getEmail());                    //邮箱
+                enter.setTelephone(user.getTelephone());             //电话
+            }
             enterService.saveEnter(enter);
+
+
         } else {
             // noticeService.update(notice);
             // competitionService.update(competition);
@@ -376,7 +401,19 @@ public class EnterAction extends BaseAction<Enter> {
                 enter2.setSno(sno);
                 System.out.println(sno);
 
-                Cell fCell1 = rs.getCell(1, i);
+
+                User user=userService.findUserBySno(sno);
+                if(!TUtil.null2String(user).equals("")) {
+                    enter2.setTrueName(user.getUserName());           //姓名
+                    enter2.setGrade(user.getGrade());                //年级
+                    enter2.setAcademe(user.getAcademe());              //学院
+                    enter2.setProfession(user.getProfession());            //专业
+                    enter2.setClasses(user.getClasses());              //班级
+                    enter2.setEmail(user.getEmail());                    //邮箱
+                    enter2.setTelephone(user.getTelephone());             //电话
+                }
+
+               /* Cell fCell1 = rs.getCell(1, i);
                 String trueName = fCell1.getContents();
                 enter2.setTrueName(trueName);
                 System.out.println(trueName);
@@ -409,21 +446,23 @@ public class EnterAction extends BaseAction<Enter> {
                 Cell fCell7 = rs.getCell(7, i);
                 String email = fCell7.getContents();
                 enter2.setEmail(email);
-                System.out.println(email);
+                System.out.println(email);*/
 
-                Cell fCell8 = rs.getCell(8, i);
-                String tutor = fCell8.getContents();
-                enter2.setTutor(tutor);
-                System.out.println(tutor);
 
-                Cell fCell9 = rs.getCell(9, i);
+
+                Cell fCell9 = rs.getCell(1, i);
                 String comName = fCell9.getContents();
                 enter2.setComName(comName);
                 System.out.println(comName);
 
+                Cell fCell8 = rs.getCell(2, i);
+                String tutor = fCell8.getContents();
+                enter2.setTutor(tutor);
+                System.out.println(tutor);
+
 
                 //报名时间
-                Cell fCell10 = rs.getCell(10, i);
+                Cell fCell10 = rs.getCell(3, i);
                 if (fCell10.getType() == CellType.DATE) {
                     DateCell dateCell = (DateCell) fCell10;
                     Date result = dateCell.getDate();
@@ -542,11 +581,6 @@ public class EnterAction extends BaseAction<Enter> {
         String professionId = request.getParameter("profession");
         String comName = request.getParameter("comName");
 
-
-
-
-
-
         try {
             grade = new String(grade.getBytes("ISO8859-1"),"UTF-8");
             academe = new String(academe.getBytes("ISO8859-1"),"UTF-8");
@@ -628,15 +662,15 @@ public class EnterAction extends BaseAction<Enter> {
         // 设置excel每列宽度
         sheet.setColumnWidth(0, 6000);
         sheet.setColumnWidth(1, 4000);
-        sheet.setColumnWidth(2, 8000);
+        sheet.setColumnWidth(2, 3000);
         sheet.setColumnWidth(3, 6000);
         sheet.setColumnWidth(4, 6000);
-        sheet.setColumnWidth(5, 6000);
-        sheet.setColumnWidth(6, 6000);
+        sheet.setColumnWidth(5, 4000);
+        sheet.setColumnWidth(6, 5000);
         sheet.setColumnWidth(7, 6000);
-        sheet.setColumnWidth(8, 6000);
-        sheet.setColumnWidth(9, 6000);
-        sheet.setColumnWidth(10, 6000);
+        sheet.setColumnWidth(8, 10000);
+        sheet.setColumnWidth(9, 4000);
+        sheet.setColumnWidth(10, 5000);
 
 
         // 创建字体样式
@@ -664,7 +698,7 @@ public class EnterAction extends BaseAction<Enter> {
         // 创建一个Excel的单元格
         HSSFCell cell = row.createCell(0);
         // 合并单元格(startRow，endRow，startColumn，endColumn)
-        sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 11));
+        sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, 10));
         // 给Excel的单元格设置样式和赋值
         cell.setCellStyle(style);
         String title = "报名表";
@@ -875,9 +909,12 @@ public class EnterAction extends BaseAction<Enter> {
             request.setAttribute("academe1", enter2.getAcademe());
             request.setAttribute("profession1", enter2.getProfession());
 
+        //指导教师
+        List<Teacher> teacherList=teacherService.findTeachersNoPage();
 
+        request.setAttribute("teacherList", teacherList);
 
-
+        request.setAttribute("tutor1", enter2.getTutor());
 
         request.setAttribute("edit", true);
 
@@ -959,6 +996,9 @@ public class EnterAction extends BaseAction<Enter> {
         }
 
         List<Enter> list = enterService.findEnterByCondition(enter1, beginTime, endTime);
+
+        List<Competition> competitionList=competitionService.findCompetitionsNoPage();
+        request.setAttribute("competitionList", competitionList);
 
         request.setAttribute("enterList", list);
         request.setAttribute("beginTime", beginTime);

@@ -134,6 +134,10 @@
           <option value="14级" ${request.grade =="14级"?'selected':''}>14级</option>
           <option value="15级" ${request.grade =="15级"?'selected':''}>15级</option>
 
+          <option value="16级" ${request.grade =="16级"?'selected':''}>16级</option>
+          <option value="17级" ${request.grade =="17级"?'selected':''}>17级</option>
+          <option value="18级" ${request.grade =="18级"?'selected':''}>18级</option>
+
       </select></span>
 
                     <span>学院</span> <span>
@@ -149,8 +153,7 @@
 
       </select>
       </span>
-                    </li>
-                <li>
+
 
                     <span>专业</span> <span>
       <select name="profession" id="profession" >
@@ -165,6 +168,9 @@
 
       </select>
       </span>
+
+                </li>
+                <li>
 
 
                     <span>竞赛名称</span> <span>
@@ -204,7 +210,8 @@
         <div class="operation">
             <h3>友情提示</h3>
             <ul>
-                <li>到期已提交续费申请的店铺请尽快与店主联系并完成线下续费流程，待店主续费成功后请编辑店铺状态为正常营业</li>
+                <li>您可以按条件查询结果信息，新增、编辑、删除、批量删除结果信息</li>
+                <li>您可以通过Excel批量导入结果信息、按条件导出Excel结果信息</li>
             </ul>
         </div>
         <div class="fshoptb">
@@ -213,17 +220,17 @@
 
                     <th width="4%" align="left">&nbsp;</th>
 
-                    <th width="6%" ><span class="form_btna">学号</span></th>
+                    <th width="8%" ><span class="form_btna">学号</span></th>
                     <th width="6%" ><span class="form_btna">姓名</span></th>
                     <th width="6%" ><span class="form_btna">年级</span></th>
-                    <th width="6%" ><span class="form_btna">学院</span></th>
-                    <th width="6%" ><span class="form_btna">专业</span></th>
+                    <th width="12%" ><span class="form_btna">学院</span></th>
+                    <th width="12%" ><span class="form_btna">专业</span></th>
 
                     <th width="6%" ><span class="form_btna">班级</span></th>
-                    <th width="6%" ><span class="form_btna">竞赛名称</span></th>
+                    <th width="12%" ><span class="form_btna">竞赛名称</span></th>
                     <th width="6%" ><span class="form_btna">参赛形式</span></th>
 
-                    <th width="6%" ><span class="form_btna">奖项</span></th>
+                    <th width="8%" ><span class="form_btna">奖项</span></th>
                     <th width="6%" ><span class="form_btna">指导教师</span></th>
 
                     <th width="6%" ><span class="form_btna">获奖时间</span></th>

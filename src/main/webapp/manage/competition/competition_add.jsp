@@ -116,10 +116,9 @@
 
 
              <option value="" ${request.competition.category ==null?'selected':''}>请选择...</option>
-             <option value="学科知识类" ${request.competition.category =="学科知识类"?'selected':''}>学科知识类</option>
-             <option value="创新创业类" ${request.competition.category =="创新创业类"?'selected':''}>创新创业类</option>
-             <option value="文化素质类" ${request.competition.category =="文化素质类"?'selected':''}>文化素质类</option>
-             <option value="体育竞赛类" ${request.competition.category =="体育竞赛类"?'selected':''}>体育竞赛类</option>
+             <option value="A类" ${request.competition.category =="A类"?'selected':''}>A类</option>
+             <option value="B类" ${request.competition.category =="B类"?'selected':''}>B类</option>
+             <option value="C类" ${request.competition.category =="C类"?'selected':''}>C类</option>
 
          </select>
         </span>

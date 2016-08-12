@@ -20,7 +20,7 @@
             <column name="academe" length="60" />
         </property>
         <property name="rank" type="java.lang.String">
-            <column name="rank" length="30" />
+            <column name="rank" length="60" />
         </property>
 
         <property name="research" type="java.lang.String">

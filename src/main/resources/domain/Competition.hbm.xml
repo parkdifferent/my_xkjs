@@ -25,23 +25,23 @@
         </property>
 
         <property name="category" type="java.lang.String">
-            <column name="category" length="120" />
+            <column name="category" length="60" />
         </property>
 
         <property name="level" type="java.lang.String">
-            <column name="level" length="120" />
+            <column name="level" length="30" />
         </property>
 
         <property name="startDate" type="date" column="startDate"></property>
 
 
         <property name="fileName" type="java.lang.String">
-            <column name="fileName" length="150" />
+            <column name="fileName" length="120" />
         </property>
 
 
         <property name="filePath" type="java.lang.String">
-            <column name="filePath" length="150" />
+            <column name="filePath" length="120" />
         </property>
 
 
